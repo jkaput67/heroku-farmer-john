@@ -1,0 +1,30 @@
+.social_hero {
+	padding-top:25.78125%;
+	background-image:url(../assets/img/social/social-hero.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+.page-social {
+	.j-filters {position:absolute; left:-100000px}
+	.feed-item {max-width:300px; margin-top:10px!important; margin-left:5px!important; margin-right:5px!important; margin-bottom:10px!important;}
+	.social_archive_filter_item {float:left!important;}
+	
+	@media #{$large-up}{
+		.social_archive_filter_item {
+			padding:0;
+		}
+		.social_archive_filter_item a {
+			margin:0;
+			font-size:0.8rem;
+		}
+
+		.social_archive_filter_item a i.fa {
+			font-size:1.1rem;
+		}
+
+		.social_archive_filter_item a.active {
+			margin:0 0.5rem;
+		}
+	}
+}

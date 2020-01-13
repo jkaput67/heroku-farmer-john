@@ -1,0 +1,106 @@
+.food_safety_hero {
+	background-image:url(../assets/img/food-safety/hero-1024.jpg);
+	padding-top:25%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+}
+
+@media #{$large-up}{
+	.food_safety_hero {
+		background-image:url(../assets/img/food-safety/hero-2048.jpg);
+	}
+}
+
+.food_safety_content {
+	padding-bottom:4rem;
+}
+
+@media #{$large-up}{
+	.food_safety_content .row {
+		padding-top:4.5rem;
+	}
+}
+
+.food_safety_content h2, h2.title {
+	font-family: "DIN OT Bold";
+	color:$black;
+	font-size:2.5rem;
+	margin:3rem auto;
+	display:block;
+	line-height:100%;
+}
+
+@media #{$large-up}{
+	.food_safety_content h2, h2.title {
+		font-size:2rem;
+		margin:0 auto 2rem;
+	}
+}
+
+.food_safety_content p {
+	font-size:1.75rem;
+	display:block;
+	padding:7%;
+	margin-bottom:0;
+}
+
+@media #{$large-up}{
+	.food_safety_content p {
+		font-size:1.15rem;
+		padding:0 7%;
+	}
+}
+
+img.ribbon {
+	max-width:15%;
+	height:auto;
+}
+
+img.pig {
+	max-width:39%;
+	height:auto;
+}
+
+img.farm {
+	max-width:35%;
+	height:auto;
+}
+
+@media #{$large-up}{
+	img.farm, img.pig, img.ribbon{
+		max-width:none;
+	}
+}
+
+.food_safety_slider .tip_icon_bg h2, .food_safety_slider .tip_icon_bg p {
+	color:#333;
+}
+
+.food_safety_slider .tip_icon_bg .homepage-tip-divider {
+	border-bottom:4px solid #333;
+}
+
+.food_safety_slider .tip {
+    min-height: 33rem;
+}
+
+.food_safety_slider .tip_icon_bg {
+    background-size: auto 75% !important;
+}
+
+.blue-divider {
+    width: 90%;
+    border-bottom: 3px solid $fj-seafoam;
+	margin: 4rem auto 1rem;
+}
+
+.food_safety_tip {
+	padding-top:31.25%;
+	display:block;
+	background-size:cover;
+}
+
+.food-safety-tip h2 {
+	font-size:3rem;
+}

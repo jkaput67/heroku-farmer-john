@@ -1,0 +1,137 @@
+.partners_hero {
+	padding-top:25%;
+	background-image:url(../assets/img/partners/partners_bg.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.partners_top_blurb {
+	padding:10%;
+}
+
+@media #{$large-up}{
+	.partners_top_blurb {
+		padding:5% 10%;
+	}	
+}
+
+section.page-partners p, p {
+	font-size:1.7rem;
+	line-height:140%;
+}
+
+@media #{$large-up}{
+	section.page-partners p, p {
+		font-size:1.25rem;
+	}
+}
+
+section.page-partners strong {
+	font-size:1.85rem;
+	font-family: "DIN OT Bold";
+	display:block;
+	margin:1rem 0 1.5rem;
+}
+
+@media #{$large-up}{
+	section.page-partners strong {
+		font-size:1.75rem;
+	}
+}
+
+.dodger-stadium-bg {
+	background:url(../assets/img/partners/dodger-stadium-bg-mobile.jpg) no-repeat;
+	background-size:cover;
+	padding-top:87.5%
+}
+
+.dodgers-logo-bg {
+	background:url(../assets/img/partners/dodgers-logo-bg-mobile.jpg) no-repeat;
+	background-size:cover;
+}
+
+.rose-bowl-stadium-bg {
+	background:url(../assets/img/partners/rose-bowl-stadium-bg-mobile.jpg) no-repeat;
+	background-size:cover;
+	padding-top:87.5%
+}
+
+.rose-bowl-logo-bg {
+	background:url(../assets/img/partners/rose-bowl-logo-bg-mobile.png) no-repeat;
+	background-size:cover;
+	padding:20% 9%;
+}
+
+.angels-stadium-bg {
+	background:url(../assets/img/partners/angels-stadium-bg-mobile.jpg) no-repeat;
+	background-size:cover;
+	padding-top:87.5%
+}
+
+.angels-logo-bg {
+	background:url(../assets/img/partners/angels-logo-bg-mobile.png) no-repeat;
+	background-size:cover;
+	padding:20% 9%;
+}
+
+.trojans-player-bg {
+	background:url(../assets/img/partners/trojans-player-bg-mobile.jpg) no-repeat;
+	background-size:cover;
+	padding-top:87.5%
+}
+
+.trojans-logo-bg {
+	background:url(../assets/img/partners/trojans-logo-bg-mobile.png) no-repeat;
+	background-size:cover;
+	padding:20% 9% 10%;
+}
+
+.partners_section_desktop .partners_text_blurb_desktop, .partners_section_desktop_left .partners_text_blurb_desktop {
+	width:40%;
+	margin-left:50%;
+}
+
+.partners_section_desktop_left .partners_text_blurb_desktop {
+	margin-left:10%;
+}
+
+.dodgers {
+	background-image:url(../assets/img/partners/dodgers-bg.jpg);
+	background-repeat:no-repeat;
+}
+
+.rose_bowl {
+	background-image:url(../assets/img/partners/rose-bowl-bg.jpg);
+	background-repeat:no-repeat;
+}
+
+.angels {
+	background-image:url(../assets/img/partners/angels-bg.jpg);
+	background-repeat:no-repeat;
+}
+
+.trojans {
+	background-image:url(../assets/img/partners/trojans-bg.jpg);
+}
+
+.partners_section_desktop, .partners_section_desktop_left {
+	padding:10% 0;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+@media #{$large-up}{
+	
+}
+
+@media #{$large-up}{
+	
+}
+
+@media #{$large-up}{
+	
+}
+
+@media #{$large-up}{
+	
+}

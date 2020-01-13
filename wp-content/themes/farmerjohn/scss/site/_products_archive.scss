@@ -1,0 +1,488 @@
+.products_archive {
+	padding-bottom:3rem;
+}
+
+.products-archive-product {
+	margin:1rem 0;
+}
+
+.products-archive-product-title {
+	font-size:2rem;
+	text-transform:uppercase;
+	line-height:120%;
+}
+
+.products-archive-product:hover .products-archive-product-title {
+	font-family: "DIN OT Bold";
+}
+
+.products_archive_hero {
+	background:url(../assets/img/products/FJ_product_Main_All.jpg);
+	padding-top:26.166666667%;
+	background-size:cover;
+}
+
+.products_single_hero.california-natural-fresh-pork, .products_archive_hero.california-natural-fresh-pork {
+	background-image:url(../assets/img/products/FJ_product_california-natural-fresh-pork.jpg);
+}
+
+.products_single_hero.bacon, .products_archive_hero.bacon {
+	background-image:url(../assets/img/products/FJ_product_bacon.jpg);
+}
+
+.products_single_hero.breakfast-sausage, .products_archive_hero.breakfast-sausage {
+	background-image:url(../assets/img/products/FJ_product_breakfast-sausage.jpg);
+}
+
+.products_single_hero.ham, .products_archive_hero.ham {
+	background-image:url(../assets/img/products/FJ_product_Ham.jpg);
+}
+
+.products_single_hero.hot-dogs, .products_archive_hero.hot-dogs {
+	background-image:url(../assets/img/products/FJ_product_hot-dogs.jpg);
+}
+
+.products_single_hero.lunch-meat, .products_archive_hero.lunch-meat {
+	background-image:url(../assets/img/products/FJ_product_lunch-meat.jpg);
+}
+
+.products_single_hero.smoked-sausage, .products_archive_hero.smoked-sausage {
+	background-image:url(../assets/img/products/FJ_product_smoked-sausage.jpg);
+}
+
+@media #{$large-up}{
+	.products_archive_filter_item, .social_archive_filter_item {
+		float:left;
+	    display: flex;
+		flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+		width:10%;
+		border-right:1px solid $fj-grey;
+		text-align:center;
+		height:4rem;
+	}
+
+	.social_archive_filter_item {
+		width:auto;
+	}
+
+	.products-archive-product-title {
+		font-size:0.85rem;
+	}
+}
+
+.products_archive_filter_item:last-child, .social_archive_filter_item:last-child {
+	border-right:none;
+}
+
+.products_archive_filter_item a, .social_archive_filter_item a, a.red-button {
+	font-size:1.75rem;
+	line-height:250%;
+	color:$black;
+	padding:0.75rem 1.5rem;
+}
+
+.products_archive_filter_item a.active, .social_archive_filter_item a.active, a.red-button.active {
+	color:$white;
+	background:$fj-red;
+	font-family: "DIN OT Bold";
+}
+
+a.red-button:hover {
+	font-family: "DIN OT Bold";
+}
+
+.alert-box.alert {
+    font-size: 2rem;
+}
+
+@media #{$large-up}{
+	.products_archive_filter_item a, .social_archive_filter_item a {
+		font-size:0.8rem;
+		color:$black;
+		padding:0.5rem 1rem;
+		line-height:130%;
+	}
+
+	.products_archive_filter_item a.active, .social_archive_filter_item a.active {
+		color:$white;
+		background:$fj-red;
+		font-family: "DIN OT Bold";
+	}
+
+	 .products_archive_filter_item a:hover, .social_archive_filter_item a:hover {
+	 	font-family: "DIN OT Bold";
+	 }
+
+	.alert-box.alert {
+	    font-size: 0.8125rem;
+	}
+}
+
+.products_archive_filter_nav, .social_archive_filter_nav {
+	padding:1rem 0;
+}
+
+.products_archive_category_filter_label, .social_archive_category_filter_label {
+	display:none;
+	color:$fj-red;
+	font-size:2rem;
+	font-family:'DIN OT Bold';
+}
+
+.products_archive_category_filter_label.active, .social_archive_category_filter_label.active {
+	display:block;
+	text-align:center;
+}
+
+@media #{$large-up}{
+	.products_archive_category_filter_label.active, .social_archive_category_filter_label.active {
+		display:inline-block;
+		text-align:left;
+	}
+	.products_archive_category_filter_label, .social_archive_category_filter_label {
+		font-size:1.25rem;
+	}
+}
+
+.category_label_and_diet_filter_container {
+	padding:2rem 0;
+}
+
+.no-results-text {
+	display:none;
+}
+
+.products-archive-photo {
+	height:120px;
+	background-size:contain !important;
+	background-position:center center !important;
+	background-repeat:no-repeat !important;
+	position:relative;
+	margin:0 auto;
+	opacity:1;
+}
+
+.products-archive-product:hover .products-archive-photo {
+	opacity:0.5;
+}
+
+.products-archive-product a {
+	display:inline-block;
+	margin:0 auto;
+	width: 90%;
+}
+
+@media #{$large-up}{
+	.products-archive-product a {
+		display:inline-block;
+		margin:0 auto;
+		width: 70%;
+	}
+}
+
+.products_archive_filter_dropdown {
+	padding:0 0 2rem;
+}
+
+.products_archive_filter_dropdown_toggle, .social_archive_filter_dropdown_toggle {
+	display:block;
+}
+
+.products_archive_filter_dropdown_toggle h2, .products_archive_filter_dropdown, .social_archive_filter_dropdown_toggle h2, .social_archive_filter_dropdown {
+	display:none;
+}
+
+.products_archive_filter_dropdown.active, .social_archive_filter_dropdown.active {
+	display:block;
+}
+
+.products_archive_filter_dropdown_toggle h2.active, .social_archive_filter_dropdown_toggle h2.active {
+	display:inline-block;
+	margin:0 auto;
+}
+
+.products_archive_filter_dropdown_toggle h2, .social_archive_filter_dropdown_toggle h2 {
+	line-height:200%;
+}
+
+.vertical-divider {
+	width:95%;
+	margin: 1rem auto 2.5rem;
+	border-bottom:1px solid $black;
+}
+
+.dropdown-toggle {
+	background-position:center center;
+	background-repeat:no-repeat !important;
+	background-size: contain !important;
+	height:1.6875rem;
+	width:1.5rem;
+	margin-right:1rem;
+	margin-top:1.6875rem;
+}
+
+.dropdown-toggle.collapsed {
+	background:url(../assets/img/components/dropdown-collapsed.png);
+}
+
+.all-products-container {
+	display:none;
+}
+
+select.diet_dropdown {
+	padding:0.5rem 2rem;
+	font-size:2rem;
+	font-family: "DIN OT Bold";
+	height:auto;
+	text-transform: uppercase;
+}
+
+.post-type-archive-recipes #submit-a-recipe {
+	background-color:$fj-yellow;
+	.gform_heading {
+		display:block;
+		text-align:center;
+		p, p small {
+			text-align:left;
+			font-size:1.5rem;
+			line-height:130%;
+		}
+
+		p small {
+			font-size:1rem;
+		}
+
+		.gform_title {
+			text-transform: uppercase;
+			color:$black;
+			font-family:"DIN OT Bold";
+			font-size:3rem;
+		}
+	}
+
+	input, .select2-container .select2-choice, textarea {
+		background-color:#fff9e9;
+		border: none;
+		box-shadow:none;
+		padding:2rem 0 2rem 2rem;
+		font-size:1.5rem;
+		width:100%;
+		display:block;
+	}
+
+	.select2-container {
+		margin:0 0 1rem;
+		width:100%;
+		display:block;
+	}
+
+	.select2-container .select2-choice {
+		padding: 0.75rem 0 0.75rem 1rem;
+	}
+
+	/* Two Fields Per Row */
+
+	#field_3_4, #field_3_8 {
+		display:inline-block !important;
+		float:left !important;
+		width:48.5% !important;
+		clear:none !important;
+	}
+
+	/* Left Row (2 per row) */
+
+	#field_3_4 {
+		margin-right: 3%;
+	}
+
+	/* Three Fields Per Row */
+
+	#field_3_6, #field_3_7, #field_3_5 {
+		display:inline-block !important;
+		float:left !important;
+		width:31.3333333% !important;
+		clear:none;
+	}
+
+	/* Left and Center Row (3 per row) */
+
+	#field_3_6, #field_3_5 {
+		margin-right: 3%;
+	}
+
+	#field_3_14 .ginput_container {
+		display:none;
+	}
+
+	.gform_footer.top_label {
+		margin:0;
+		padding:0;
+		input[type="submit"] {
+			background-color:$fj-green;
+			color:$white;
+			text-transform:uppercase;
+			font-family: "DIN OT Bold";
+			transition:none;
+		    font-size: 2rem;
+		    padding: 1.5rem 0;
+		    margin-top:2rem;
+		}
+		input[type="submit"]:hover {
+			background-color:lighten($fj-green,8%);
+			transition:none;
+		}
+	}
+
+
+	#field_3_14 {
+		padding:0;
+		margin: 3rem 0 1rem;
+	}
+
+	.gform_wrapper .top_label .gfield_label {
+		margin:0;
+	}
+
+	.upload-photo-button {
+		display:block !important;
+		text-align:center;
+	}
+
+	.select2-chosen {
+		text-transform: capitalize;
+		font-size:1.5rem;
+	    line-height: 100%;
+	    padding: 0.75rem 0 0.75rem;
+	}
+
+	@media #{$large-up}{
+		.gform_footer.top_label input[type="submit"] {
+		    font-size: 1.65rem !important;
+		    padding: 0.5rem 1rem !important;
+		}
+
+		.gform_heading {
+			p, p small {
+				font-size:1rem;
+				line-height:130%;
+			}
+
+			p small {
+				font-size:0.7rem;
+			}
+
+			.gform_title {
+				font-size:1.85rem;
+			}
+		}
+		input, .select2-container .select2-choice, textarea {
+			padding:0.75rem 0 0.75rem 1rem;
+			font-size:0.85rem;
+		}
+
+		/* Two Fields Per Row */
+
+		#field_3_12, #field_3_13, #field_3_14, .gform_footer.top_label {
+			display:inline-block !important;
+			float:left !important;
+			width:48.5% !important;
+			clear:none !important;
+		}
+
+		/* Left Row (2 per row) */
+
+		#field_3_12, #field_3_14 {
+			margin-right: 3%;
+		}
+
+		/* Three Fields Per Row */
+
+		#field_3_6, #field_3_7, #field_3_5 {
+			display:inline-block !important;
+			float:left !important;
+			width:31.3333333% !important;
+			clear:none;
+		}
+
+		/* Left and Center Row (3 per row) */
+
+		#field_3_6, #field_3_5 {
+			margin-right: 3%;
+		}
+
+		#field_3_14 .ginput_container {
+			display:none;
+		}
+
+		.gform_footer.top_label {
+			margin:0;
+			padding:0;
+			input[type="submit"] {
+				background-color:$fj-green;
+				color:$white;
+				text-transform:uppercase;
+				font-family: "DIN OT Bold";
+				transition:none;
+			    font-size: 1.65rem;
+			    padding: 0.5rem 1rem;
+			    margin:0;
+			}
+			input[type="submit"]:hover {
+				background-color:lighten($fj-green,8%);
+				transition:none;
+			}
+		}
+
+
+		#field_3_14 {
+			margin:0 3% 0 0;
+			padding:0;
+		}
+
+		.gform_wrapper .top_label .gfield_label {
+			margin:0;
+		}
+
+		.upload-photo-button {
+			display:block !important;
+			text-align:center;
+		}
+
+		.select2-chosen {
+			text-transform: uppercase;
+			font-size:0.85rem;
+		    line-height: 100%;
+		    padding: 0;
+		}
+	}
+}
+
+@media #{$small-only} {
+	.select2-container .select2-choice {
+		padding: 0.5rem 0 0.5rem 1rem !important;
+		font-size:2rem !important;
+		line-height: 100% !important;
+
+	}
+	.select2-results .select2-result-label {
+		padding: 0.5rem 10% !important;
+		margin: 1rem 0 !important;
+		font-size:1.5rem !important;
+	}
+}
+
+@media #{$medium-only} {
+	.select2-container .select2-choice {
+		padding: 0.5rem 0 0.5rem 1rem !important;
+		font-size:2rem !important;
+		line-height: 100% !important;
+
+	}
+	.select2-results .select2-result-label {
+		padding: 0.5rem 10% !important;
+		margin: 1rem 0 !important;
+		font-size:1.5rem !important;
+	}
+}

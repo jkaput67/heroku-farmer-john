@@ -1,0 +1,156 @@
+footer.show-for-large-up {
+	padding:4rem 0;
+}
+
+.footer-nav {
+	padding-bottom:2rem;
+}
+
+.hide-for-large-up .footer-nav {
+	padding: 0 10% 13%;
+}
+
+.hide-for-large-up .footer-nav:first-child {
+	padding: 13% 10% 5%;
+}
+
+.hide-for-large-up .footer-nav .column {
+	padding-right:0 !important;
+}
+
+.footer-nav a {
+	display:block;
+	color:$black;
+	font-family: "DIN OT Regular";
+	font-size:1.65rem;
+	line-height:220%;
+}
+
+@media #{$large-up}{
+	.footer-nav a {
+		font-size:0.9rem;
+	}
+	.footer-nav {
+		padding-bottom:3rem;
+	}
+}
+
+.ca_transparency_act {
+	line-height:150%;
+}
+
+.footer-nav a:hover {
+	font-family: "DIN OT Bold";
+}
+
+.newsletter-signup {
+	padding:0 0 7rem;
+	.gform_wrapper {
+		margin:0;
+	}
+	label {
+		display:block;
+		text-align:center;
+		font-size:2rem;
+		margin-bottom:0.5rem;
+		@media #{$large-up}{
+			display:inline-block;
+			float:left;
+			margin-right:1rem;
+			line-height:1.9rem;
+			vertical-align:middle;
+			font-size:inherit;
+		}
+	}
+}
+
+#gform_fields_4 {
+	margin:0;
+}
+
+#gform_wrapper_4 {
+	display:inline-block;
+}
+
+.newsletter-signup input[type="email"], #input_4_1 {
+	display:inline-block;
+	width:20rem;
+	background:#e5e7e7;
+	border:none;
+	border-width:0px;
+	font-size:1.5rem;
+	padding:0.6rem 0 0.7rem 1rem;
+	margin:0 0.5rem 0 0;
+	height:auto;
+	box-shadow: none;
+	vertical-align: middle;
+}
+
+@media #{$large-up}{
+	.newsletter-signup input[type="email"], #input_4_1 {
+		float:left;
+		width:20rem;
+		font-size:0.9rem;
+		padding:0.5rem 0 0.5rem 1rem;
+		margin-right:0.5rem;
+		height:auto;
+		box-shadow: none;
+	}
+}
+
+.newsletter-signup button, #gform_submit_button_4 {
+	font-size:1.5rem;
+	font-family: "DIN OT Bold";
+	background:$fj-grey;	
+	padding:0.6rem 2.5rem 0.7rem;
+	display:inline-block;
+	vertical-align: middle;
+	margin:0;
+	line-height:normal;
+}
+
+@media #{$large-up}{
+	.newsletter-signup button, #gform_submit_button_4 {
+		font-size:0.9rem;
+		font-family: "DIN OT Bold";
+		background:$fj-grey;
+		padding:0.5rem 2rem;
+		display:inline-block;
+		float:left;
+	}
+}
+
+.footer-social {
+	margin:5rem 0 3rem;
+}
+
+.footer-social a i {
+	font-size:2.75rem;
+	color:$black;
+}
+
+.footer-social a {
+	display:inline-block;
+	margin:0 0.75rem;
+}
+
+footer .copyright {
+	font-size:1.3rem;
+	margin:2rem 0 5rem;
+}
+
+@media #{$large-up}{
+	.footer-social a i {
+		font-size:1.5rem;
+	}
+	.footer-social a {
+		margin:0 0.5rem;
+	}
+	.footer-social {
+		margin-top:1rem;
+	}
+	footer .copyright {
+		font-size:0.85rem;
+		margin:2rem 0 1rem;
+	}
+}

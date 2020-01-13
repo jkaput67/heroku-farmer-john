@@ -1,0 +1,113 @@
+.faq_hero {
+	padding-top:25.78125%;
+	background-image:url(../assets/img/faq/hero-1024.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+@media #{$large-up}{
+	.faq_hero {
+		padding-top:25%;
+		background-image:url(../assets/img/faq/hero-2048.jpg);
+	}
+}
+
+.faq_title h1 {
+	font-family: "DIN OT Bold";
+	font-size:2rem;
+	color:$fj-grey;
+	margin:2rem 0;
+}
+
+@media #{$large-up}{
+	.faq_title h1 {
+		font-size:2rem;
+	}
+}
+
+.faq_section {
+	padding:3rem 4rem;
+}
+
+@media #{$large-up}{
+	.faq_section:first-child {
+		margin-right:0.5rem;
+		margin-left:-0.5rem;
+	}
+	.faq_section:last-child {
+		margin-left:0.5rem;
+		margin-right:-0.5rem;
+	}
+	.faq_content .row:first-child {
+		margin-bottom:1rem;
+	}
+	.faq_section {
+		padding:1rem 1.5rem;
+	}
+}
+
+.faq_section_heading {
+	border-bottom:3px solid $fj-grey;
+}
+
+.faq_section_heading h2 {
+	font-family: "DIN OT Bold";
+	font-size:2rem;
+	color:$fj-grey;
+	margin:0;
+}
+
+@media #{$large-up}{
+	.faq_section_heading h2 {
+		font-size:1rem;
+	}	
+}
+
+.faq_content ul li {
+	color:$fj-grey;
+	line-height:100%;
+	margin:1rem 0;
+	font-size:1.75rem;
+}
+
+.faq_content ul li p {
+	color:$fj-grey;
+	line-height:100%;
+	font-size:1.75rem;
+	@media #{$large-up}{
+		font-size:1rem;
+	}
+}
+
+@media #{$large-up}{
+	.faq_content ul li {
+		font-size:1rem;
+	}	
+}
+
+.faq_divider {
+	width:95%;
+	border-bottom:3px solid $fj-grey;
+	margin:3rem auto;
+}
+
+.faq_content li:hover {
+	cursor:pointer;
+}
+
+.faq_content li div.answer {
+	display:none;
+	margin-top:1rem;
+}
+
+.faq_content li.active div.answer {
+	display:block;
+}
+
+.faq_content li.active {
+	font-family: "DIN OT Bold";
+}
+
+.faq_content li.active div.answer {
+	font-family:"DIN OT Regular";
+}

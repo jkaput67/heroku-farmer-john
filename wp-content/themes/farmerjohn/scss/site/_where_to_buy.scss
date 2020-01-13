@@ -1,0 +1,117 @@
+.where_to_buy_hero {
+	padding-top:25.78125%;
+	background-image:url(../assets/img/faq/hero-1024.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+@media #{$large-up}{
+	.where_to_buy_hero {
+		padding-top:25%;
+		background-image:url(../assets/img/faq/hero-2048.jpg);
+	}
+}
+
+/*
+.page-where-to-buy {
+
+	.where_to_buy_step_label {
+		font-family:"DIN OT Bold";
+		color:$fj-grey;
+		font-size:2rem;
+	}
+
+	.food-type {
+	    display: block;
+	    margin: 2em auto;
+	    position: relative;
+	    cursor: pointer;
+	    text-align:center;
+	}
+
+	@media #{$large-up}{
+		.food-type {
+		    margin: 1em 2em 1em 2em;
+		}
+	}
+
+	.map-view-zip {
+		margin:0 0 3rem;
+	}
+
+	input {
+		border:none;
+		box-shadow:none;
+		font-size:2rem;
+		line-height:100%;
+		padding:1rem 0 1rem 2rem;
+		height: auto;
+	}
+
+	.travel-distance-label {
+		font-size:1.5rem;
+		line-height:100%;
+		padding:1rem 0 1rem 2rem;
+		display:inline-block;
+	}
+
+	.radius-button {
+		font-size: 2rem !important;
+		width: auto !important;
+		height: auto;
+		padding: 1rem 5rem 1rem 2rem;
+		background-image: url(../assets/img/components/dropdown-collapsed.png);
+		background-position: 86% center;
+		background-repeat: no-repeat;
+		background-size: 2rem;
+	}
+
+	.selected-item .name, .radius-dropdown-option div {
+		font-size: 2rem!important;
+		width: auto;
+		height: auto;
+		line-height: 2rem;
+		min-width:10rem;
+	}
+
+	.radius-container {
+		position:relative;
+	}
+
+	.radius-dropdown-option {
+		text-align: left;
+		position: absolute;
+		top: 2.5rem;
+		width: auto;
+		left:0;
+		background-color: #f7df8b;
+		border: 1px solid rgb(238, 238, 238);
+		z-index: 3;
+		padding:2rem;
+		min-width:10rem;
+	}
+
+	.selected-item {
+		font-size: 2rem! important;
+		padding:1rem 0 1rem 2rem;
+		color: #000;
+		background: #ebecec;
+		width: 80%;
+		height: auto;
+		margin:1rem auto;
+		background-image: url(../assets/img/components/dropdown-collapsed.png);
+		background-position: 95% center;
+		background-repeat: no-repeat;
+		background-size: 2rem;
+	}
+	.selected-item .name {
+	    font-size: 2rem !important;
+	    display:block;
+	    height: auto;
+	    line-height: 2rem;
+	    text-align:center;
+	    float:none;
+	    overflow: visible;
+	}
+}
+*/

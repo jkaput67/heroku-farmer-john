@@ -1,0 +1,16 @@
+#portfolio-unique-options-list label {
+    width: 152px;
+    display: inline-block;
+}
+
+#hugeitportfolioinsert {
+    margin-left: 10px;
+}
+
+#portfolio-unique-options-list input[type='checkbox'] {
+    margin-left: 1px;
+}
+
+#TB_window {
+    background: #f1f1f1;
+}

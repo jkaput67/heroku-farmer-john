@@ -1,0 +1,375 @@
+/* Careers Template */
+
+/* body.page-careers */
+
+.careers_hero {
+	padding-top:25.78125%;
+	background-image:url(../assets/img/careers/hero-640.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+@media #{$medium-up}{
+	.careers_hero {
+		background-image:url(../assets/img/careers/hero-1200.jpg);
+	}
+}
+
+.hero-title {
+	top:30%;
+	left:0%;
+	width:100%;
+	height:70%;
+}
+
+@media #{$medium-up}{
+	.hero-title {
+		top:35%;
+		height:65%;
+	}
+}
+
+.hero-title h1 {
+	color:$white;
+	font-family:"DIN OT Bold";
+	border-bottom:0.4rem solid $white;
+	font-size:3.25rem;
+	display:inline-block;
+	line-height: 100%;
+}
+
+@media #{$large-up}{
+	.hero-title h1 {
+		border-bottom:0.4rem solid $white;
+		font-size:5rem;
+	}
+}
+
+.careers_who_we_are {
+	padding:3rem 8%;
+}
+
+.careers_who_we_are h2 {
+	color:$fj-grey;
+	font-size:2.5rem;
+	font-family:"DIN OT Bold";
+	margin:0 0 2rem;
+}
+
+.careers_who_we_are p {
+	font-size:1.5rem;
+}
+
+.careers_slider {
+	max-width:100%;
+	opacity:0.35;
+	transition:0.5s;
+	height:auto;
+	display:inline-block;
+	margin:0 auto;
+}
+
+@media #{$large-up}{
+	.careers_slider {
+		width:auto;
+	}
+	.careers_slider {
+		max-width:270px;
+		max-height:350px;
+	}
+}
+
+.careers_slider_slide.slick-center .careers_slider{
+	opacity:1;
+	transition:0.5s;
+}
+
+.careers_slider_container .slick-next, .careers_slider_container .slick-prev {
+	display:inline-block !important;
+}
+
+.careers_slider_quote_container li .slider-dot {
+	background-color:$fj-grey;
+}
+
+.careers_slider_quote_container li.slick-active .slider-dot {
+	background-color:$fj-red;
+}
+
+.careers_slider_quote_container {
+	background:#f2f3f3;
+}
+
+.careers_quote_slide {
+	background:#f2f3f3;
+	padding:6rem 3rem;
+	text-align:center;
+}
+
+@media #{$large-up}{
+	.careers_quote_slide {
+		padding:6rem 3rem 10rem;
+	}
+}
+
+.careers_slider_quote_container ul.slick-dots {
+	right:initial;
+	left: 0;
+	right:0;
+	text-align:center;
+}
+
+@media #{$large-up}{
+	.careers_slider_quote_container ul.slick-dots {
+		bottom:6rem;
+	}
+}
+
+.employee_quote {
+	font-size:3.25rem;
+	line-height:150%;
+	font-family: "DIN OT Condensed Light";
+    margin-bottom: 2rem;
+}
+
+@media #{$large-up}{
+	.employee_quote {
+		padding:0 10%;
+	}	
+}
+
+
+.employee_quote_attribution {
+	color:#dd775a;
+	text-transform: uppercase;
+	font-family: "DIN OT Light";
+	font-size:1.75rem;
+}
+
+.employee_job_title {
+	color:#dd775a;
+	font-size:1.25rem;
+}
+
+.careers_why_work_at_farmer_john {
+	padding:2rem 0;
+}
+
+.careers_why_work_at_farmer_john h2 {
+	margin:2rem 0;
+	font-size:2.75rem;
+	font-family:"DIN OT Bold";
+	color:$fj-grey;
+}
+
+.careers_why_work_at_farmer_john img {
+	max-width:33.333%;
+	margin:1rem 0 4rem;
+}
+
+@media #{$large-up}{
+	.careers_why_work_at_farmer_john img {
+		max-width:38%;
+		margin:1rem 0 2rem;
+	}
+}
+
+.careers_why_work_at_farmer_john h3 {
+	font-family:"DIN OT Light";
+	font-size:3rem;
+	line-height:100%;
+}
+
+@media #{$large-up}{
+	.careers_why_work_at_farmer_john h3 {
+		font-size:1.65rem;
+		margin:0.5rem 0 0;
+	}
+}
+
+.careers_why_work_at_farmer_john ul {
+	list-style-type:none;
+	margin:2rem 0 6rem;
+	padding:0 15%;
+}
+
+.careers_why_work_at_farmer_john ul li {
+	margin:2rem 0;
+	line-height:110%;
+	font-size:1.875rem;
+}
+
+@media #{$large-up}{
+	.careers_why_work_at_farmer_john ul li {
+		margin:1.25rem 0;
+		font-size:1rem;
+	}
+}
+
+a.linkedin, a.linkedin i {
+	color:#0077b5;
+	line-height: 3rem;
+	display:inline-block;
+}
+
+a.linkedin {
+	font-family:"DIN OT Bold";
+	font-size:0.875rem;
+}
+
+a.linkedin i {
+	font-size:1.4rem;
+	margin-left:0.5rem;
+}
+
+.careers_job_openings {
+	padding:3rem 0 0;
+}
+
+.careers_job_openings h2 {
+	font-family:"DIN OT Bold";
+	font-size:1.825rem;
+	color:$fj-grey;
+	margin-bottom:4rem;
+}
+
+.careers_job_openings h3 {
+	font-family:"DIN OT Light";
+	font-size:1.5rem;
+}
+
+.careers_job_openings p {
+	display:block;
+	padding:0 1.5rem;
+}
+
+.careers_job_openings_department {
+	background-color:#b5d67d;
+	padding:4rem 0;
+	display:none;
+	position:relative;
+	.close-reveal-modal {
+		color: $fj-grey;
+		cursor: pointer;
+		font-size: 3rem;
+		font-weight: bold;
+		line-height: 1;
+		position: absolute;
+		top: 0.625rem;
+		right: 1.375rem;
+	}
+}
+
+.careers_job_openings_department h2, .careers_job_openings_department h3 {
+	color:$fj-grey;
+}
+
+.careers_job_openings_department ul {
+	list-style-type:none;
+	margin: 0 0 1rem 0;
+}
+
+.careers_job_openings_department ul li a {
+	color:$fj-grey;
+}
+
+.careers_job_openings_department ul li a:hover {
+	font-family:"DIN OT Bold";
+}
+
+.green-triangle {
+	height:1rem;
+	width:100%;
+	background-image:url(../assets/img/careers/green-triangle.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position:center center;
+	position:relative;
+	top:0.5rem;
+	display:none;
+}
+
+.careers_job_openings_modal_job_title {
+	font-family:"DIN OT Bold";
+	font-size:2.5rem;
+	line-height:100%;
+	text-transform:uppercase;
+	padding:1rem 0 0;
+	margin:0;
+}
+
+@media #{$large-up}{
+	.careers_job_openings_modal_job_title {
+		font-size:1.75rem;
+		padding:1rem 0 0;
+		margin:0;
+	}
+}
+
+.careers_job_openings_modal_job_department {
+	font-family:"DIN OT Light";
+	font-size:2rem;
+	text-transform:uppercase;
+	margin-bottom: 2rem;
+}
+
+@media #{$large-up}{
+	.careers_job_openings_modal_job_department {
+		font-size:1rem;
+		text-transform:uppercase;
+		margin-bottom: 2rem;
+	}
+}
+
+.careers_job_openings_modal_job_description {
+	line-height:100%;
+	font-size:2rem;
+}
+
+@media #{$large-up}{
+	.careers_job_openings_modal_job_description {
+		line-height:100%;
+		font-size:1rem;
+	}
+}
+
+.apply-button, .apply-with-linkedin-button {
+	display:inline-block;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+.apply-button {
+	background-image:url(../assets/img/careers/apply-button.png);
+	height:36px;
+	width:125px;
+	margin-bottom:2rem;
+}
+
+@media #{$large-up}{
+	.apply-button {
+		background-image:url(../assets/img/careers/apply-button.png);
+		margin-bottom:0;
+	}
+}
+
+.apply-with-linkedin-button {
+	background-image:url(../assets/img/careers/apply-with-linkedin-button.png);
+	height:36px;
+	width:184px;
+}
+
+.apply-with-linkedin-button:hover {
+	background-image:url(../assets/img/careers/apply-with-linkedin-button-hover.png);
+}
+
+.careers-email-link {
+	color:$fj-grey;
+	font-family:"DIN OT Bold";
+	transition:0.5s;
+}
+
+.careers-email-link:hover, .careers-email-link:focus, .careers-email-link:active {
+	color:darken($fj-grey,10%);
+	transition:0.5s;
+}

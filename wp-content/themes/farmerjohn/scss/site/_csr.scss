@@ -1,0 +1,204 @@
+.csr_hero {
+	background-image:url(../assets/img/csr/csr-hero.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	padding-top:28%;
+}
+
+.no-underline h1 {
+	border-bottom:none;
+	line-height:80%;
+}
+
+.second-line {
+	line-height:80% !important;
+	padding-bottom:0.5rem;
+}
+
+section.page-csr a.red-button {
+	display:inline-block;
+	text-align:center;
+	font-size:1.75rem;
+	padding:0 0.75rem;
+}
+
+@media #{$large-up}{
+	section.page-csr a.red-button {
+		font-size:0.9rem;
+		min-width:10rem;
+	}
+}
+
+section.page-csr div.red-button-container {
+	padding:0.5rem 1rem;
+	display:inline-blockblock;
+	margin:1rem auto;
+	border-right:none;
+	
+}
+
+@media #{$large-up}{
+	section.page-csr div.red-button-container {
+		padding:0.5rem 1rem;
+		display:inline-block;
+		border-right:1px solid #c8c3b4;
+	}
+}
+
+section.page-csr div.red-button-container:last-child {
+	border-right:none;
+}
+
+.hunger_hero {
+	background-image: url(../assets/img/csr/hunger.jpg);
+}
+
+.youth_sports_hero {
+	background-image: url(../assets/img/csr/youth-sports.jpg);
+}
+
+.water_conservation_hero {
+	background-image: url(../assets/img/csr/water-conservation.png);
+}
+
+.green_initiative_hero {
+	background-image: url(../assets/img/csr/green-initiative.png);
+}
+
+.renewable_energy_hero {
+	background-image: url(../assets/img/csr/renewable-energy.png);
+}
+
+.hunger_hero, .youth_sports_hero {
+	padding-top:21%;
+	background-size:cover;
+}
+
+.renewable_energy_hero, .green_initiative_hero, .water_conservation_hero {
+	padding-top:79%;
+	background-size:cover;
+}
+
+section.sustainability, section.donation_request {
+	display:none;
+}
+
+@media #{$large-up}{
+	section.page-csr .light-grey-bg .row {
+		padding:5% 0;
+	}
+	section.page-csr .light-grey-bg .row .column:last-child {
+		padding-left:4rem;	
+	}
+}
+
+@media #{$large-up}{
+	
+}
+
+.csr_form_container {
+	background-color:$white;
+	header{
+		h2 {
+			font-size:3rem;
+		}
+	}
+	input, textarea {
+		background-color:lighten($fj-yellow,15%);
+		padding:1rem 0 1rem 1.5rem !important;
+		height:auto;
+		border:none;
+		box-shadow:none;
+		display:block;
+		width:100% !important;
+	}
+	input[type="submit"] {
+		display:inline-block;
+		margin:1rem auto;
+		font-size:2.25rem !important;
+		background-color:$fj-peach;
+		color:$white;
+		font-family: "DIN OT Bold";
+		padding:1rem 2rem !important;
+		line-height:100%;
+		text-transform:uppercase;
+		height:auto !important;
+	}
+
+	input[type="submit"]:hover {
+	background-color:lighten($fj-peach,8%);
+	color:$white;
+	}
+
+	@media #{$large-up}{
+		padding: 5rem;
+		header{
+			margin-bottom:4rem;
+			h2 {
+				font-size:2rem;
+				margin-bottom:2rem;
+			}
+			p {
+				font-size:1.1rem;
+			}
+		}
+
+		input, textarea {
+			padding:0.8rem 0 0.8rem 1rem !important;
+			font-size:0.8rem !important;
+		}
+
+		input[type="submit"] {
+			margin:0.5rem auto;
+			font-size:1.65rem;
+			padding:0.5rem 1rem;
+		}
+
+		input[type="text"] {
+			float:left;
+		}
+
+		/* Two Fields Per Row */
+
+		#field_5_1, #field_5_2, #field_5_3, #field_5_4, #field_5_5, #field_5_6, #field_5_7, #field_5_8, #field_5_9, #field_5_15 {
+			display:inline-block !important;
+			float:left !important;
+			width:48.5% !important;
+			clear:none !important;
+		}
+
+		/* Left Row (2 per row) */
+
+		#field_5_1, #field_5_3, #field_5_5, #field_5_7, #field_5_9 {
+			margin-right: 3%;
+		}
+
+		/* Three Fields Per Row */
+
+		#field_5_11, #field_5_12, #field_5_13 {
+			display:inline-block !important;
+			float:left !important;
+			width:31.3333333% !important;
+			clear:none;
+		}
+
+		/* Left and Center Row (3 per row) */
+
+		#field_5_11, #field_5_12 {
+			margin-right: 3%;
+		}
+
+		input[type="submit"] {
+			margin:1rem auto;
+			font-size:1.5rem !important;
+			padding:0.5rem 2rem !important;
+			display:inline-block !important;
+			width: auto !important;
+		}
+
+		.gform_footer.top_label {
+			text-align:center;
+		}
+
+	}
+}

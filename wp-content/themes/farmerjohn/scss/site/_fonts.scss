@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'DIN OT Black';
+    src: url(../assets/fonts/DIN_OT/DINOT-Black.otf);
+}
+@font-face {
+    font-family: 'DIN OT Black Italic';
+    src: url(../assets/fonts/DIN_OT/DINOT-BlackItalic.otf);
+}
+@font-face {
+    font-family: 'DIN OT Bold';
+    src: url(../assets/fonts/DIN_OT/DINOT-Bold.otf);
+}
+@font-face {
+    font-family: 'DIN OT Bold Italic';
+    src: url(../assets/fonts/DIN_OT/DINOT-BoldItalic.otf);
+}
+@font-face {
+    font-family: 'DIN OT Condensed';
+    src: url('../assets/fonts/DIN_OT/DINOT-Cond.eot');
+    src: url('../assets/fonts/DIN_OT/DINOT-Cond.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DIN_OT/DINOT-Cond.woff2') format('woff2'),
+        url('../assets/fonts/DIN_OT/DINOT-Cond.woff') format('woff'),
+        url('../assets/fonts/DIN_OT/DINOT-Cond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN OT Condensed Black';
+    src: url('../assets/fonts/DIN_OT/DINOT-CondBlack.eot');
+    src: url('../assets/fonts/DIN_OT/DINOT-CondBlack.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DIN_OT/DINOT-CondBlack.woff2') format('woff2'),
+        url('../assets/fonts/DIN_OT/DINOT-CondBlack.woff') format('woff'),
+        url('../assets/fonts/DIN_OT/DINOT-CondBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN OT Condensed Bold';
+    src: url('../assets/fonts/DIN_OT/DINOT-CondBold.eot');
+    src: url('../assets/fonts/DIN_OT/DINOT-CondBold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DIN_OT/DINOT-CondBold.woff2') format('woff2'),
+        url('../assets/fonts/DIN_OT/DINOT-CondBold.woff') format('woff'),
+        url('../assets/fonts/DIN_OT/DINOT-CondBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN OT Condensed Light';
+    src: url('../assets/fonts/DIN_OT/DINOT-CondLight.eot');
+    src: url('../assets/fonts/DIN_OT/DINOT-CondLight.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DIN_OT/DINOT-CondLight.woff2') format('woff2'),
+        url('../assets/fonts/DIN_OT/DINOT-CondLight.woff') format('woff'),
+        url('../assets/fonts/DIN_OT/DINOT-CondLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN OT Condensed Medium';
+    src: url('../assets/fonts/DIN_OT/DINOT-CondMedium.eot');
+    src: url('../assets/fonts/DIN_OT/DINOT-CondMedium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DIN_OT/DINOT-CondMedium.woff2') format('woff2'),
+        url('../assets/fonts/DIN_OT/DINOT-CondMedium.woff') format('woff'),
+        url('../assets/fonts/DIN_OT/DINOT-CondMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN OT Condensed Regular';
+    src: url('../assets/fonts/DIN_OT/DINOT-Cond.eot');
+    src: url('../assets/fonts/DIN_OT/DINOT-Cond.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DIN_OT/DINOT-Cond.woff2') format('woff2'),
+        url('../assets/fonts/DIN_OT/DINOT-Cond.woff') format('woff'),
+        url('../assets/fonts/DIN_OT/DINOT-Cond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN OT Light';
+    src: url('../assets/fonts/DIN_OT/DINPro-Light.eot');
+    src: url('../assets/fonts/DIN_OT/DINPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DIN_OT/DINPro-Light.woff2') format('woff2'),
+        url('../assets/fonts/DIN_OT/DINPro-Light.woff') format('woff'),
+        url('../assets/fonts/DIN_OT/DINPro-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DIN OT Light Italic';
+    src: url(../assets/fonts/DIN_OT/DINOT-LightItalic.otf);
+}
+@font-face {
+    font-family: 'DIN OT Medium';
+    src: url(../assets/fonts/DIN_OT/DINOT-Medium.otf);
+}
+@font-face {
+    font-family: 'DIN OT Medium Italic';
+    src: url(../assets/fonts/DIN_OT/DINOT-MediumItalic.otf);
+}
+@font-face {
+    font-family: 'DIN OT Regular';
+    src: url(../assets/fonts/DIN_OT/DINOT-Regular.otf);
+}

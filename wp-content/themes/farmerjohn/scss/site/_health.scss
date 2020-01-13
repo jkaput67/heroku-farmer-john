@@ -1,0 +1,294 @@
+.health_hero {
+	background-image:url(../assets/img/health/health-hero.png);
+	background-size:cover;
+	padding-top:25%;
+}
+
+.health_slider {
+	padding-top:25%;
+}
+
+
+.health_nav_label_container {
+	margin:1rem 0;
+}
+
+.health_nav_label_container.light-blue {
+	border-bottom: 4px solid $fj-seafoam;
+}
+
+.health_nav_label_container.orange {
+	border-bottom: 4px solid $fj-orange;
+}
+
+.health_nav_label_container.red {
+	border-bottom: 4px solid $fj-peach;
+}
+
+
+a.health_more_button {
+	color:#333333;
+	font-family: "DIN OT Bold";
+	font-size:2.5rem;
+	padding:0 6rem;
+	display:inline-block;
+	margin:2rem auto 0;
+}
+
+@media #{$large-up}{
+	a.health_more_button {
+		font-size:1rem;
+		line-height:100%;
+		padding:0.3rem 2.5rem;
+		margin:2rem auto 0;
+	}
+}
+
+section.page-health h3 strong {
+	font-size:2.5rem;
+	color:$fj-grey;
+	display:inline-block;
+	font-family:"DIN OT Bold";
+	line-height:100%;
+}
+
+@media #{$large-up}{
+	section.page-health h3 strong {
+		font-size:2rem;
+	}
+}
+
+@media #{$large-up}{
+	.comparison_nav {
+		padding:5% 0 0;
+	}
+
+	.diamonds-container {
+		padding-top:5%;
+	}
+
+	.expanded-content-area-diamond {
+		background-size:contain;
+		height:20px;
+		background-repeat:no-repeat;
+		background-position:center bottom;
+		display:none;
+	}
+
+	.expanded-content-area-diamond.blue {
+		background-image:url(../assets/img/health/triangle-blue.png);
+	}
+
+	.expanded-content-area-diamond.yellow {
+		background-image:url(../assets/img/health/triangle-yellow.png);
+	}
+
+	.expanded-content-area-diamond.red {
+		background-image:url(../assets/img/health/triangle-red.png);
+	}
+}
+
+.comparison_bg.chicken {
+	background-image:url(../assets/img/health/chicken.jpg);
+}
+
+.comparison_bg.pork {
+	background-image:url(../assets/img/health/pork1.jpg);
+}
+
+.comparison_bg.pork2 {
+	background-image:url(../assets/img/health/pork2.jpg);
+}
+
+.comparison_bg.pork3 {
+	background-image:url(../assets/img/health/pork3.jpg);
+}
+
+.comparison_bg.pork4 {
+	background-image:url(../assets/img/health/pork4.jpg);
+}
+
+.comparison_bg.pork5 {
+	background-image:url(../assets/img/health/pork5.jpg);
+}
+
+.comparison_bg.bananas {
+	background-image:url(../assets/img/health/bananas.jpg);
+}
+
+.comparison_bg.shrimp {
+	background-image:url(../assets/img/health/shrimp.jpg);
+}
+
+.comparison_bg.beef1 {
+	background-image:url(../assets/img/health/beef1.jpg);
+}
+
+.comparison_bg.beef2 {
+	background-image:url(../assets/img/health/beef2.jpg);
+}
+
+.comparison_bg {
+	padding-top:100%;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+.comparison_answer {
+	display:none;
+	padding: 25% 10% 0 10%;
+}
+
+.comparison_bg:hover {
+	cursor:pointer;
+}
+
+.comparison_answer.answered {
+	display:block;
+}
+
+.comparison_answer.light-blue {
+	background-color:rgba(210,236,241,0.5);
+}
+
+.comparison_answer.red {
+	background-color:rgba(237,128,99,0.5);
+}
+
+.health_pork_comparison {
+	padding:5% 0;
+	p {
+		min-height:4rem;
+		vertical-align:middle;
+		display:block;
+		margin:0;
+	}
+}
+
+.health_pork_comparison .row {
+	padding:2% 0;
+}
+
+.health_pork_comparison .row:first-child {
+	padding-bottom:3%;
+}
+
+.vs {
+	font-family: "DIN OT Bold";
+	font-size:1.5rem;
+}
+
+.comparison_label {
+	font-family: "DIN OT Bold";
+	font-size:1rem;
+}
+
+.answer-text {
+	font-size:1rem;
+	font-family: "DIN OT Bold";
+}
+
+.expandable_content_area {
+	position:relative;
+	padding:15% 0 7%;
+	display:none;
+}
+
+@media #{$large-up}{
+	.expandable_content_area {
+		padding:7% 0;
+	}
+}
+
+.exit_expandable_content_area {
+	position:absolute;
+	top:3%;
+	right:3%;
+	background-image:url(../assets/img/health/exit.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	height:2rem;
+	width:2rem;
+	opacity:0.6;
+}
+
+@media #{$large-up}{
+	.exit_expandable_content_area {
+		top:5%;
+		right:3%;
+	}
+}
+
+.health-tip, .food-safety-tip {
+	background-image:url(../assets/img/health/health-tips-slider-bg-sm.png);
+	background-size:contain;
+	background-position:center-center;
+	background-repeat: no-repeat;
+}
+
+.health-tip {
+	background-color: #e77c5e;
+}
+
+.food-safety-tip {
+	background-image:url(../assets/img/food-safety/food-safety-tip-bg-sm.png);
+	background-color: #f5e290;
+}
+
+.health-tip .relative-block, .food-safety-tip .relative-block {
+	padding-top:76.3671875%;
+}
+
+@media #{$large-up}{
+	.health-tip {
+		background-image:url(../assets/img/health/health-tips-slider-bg-lg.png);
+		background-position:initial;
+	}
+	.food-safety-tip {
+		background-image:url(../assets/img/food-safety/food-safety-tip-bg-lg.png);
+		background-position:initial;
+	}
+	.health-tip .relative-block, .food-safety-tip .relative-block {
+		padding-top:31.25%;
+	}
+}
+
+.health-tip h2, .health-tip p, .food-safety-tip h2, .food-safety-tip p {
+	font-family:"DIN OT Bold";
+	text-transform: uppercase;
+	color:$white;
+}
+
+.food-safety-tip h2, .food-safety-tip p {
+	color:$black;
+}
+
+.health-tip h2 {
+	font-size:3rem;
+}
+
+.health-tip p, .food-safety-tip p {
+	line-height:110%;
+}
+
+.health_slider_container {
+	.slick-prev, .slick-next {
+		display:inline-block !important;
+		max-width: 10%;
+	}
+}
+
+.food_safety_slider_container {
+	.slick-prev, .slick-next {
+		display:inline-block !important;
+		max-width: 10%;
+	}
+	.homepage-tip-divider {
+	    border-bottom: 4px solid $black;
+	}
+}
+
+.keep-a-balanced-diet p a {
+	color:$black;
+	font-family:"DIN OT Bold";
+}

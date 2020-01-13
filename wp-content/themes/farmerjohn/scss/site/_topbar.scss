@@ -1,0 +1,255 @@
+// Add some whitespace between top bar and content
+.top-bar-container, .tab-bar {
+
+	@media only screen and (max-width: ($topbar-breakpoint)) {
+		.top-bar-left {
+			li.name {
+				padding-left: rem-calc(50);
+			}
+
+			li.toggle-topbar a, li.menu-icon {
+				position: absolute;
+				left: 0;
+			}
+
+		}
+
+		.top-bar-right {
+			li.toggle-topbar a, li.menu-icon {
+				position: absolute;
+				right: 0;
+			}
+		}
+	}
+
+	.top-bar-logo-container ul {
+		list-style-type:none;
+		margin:0 auto;
+	}
+
+	.top-bar-section ul li:not(.has-form):not(.top-bar-logo) {
+		background: $white;
+		margin: 0 0.9275rem;
+		height: 45px;
+		display: inline-block;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown {
+		background: $fj-red;
+		margin-top: 20px;
+		min-width:150px;
+		@media #{$xlarge-up}{
+			margin-top: 19px;
+		}
+	}
+
+	.top-bar-section ul.left li.has-dropdown ul.dropdown {
+		margin-left:-30px;
+	}
+
+	.top-bar-section ul.right li.has-dropdown ul.dropdown {
+		margin-right: -25px;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li {
+		border: 0;
+		background-color:$fj-red;
+		height: auto;
+		margin:0;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li:hover a {
+		font-family: 'DIN OT Bold';
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li.back {
+		display:none;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li a {
+		border:none !important;
+		padding: 8px 20px;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li.first-child a {
+		padding: 30px 20px 8px;
+	}
+
+	.top-bar-section ul li.has-dropdown ul.dropdown li:last-child a {
+		padding: 8px 20px 30px;
+	}
+
+	.top-bar-section li:not(.has-form) a:not(.button) {
+		border-bottom:2px solid $white;
+		line-height:140%;
+		text-transform: uppercase;
+		padding:0;
+		display:inline-block;
+	}
+	.top-bar-section li:not(.has-form):hover a:not(.button), .top-bar-section li.active:not(.has-form) a:not(.button) {
+		border-bottom:2px solid $fj-red;
+	}
+	.top-bar-section ul li:not(.has-form) ul.social li:hover a:not(.button), .top-bar-section ul li:not(.has-form):hover ul.social li a:not(.button) {
+		border-bottom:2px solid $white;
+	}
+	.top-bar-section ul li:not(.has-form) ul.social li:hover a:not(.button) {
+		opacity:0.25;
+	}
+
+	.top-bar-logo {
+		margin-top:-35px !important;
+		height:40px;
+		overflow:visible;
+		z-index:10;
+		background:transparent;
+	}
+	.tab-bar {
+		z-index:10;
+	}
+	.top-bar-logo a {
+		background:transparent !important;
+		border:none !important
+	}
+
+	.top-bar-section .has-dropdown>a {
+	    padding-right: 0 !important;
+	}
+
+	nav.hide-for-large-up .text-center {
+		margin:0 auto;
+		height:6rem;
+		max-width:35%;
+	}
+
+	nav.hide-for-large-up .top-bar-logo {
+		margin-top:0px !important;
+	}
+
+	nav.hide-for-large-up .top-bar-logo img {
+		margin-top:1rem;
+	}
+
+}
+
+@media #{$large-up}{
+	ul.social li {
+		margin: 0 0.8rem !important;
+	}
+}
+
+ul.social li a, ul.social li a i.fa {
+	font-size:1.25em;
+	@media #{$large-up}{
+		font-size:1.1em;
+	}
+}
+
+@media #{$xlarge-up}{
+	.top-bar-logo {
+		margin-left:1.5rem;
+	}
+}
+
+@media screen and (min-width:$medium-breakpoint) and (max-width:1199px) {
+	.top-bar-section.show-for-large-up ul.right > li:last-child {
+		display:none;
+	}
+	.top-bar-logo {
+		margin-left:1.5rem;
+	}
+}
+
+.left-small {
+	border-right: 0;
+}
+
+.right-small {
+	border-left: 0;
+}
+
+.top-bar .name {
+	h1 a { font-weight: 500; }
+}
+
+ul.off-canvas-list li.logo a {
+	padding:0.75rem 0;
+}
+
+ul.off-canvas-list li.logo a img {
+	max-width:50%;
+}
+
+ul.off-canvas-list li a {
+    border-bottom: none;
+    padding: 1rem 1rem 1rem 5rem;
+    text-transform: uppercase;
+    font-size:2.5rem;
+    color:$white;
+    font-family: "DIN OT Regular";
+}
+
+ul.off-canvas-list li ul.social {
+	display:block;
+	margin:0;
+}
+
+ul.off-canvas-list li ul.social li {
+	list-style-type: none;
+	display:inline-block;
+}
+
+ul.off-canvas-list li ul.social li a {
+	color:$black;
+	padding:1rem;
+	font-size:2.5rem;
+}
+
+.tab-bar .menu-icon span::after {
+    width: 2rem;
+}
+
+.right-off-canvas-menu ul.off-canvas-list li.has-submenu > a:before {
+	display:none;
+}
+
+.right-submenu .back > a:after {
+	display:none;
+}
+
+.right-submenu .back > a:before {
+	content: "\AB";
+    margin-left: .5rem;
+    display: inline;
+}
+
+.right-submenu .back > a, ul.off-canvas-list li label {
+	background:$fj-red;
+	color:$white;
+	border:none;
+}
+
+ul.off-canvas-list li label {
+	font-size:2rem;
+}
+
+ul.right-submenu li a:focus, ul.right-submenu li a:hover, ul.off-canvas-list li a:hover {
+	background-color:$fj-dark-red !important;
+}
+
+// Switch between the mobile menu (tab-bar) and desktop menu (topbar) based on a custom $topbar-breakpoint value.
+// The $topbar-breakpoint can be edited in _custom-settings.scss.
+
+@media only screen and (min-width: ($topbar-breakpoint + em-calc(1))) {
+  .tab-bar { display: none; }
+
+  .top-bar {
+  	height: rem-calc(100);
+  	padding-top: 3em;
+  	z-index:10;
+  }
+}
+
+// Hide the topbar when the screen size is smaller than the topbar breakpoint
+@media only screen and (max-width: $topbar-breakpoint) {
+  body.offcanvas .top-bar { display: none; }
+}

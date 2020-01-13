@@ -1,0 +1,11 @@
+wp-config.php
+
+wp-content/uploads/
+wp-content/upgrade/
+
+node_modules/
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite

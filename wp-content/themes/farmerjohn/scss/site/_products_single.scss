@@ -1,0 +1,118 @@
+/* Products Single styles */
+
+.products_single_hero {
+	background-image:url(../assets/img/products/products_single_hero_sm.jpg);
+	background-size:cover;
+	background-position:center top;
+	padding-top:29.296875%;
+}
+
+@media #{$large-up}{
+	.products_single_hero {
+		background:url(../assets/img/products/products_single_hero_lg.jpg);
+		background-size:cover;
+		background-position:center top;
+		padding-top:29.296875%;
+	}	
+}
+
+.products_single_product_image_background {
+	padding:2rem 1.5rem;
+	margin-top:-2rem;
+}
+
+@media #{$large-up}{
+	.products_single_product_image_background {
+		margin-top:-25%;;
+	}
+}
+
+.cooking_suggestion_header {
+	display:inline-block;
+}
+
+.cooking_suggestion_heading, .cooking_tip_heading {
+	color:$fj-grey;
+	font-family: "DIN OT Condensed Bold";
+	text-transform: uppercase;
+	font-size:2.75rem;
+	margin: 2rem 0 2rem;
+	line-height:110%;
+	border-top: 5px solid $fj-green;
+	display:inline-block;
+	padding-top:0.25rem;
+}
+
+@media #{$large-up}{
+	.cooking_suggestion_heading, .cooking_tip_heading {
+		border-top: 9px solid $fj-green;
+		padding-top:0.1rem;
+		font-size: 2.5rem;
+		margin: 2rem 0 1rem;
+	}
+}
+
+@media #{$large-up}{
+	.products_single_product_image_container  {
+		padding-top: 80%;
+		width: 100%;
+		margin-top: -11rem;
+	}
+}
+
+@media #{$xlarge-up}{
+	.products_single_product_image_container  {
+		padding-top: 62%;
+	}
+}
+
+.cooking_suggestion strong {
+	font-size:1.75rem;
+	font-family: "DIN OT Bold";
+	color:$fj-grey;
+}
+
+@media #{$large-up}{
+	.cooking_suggestion strong {
+		font-size:1.5rem;
+		color:#666666;
+	}
+}
+
+.cooking_suggestion p {
+	font-size:1.5rem;
+	color:$fj-grey;
+}
+
+@media #{$large-up}{
+	.cooking_suggestion p {
+		font-size:1rem;
+		color:$fj-grey;
+		line-height:140%;
+	}
+}
+
+.ingredients {
+	margin-top:1rem;
+	text-transform: uppercase;
+	font-size:0.75rem;
+	color:#77787b;
+	font-family: "DIN OT Bold";
+}
+
+.nutrition_facts_image {
+	margin-top:1rem;
+}
+
+
+/* These lines just hide some elements of the homepage recipes widget that aren't supposed to appear on the single products template. Once we get recipes in and this widget can be properly built-out, this can be removed. */
+
+body.single-products .homepage_recipes_header, body.single-products .homepage_recipes_recipe:nth-child(5), body.single-products .homepage_recipes_recipe:nth-child(6), body.single-products .homepage_recipes_recipe:nth-child(7), body.single-products .homepage_recipes_recipe:nth-child(8), body.single-products .homepage_recipes_recipe:nth-child(9), body.single-products .homepage_recipes_recipe:nth-child(10) {
+	display:none !important;
+}
+
+@media #{$large-up}{
+	body.single-products .homepage_recipes_recipe:nth-child(4), body.single-products .homepage_recipes_recipe:nth-child(5) {
+		display:none !important;
+	}
+}
