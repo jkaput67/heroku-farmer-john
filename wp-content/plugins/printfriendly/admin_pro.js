@@ -120,22 +120,32 @@ jQuery(document).ready(function($) {
         $activate.show();
         $pro.addClass('pf-notice-warning');
         $statusHeader.text('Activate').addClass('pf-text-warning');
+		jQuery('.password_protected_yes').attr('data-sub-status', 'none');
+		jQuery('.dynamic_content_yes').attr('data-sub-status', 'none');
         break;
       case 'trial':
         $buy.show();
         $pro.addClass('pf-notice-success');
         $statusHeader.text('Active Trial').addClass('pf-text-success');
+		jQuery('.password_protected_yes').attr('data-sub-status', 'trial');
+		jQuery('.dynamic_content_yes').attr('data-sub-status', 'trial');
         break;
       case 'pro':
         $pro.addClass('pf-notice-success');
         $statusHeader.text('Active').addClass('pf-text-success');
+		jQuery('.password_protected_yes').attr('data-sub-status', 'pro');
+		jQuery('.dynamic_content_yes').attr('data-sub-status', 'pro');
         break;
       case 'expired':
         $buy.show();
         $pro.addClass('pf-notice-error');
         $statusHeader.text('Expired').addClass('pf-text-error');
+		jQuery('.password_protected_yes').attr('data-sub-status', 'expired');
+		jQuery('.dynamic_content_yes').attr('data-sub-status', 'expired');
         break;
     }
+	jQuery('#password_protected').change();
+	jQuery('#dynamic_content').change();
   }
 
   function saveOptions() {

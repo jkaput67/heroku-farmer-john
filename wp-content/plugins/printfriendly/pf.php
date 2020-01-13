@@ -5,11 +5,16 @@ Plugin Name: Print, PDF & Email by PrintFriendly
 Plugin URI: http://www.printfriendly.com
 Description: PrintFriendly & PDF button for your website. Optimizes your pages and brand for print, pdf, and email.
 Name and URL are included to ensure repeat visitors and new visitors when printed versions are shared.
-Version: 3.14.2
+Version: 3.14.7
 Author: Print, PDF, & Email by PrintFriendly
 Author URI: http://www.PrintFriendly.com
 
 Changelog :
+3.14.7 - Remove unnessary closing style tag. Add outline:none to printfriendly button link to remove outline on click.
+3.14.6 - Improvements to CSS and how we load JS. Moved button CSS from page head to a seperate stylesheet. Load JS using async attribute (now that all major browsers support async attribute, we need not insert JS dynamically)
+3.14.5 - New Feature: Password protected image option. Select this option if your images are password protected so they can be included in PDFs.
+3.14.4 - Make save options work without Pro field(email, domain) validation check.
+3.14.3 - Plugin copy and style changes. No functionality changes.
 3.14.2 - GDPR Compliant notification for PrintFriendly Pro and links to Privacy Policy.
 3.14.1 - Fix client side pro domain validation
 3.14.0 - Integrate instant free Pro Trial, and Pro status.
@@ -127,7 +132,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
      * Current plugin version.
      * @var string
      */
-    var $plugin_version = '3.14.1';
+    var $plugin_version = '3.14.5';
 
     /**
      * The hook, used for text domain as well as hooks on pages and in get requests for admin.
@@ -280,7 +285,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
 
     function init_error_reporting() {
       try {
-        require_once 'vendor/PrintFriendly/Raven/Autoloader.php';
+        require_once(dirname(__FILE__).'/vendor/PrintFriendly/Raven/Autoloader.php');
 
         PrintFriendly_Raven_Autoloader::register();
 
@@ -378,9 +383,11 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
       try {
 ?>
     <style type="text/css" media="screen">
-      div.printfriendly a, div.printfriendly a:link, div.printfriendly a:hover, div.printfriendly a:visited {
+      div.printfriendly a, div.printfriendly a:link, div.printfriendly a:hover, div.printfriendly a:visited, div.printfriendly a:focus {
         text-decoration: none;
         border: none;
+        -webkit-box-shadow:none!important;
+        box-shadow:none!important;
       }
     </style>
    <?php
@@ -391,44 +398,13 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
         <style type="text/css" media="screen">
           div.printfriendly {
             margin: <?php echo $this->options['margin_top'].'px '.$this->options['margin_right'].'px '.$this->options['margin_bottom'].'px '.$this->options['margin_left'].'px'; ?>;
-            position: relative;
-            z-index: 1000;
           }
           div.printfriendly a, div.printfriendly a:link, div.printfriendly a:visited {
             font-size: <?php echo $this->options['text_size']; ?>px;
             color: <?php echo $this->options['text_color']; ?>;
-            vertical-align: bottom;
-          }
-          .printfriendly a {
-            box-shadow:none;
-          }
-          .printfriendly a:hover {
-            cursor: pointer;
-          }
-          .printfriendly a img  {
-            border: none;
-            padding:0;
-            margin-right: 6px;
-            box-shadow: none;
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
-          }
-          .printfriendly a span{
-            vertical-align: bottom;
-          }
-          .pf-alignleft {
-            float: left;
-          }
-          .pf-alignright {
-            float: right;
-          }
-          div.pf-aligncenter {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
           }
         </style>
+		<link rel="stylesheet" href="<?php echo plugin_dir_url(__FILE__); ?>printfriendly.css" media="screen" />
         <style type="text/css" media="print">
           .printfriendly {
             display: none;
@@ -466,17 +442,14 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
           var pfdisableClickToDel = '<?php echo esc_js($this->options['click_to_delete']); ?>';
           var pfImagesSize = '<?php echo esc_js($this->options['images-size']); ?>';
           var pfImageDisplayStyle = '<?php echo esc_js($this->options['image-style']); ?>';
+          var pfEncodeImages = '<?php echo esc_js($this->options['password_protected'] == 'yes' ? 1 : 0); ?>';
           var pfDisableEmail = '<?php echo esc_js($this->options['email']); ?>';
           var pfDisablePDF = '<?php echo esc_js($this->options['pdf']); ?>';
           var pfDisablePrint = '<?php echo esc_js($this->options['print']); ?>';
           var pfCustomCSS = '<?php echo esc_js(esc_url($this->options['custom_css_url'])); ?>';
           var pfPlatform = 'Wordpress';
-      (function() {
-            var e = document.createElement('script'); e.type="text/javascript";
-            e.src = 'https://cdn.printfriendly.com/printfriendly.js';
-            document.getElementsByTagName('head')[0].appendChild(e);
-        })();
       </script>
+      <script async src='https://cdn.printfriendly.com/printfriendly.js'></script>
 <?php
       }
     }
@@ -566,7 +539,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
           if($this->google_analytics_enabled()) {
               $onclick = $onclick.' onclick="'.$analytics_code.'"';
           }
-          $href = "https://www.printfriendly.com/print?headerImageUrl=".urlencode($this->options['image_url'])."&headerTagline=".urlencode($this->options['tagline'])."&pfCustomCSS=".urlencode($this->options['custom_css_url'])."&imageDisplayStyle=".urlencode($this->options['image-style'])."&disableClickToDel=".urlencode($this->options['click_to_delete'])."&disablePDF=".urlencode($this->options['pdf'])."&disablePrint=".urlencode($this->options['print'])."&disableEmail=".urlencode($this->options['email'])."&imagesSize=".urlencode($this->options['images-size'])."&url=".urlencode(get_permalink())."&source=wp";
+          $href = "https://www.printfriendly.com/print?headerImageUrl=".urlencode($this->options['image_url'])."&headerTagline=".urlencode($this->options['tagline'])."&pfCustomCSS=".urlencode($this->options['custom_css_url'])."&imageDisplayStyle=".urlencode($this->options['image-style'])."&disableClickToDel=".urlencode($this->options['click_to_delete']).".&disablePDF=".urlencode($this->options['pdf'])."&disablePrint=".urlencode($this->options['print'])."&disableEmail=".urlencode($this->options['email'])."&imagesSize=".urlencode($this->options['images-size'])."&url=".urlencode(get_permalink())."&source=wp";
         }
         if ( !is_singular() && '' != $onclick && $js_enabled)  {
           $onclick = '';
@@ -577,7 +550,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
         if ( 'none' != $this->options['content_position'] )
           $align = ' pf-align'.$this->options['content_position'];
     $href = str_replace("&", "&amp;", $href );
-        $button = apply_filters( 'printfriendly_button', '<div class="printfriendly'.$align.'"><a href="'.$href.'" rel="nofollow" '.$onclick.' class="noslimstat" title="Printer Friendly, PDF & Email">'.$this->button().'</a></div>' );
+        $button = apply_filters( 'printfriendly_button', '<div class="printfriendly'.$align.'"><a href="'.$href.'" style="outline:none;" rel="nofollow" '.$onclick.' class="noslimstat" title="Printer Friendly, PDF & Email">'.$this->button().'</a></div>' );
     return $button;
   }
 
@@ -655,7 +628,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
           'buttons/print-button-gray.png', // buttongroup3
           'custom-button' // custom
         ) ) ) {
-        $valid_input['button_type'] = 'buttons/printfriendly-button.png';
+        $valid_input['button_type'] = 'printfriendly-pdf-button.png';
       }
 
       if ( !isset( $input['custom_button_icon'] ) || !in_array( $input['custom_button_icon'], array(
@@ -683,7 +656,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
 
       // Custom button selected, but no url nor text given, reset button type to default
       if( 'custom-button' === $valid_input['button_type'] && ( '' === $valid_input['custom_image'] && '' === $input['custom_text'] ) ) {
-        $valid_input['button_type'] = 'buttons/printfriendly-button.png';
+        $valid_input['button_type'] = 'buttons/printfriendly-pdf-button.png';
         add_settings_error( $this->option_name, 'invalid_custom_image', __( 'No valid custom image url received, please enter a valid url to use a custom image.', $this->hook ) );
       }
 
@@ -870,7 +843,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
     function admin_enqueue_scripts( $screen_id ) {
       try {
         if ( $this->settings_page == $screen_id ) {
-          $ver = '3.2.5';
+          $ver = '3.14.5';
           wp_register_script( 'pf-color-picker', plugins_url( 'colorpicker.js', __FILE__ ), array( 'jquery', 'media-upload' ), $ver );
           wp_register_script( 'pf-admin-js', plugins_url( 'admin.js', __FILE__ ), array( 'jquery', 'media-upload' ), $ver );
           wp_register_script( 'pf-admin-pro-js', plugins_url( 'admin_pro.js', __FILE__ ), array( 'jquery', 'media-upload' ), $ver );
@@ -920,7 +893,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
       try {
         // Set some defaults
         $this->options = array(
-          'button_type' => 'buttons/printfriendly-button.png',
+          'button_type' => 'buttons/printfriendly-pdf-button.png',
           'content_position' => 'left',
           'content_placement' => 'after',
           'custom_button_icon' => 'https://cdn.printfriendly.com/icons/printfriendly-icon-md.png',
@@ -1434,8 +1407,8 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
     function on_load_printfriendly() {
       global $wp_version;
       if($this->wp_version_gt30()) {
-        require_once('includes/meta-boxes.php');
-        //require_once('includes/nav-menu.php');
+        //require_once(dirname(__FILE__).'/includes/meta-boxes.php');
+        //require_once(dirname(__FILE__).''includes/nav-menu.php');
         wp_enqueue_script('post');
 
         add_meta_box('categorydiv', __('Only display when post is in:', $this->hook), 'post_categories_meta_box', 'settings_page_'. $this->hook, 'normal', 'core');
@@ -1468,7 +1441,7 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
     }
 ?>
 
-    <div id="pf_settings" class="wrap">
+<div id="pf_settings" class="wrap">
       <div class="icon32" id="printfriendly"></div>
       <h2><?php _e( 'Print Friendly & PDF Settings', $this->hook ); ?></h2>
 
@@ -1476,20 +1449,22 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
         <?php wp_nonce_field( 'pf-options', 'pf-nonce' ); ?>
         <?php settings_fields( $this->option_name ); ?>
 
-        <div class="pf-notice pf-pro">
+        <div id="pf-pro" class="pf-notice pf-pro">
           <h3 style="margin: 1rem 0 0 0">Pro - <span id="pf-pro-status-header"></span></h3>
-          PrintFriendly Pro is <strong>GDPR Compliant</strong> <a href="https://www.printfriendly.com/privacy" target="_blank">Learn more</a>.<br />
+          <p class="pf-alert-success">PrintFriendly is <strong>GDPR Compliant</strong> <a href="https://www.printfriendly.com/privacy" target="_blank">Learn more</a>.
+
+          </p>
           <div class="pf-col-1 ">
             <label class="pf-no-margin">
               <strong><?php _e( "Email", $this->hook ); ?></strong><span class="description"> (To send account details)</span><br>
-              <input id="pf-pro-email" type="email" class="regular-text" maxlength="80" name="<?php echo $this->option_name; ?>[pro_email]" value="<?php $this->val( 'pro_email' ); ?>" placeholder="hello@my-website.com" required />
+              <input id="pf-pro-email" type="email" class="regular-text" maxlength="80" name="<?php echo $this->option_name; ?>[pro_email]" value="<?php $this->val( 'pro_email' ); ?>" placeholder="hello@my-website.com" />
               <br>
               <span id="pf-pro-email-error" class="pf-error">Email is invalid</span>
             </label>
 
             <label>
               <strong><?php _e( "Production Domain", $this->hook ); ?></strong><span class="description"> (Your website domain)</span><br>
-              <input id="pf-pro-domain" type="text" class="regular-text" maxlength="80" pattern="^[a-zA-Z0-9][a-zA-Z0-9.-]+[a-zA-Z0-9]$" name="<?php echo $this->option_name; ?>[pro_domain]" value="<?php $this->val( 'pro_domain' ); ?>" placeholder="my-website.com" required/>
+              <input id="pf-pro-domain" type="text" class="regular-text" maxlength="80" pattern="^[a-zA-Z0-9][a-zA-Z0-9.-]+[a-zA-Z0-9]$" name="<?php echo $this->option_name; ?>[pro_domain]" value="<?php $this->val( 'pro_domain' ); ?>" placeholder="my-website.com" />
               <br/>
               <span id="pf-pro-domain-error" class="pf-error">Domain is invalid</span>
             </label>
@@ -1522,10 +1497,90 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
                 <li>- Works on all sites (Password protected, Angular/React/Ember)</li>
                 <li>- Email support</li>
             </ul>
-            <p>Need a dev domain added? <a href="mailto:pro@printfriendly.com?Subject=Dev%20Domain%20Request"">Email support</a> (include the domain).</p>
+            <p>Have a development/staging domain? <a href="https://support.printfriendly.com/button/pro/development-domain/">Add Free Development Domain</a>.</p>
           </div>
+          <br />
         </div>
 
+        <!--Section 1 WebMaster-->
+        <h3><?php _e( "Webmaster Settings", $this->hook ); ?></h3>
+        <div>
+          <label for="password_protected" class="pf-no-margin"><?php _e( 'Password Protected Content', $this->hook ); ?></label>
+          <select id="password_protected" name="<?php echo $this->option_name; ?>[password_protected]" class="alignleft">
+            <option value="no" <?php selected( $this->options['password_protected'], 'no' ); ?>><?php _e( "No", $this->hook ); ?></option>
+            <option value="yes" <?php selected( $this->options['password_protected'], 'yes' ); ?>><?php _e( "Yes", $this->hook ); ?></option>
+          </select>
+
+          <span class="password_protected_yes pf-alert-warning alignleft">
+            <?php _e( "Password protected content requires Pro subscription.", $this->hook ); ?>
+            <a href="https://www.printfriendly.com/pro">Learn More</a>
+          </span>
+          <div class="clearfloat"></div>
+        </div>
+        <br class="clear">
+
+        <div>
+          <label for="dynamic_content" class="pf-no-margin"><?php _e( 'My site uses React/Angular/Ember or uses JS to deliver content', $this->hook ); ?></label>
+          <select id="dynamic_content" name="<?php echo $this->option_name; ?>[dynamic_content]" class="alignleft">
+            <option value="no" <?php selected( $this->options['dynamic_content'], 'no' ); ?>><?php _e( "No", $this->hook ); ?></option>
+            <option value="yes" <?php selected( $this->options['dynamic_content'], 'yes' ); ?>><?php _e( "Yes", $this->hook ); ?></option>
+          </select>
+
+          <span class="dynamic_content_yes pf-alert-warning alignleft">
+            <?php _e( "JS generated content requires a Pro subscription.", $this->hook ); ?>
+            <a href="https://www.printfriendly.com/pro">Learn More</a>
+          </span>
+          <div class="clearfloat"></div>
+        </div>
+
+        <label for="javascript"><?php _e( 'Use JavaScript (Lightbox) for PrintFriendly Preview', $this->hook ); ?><br>
+        <select id="javascript" name="<?php echo $this->option_name; ?>[javascript]>">
+          <option value="yes" <?php $this->selected( 'javascript', 'yes' ); ?>> <?php _e( "Yes", $this->hook ); ?></option>
+          <option value="no" <?php $this->selected( 'javascript', 'no' ); ?>> <?php _e( "No", $this->hook ); ?></option>
+        </select>
+        <span class="description no-javascript no-italics">
+          <?php _e( "Preview opens a new browser tab.", $this->hook ); ?>
+        </span>
+        </label>
+        <label for="pf-algo-usage"><?php _e( 'Select content using:', $this->hook ); ?>  <span class="description no-italics" ><?php _e( 'Change this setting if your content is not showing in the preview.', $this->hook ); ?></span><br>
+
+        <?php
+          if (class_exists('WooCommerce')) {
+        ?>
+          <span><strong><?php _e( "Not available for woocommerce", $this->hook ); ?></strong></span>
+        <?php
+        } else {
+        ?>
+          <select id="pf-algo-usage" name="<?php echo $this->option_name; ?>[pf_algo]">
+            <option value="wp" <?php $this->selected( 'pf_algo', 'wp' ); ?>> <?php _e( 'WP Template', $this->hook ); ?></option>
+            <option value="pf" <?php $this->selected( 'pf_algo', 'pf' ); ?>> <?php _e( "Content Algorithm", $this->hook ); ?></option>
+          </select>
+        <?php
+        }
+        ?>
+        </label>
+        <label for="pf-analytics-tracking"><?php _e( 'Track in Google Analytics', $this->hook ); ?><br>
+        <select id="pf-analytics-tracking" name="<?php echo $this->option_name; ?>[enable_google_analytics]">
+          <option value="yes" <?php $this->selected( 'enable_google_analytics', 'yes' ); ?>> <?php _e( "Yes", $this->hook ); ?></option>
+          <option value="no" <?php $this->selected( 'enable_google_analytics', 'no' ); ?>> <?php _e( "No", $this->hook ); ?></option>
+        </select>
+        </label>
+        <label for="pf-error-reporting"><?php _e( 'Error Reporting', $this->hook ); ?>
+        <span class="description no-italics" ><?php _e( 'Ensure PrintFriendly is working - Automatically send anonymous alert if PrintFriendly encounters an error.', $this->hook ); ?></span>
+        <br>
+        <select id="pf-error-reporting" name="<?php echo $this->option_name; ?>[enable_error_reporting]">
+          <option value="yes" <?php $this->selected( 'enable_error_reporting', 'yes' ); ?>> <?php _e( "Yes", $this->hook ); ?></option>
+          <option value="no" <?php $this->selected( 'enable_error_reporting', 'no' ); ?>> <?php _e( "No", $this->hook ); ?></option>
+        </select>
+        </label>
+        <br class="clear">
+
+        <p class="submit">
+        <input type="submit" class="button-primary" value="<?php esc_attr_e( "Save Options", $this->hook ); ?>"/>
+        <input type="reset" class="button-secondary" value="<?php esc_attr_e( "Cancel", $this->hook ); ?>"/>
+        </p>
+
+         <!--Section 2 Pick Button Style-->
         <h3><?php _e( "Pick Your Button Style", $this->hook ); ?></h3>
 
         <fieldset id="button-style">
@@ -1616,10 +1671,15 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
 
         <br class="clear">
 
-        <!--Section 2 Button Positioning-->
+        <p class="submit">
+        <input type="submit" class="button-primary" value="<?php esc_attr_e( "Save Options", $this->hook ); ?>"/>
+        <input type="reset" class="button-secondary" value="<?php esc_attr_e( "Cancel", $this->hook ); ?>"/>
+        </p>
+
+        <!--Section 3 Button Positioning-->
         <div id="button-positioning">
           <h3><?php _e( "Button Positioning", $this->hook ); ?>
-          <span id="css"><input type="checkbox" name="<?php echo $this->option_name; ?>[enable_css]" value="<?php $this->val('enable_css');?>" <?php $this->checked('enable_css', 'off'); ?> /><?php _e('Do not use CSS for button styles'); ?></span>
+          <span id="css"><input type="checkbox" name="<?php echo $this->option_name; ?>[enable_css]" value="<?php $this->val('enable_css');?>" <?php $this->checked('enable_css', 'off'); ?> /><?php _e('Do not use CSS for button styles', $this->hook); ?></span>
                 </h3>
                 <div id="button-positioning-options">
                   <div id="alignment">
@@ -1657,9 +1717,14 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
                   </div>
                 </div>
               </div>
-              <br class="clear">
+			<br class="clear">
 
-        <!--Section 3 Button Placement-->
+			<p class="submit">
+			<input type="submit" class="button-primary" value="<?php esc_attr_e( "Save Options", $this->hook ); ?>"/>
+			<input type="reset" class="button-secondary" value="<?php esc_attr_e( "Cancel", $this->hook ); ?>"/>
+			</p>
+
+        <!--Section 4 Button Placement-->
         <div id="button-placement">
           <h3><?php _e( "Display button on:", $this->hook ); ?></h3>
           <div id="pages">
@@ -1678,7 +1743,11 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
 
         <br class="clear">
 
-        <!--Section 4 Button Print Options-->
+        <p class="submit">
+        <input type="submit" class="button-primary" value="<?php esc_attr_e( "Save Options", $this->hook ); ?>"/>
+        <input type="reset" class="button-secondary" value="<?php esc_attr_e( "Cancel", $this->hook ); ?>"/>
+        </p>
+        <!--Section 5 Button Print Options-->
         <div id="print-options">
           <h3><?php _e( "Print PDF Options", $this->hook ); ?></h3>
           <label id="pf-favicon" for="pf-logo">
@@ -1731,8 +1800,8 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
               <option value="0" <?php selected( $this->options['pdf'], '0' ); ?>><?php _e( "Allow", $this->hook ); ?></option>
               <option value="1" <?php selected( $this->options['pdf'], '1' ); ?>><?php _e( "Not Allow", $this->hook ); ?></option>
             </select>
-            <span class="alignleft">
-                <b class="alignleft notice"><abbr class="required"><?php _e( "Developer Note: ", $this->hook ); ?></abbr><?php _e( "On localhost the images can not be included in the PDF. Once the website is live/public images will be included in the PDF.", $this->hook ); ?></b>
+            <span class="alignleft pf-alert-warning">
+              <strong><?php _e( "Developer Note: ", $this->hook ); ?></strong><?php _e( "On localhost the images can not be included in the PDF. Once the website is live/public images will be included in the PDF.", $this->hook ); ?>
             </span>
           </label>
           <label for="print" class="clear">
@@ -1742,65 +1811,17 @@ if ( ! class_exists( 'PrintFriendly_WordPress' ) ) {
               <option value="1" <?php selected( $this->options['print'], '1' ); ?>><?php _e( "Not Allow", $this->hook ); ?></option>
             </select>
           </label>
+          <strong>Print/PDF Custom CSS</strong>
+          <div>Custom the styles of the printed/pdf page using your own CSS. Create your custom CSS, and put the URL to your Custom CSS file in the box below. <a target="_blank" href="https://support.printfriendly.com/customer/portal/articles/895256-custom-css-styles"><?php _e( 'Learn More', $this->hook ); ?></a></div>
           <label for="custom_css_url">
-            <?php _e( "Custom css url", $this->hook ); ?>
+            <?php _e( "Custom CSS URL", $this->hook ); ?>
             <input id="custom_css_url" type="text" class="regular-text" name="<?php echo $this->option_name; ?>[custom_css_url]" value="<?php $this->val( 'custom_css_url' ); ?>" />
-            <span class="description pf-help-link"><a target="_blank" href="https://support.printfriendly.com/customer/portal/articles/895256-custom-css-styles"><?php _e( '?', $this->hook ); ?></a></span>
+
           </label>
         </div>
 
-        <!--Section 5 WebMaster-->
-        <h3><?php _e( "Webmaster Settings", $this->hook ); ?></h3>
+        <br class="clear">
 
-        <label for="password_protected"><?php _e( 'Password Protected Content', $this->hook ); ?>
-        <select id="password_protected" name="<?php echo $this->option_name; ?>[password_protected]">
-          <option value="no" <?php selected( $this->options['password_protected'], 'no' ); ?>><?php _e( "No", $this->hook ); ?></option>
-          <option value="yes" <?php selected( $this->options['password_protected'], 'yes' ); ?>><?php _e( "Yes", $this->hook ); ?></option>
-        </select>
-        </label>
-        <label for="javascript"><?php _e( 'Use JavaScript', $this->hook ); ?><br>
-        <select id="javascript" name="<?php echo $this->option_name; ?>[javascript]>">
-          <option value="yes" <?php $this->selected( 'javascript', 'yes' ); ?>> <?php _e( "Yes", $this->hook ); ?></option>
-          <option value="no" <?php $this->selected( 'javascript', 'no' ); ?>> <?php _e( "No", $this->hook ); ?></option>
-        </select>
-        <span class="description javascript no-italics">
-          <?php _e( "Preview appears on the page in a Lightbox.", $this->hook ); ?>
-        </span>
-        <span class="description no-javascript no-italics">
-          <?php _e( "Preview opens a new browser tab.", $this->hook ); ?>
-        </span>
-        </label>
-        <label for="pf-analytics-tracking"><?php _e( 'Track in Google Analytics', $this->hook ); ?><br>
-        <select id="pf-analytics-tracking" name="<?php echo $this->option_name; ?>[enable_google_analytics]">
-          <option value="yes" <?php $this->selected( 'enable_google_analytics', 'yes' ); ?>> <?php _e( "Yes", $this->hook ); ?></option>
-          <option value="no" <?php $this->selected( 'enable_google_analytics', 'no' ); ?>> <?php _e( "No", $this->hook ); ?></option>
-        </select>
-        </label>
-        <label for="pf-error-reporting"><?php _e( 'Error Reporting', $this->hook ); ?>
-        <span class="description no-italics" ><?php _e( 'Ensure PrintFriendly is working - Automatically send anonymous alert if PrintFriendly encounters an error.', $this->hook ); ?></span>
-        <br>
-        <select id="pf-error-reporting" name="<?php echo $this->option_name; ?>[enable_error_reporting]">
-          <option value="yes" <?php $this->selected( 'enable_error_reporting', 'yes' ); ?>> <?php _e( "Yes", $this->hook ); ?></option>
-          <option value="no" <?php $this->selected( 'enable_error_reporting', 'no' ); ?>> <?php _e( "No", $this->hook ); ?></option>
-        </select>
-        </label>
-        <label for="pf-algo-usage"><?php _e( 'My Page Content Selected By:', $this->hook ); ?>  <span class="description no-italics" ><?php _e( 'Change this setting if your content is not showing in the preview.', $this->hook ); ?></span><br>
-
-        <?php
-          if (class_exists('WooCommerce')) {
-        ?>
-          <span><strong><?php _e( "Not available for woocommerce", $this->hook ); ?></strong></span>
-        <?php
-        } else {
-        ?>
-          <select id="pf-algo-usage" name="<?php echo $this->option_name; ?>[pf_algo]">
-            <option value="wp" <?php $this->selected( 'pf_algo', 'wp' ); ?>> <?php _e( 'WP Template', $this->hook ); ?></option>
-            <option value="pf" <?php $this->selected( 'pf_algo', 'pf' ); ?>> <?php _e( "Content Algorithm", $this->hook ); ?></option>
-          </select>
-        <?php
-        }
-        ?>
-        </label>
         <p class="submit">
         <input type="submit" class="button-primary" value="<?php esc_attr_e( "Save Options", $this->hook ); ?>"/>
         <input type="reset" class="button-secondary" value="<?php esc_attr_e( "Cancel", $this->hook ); ?>"/>

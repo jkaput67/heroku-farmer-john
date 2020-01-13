@@ -116,7 +116,7 @@ class AIOWPSecurity_Filesystem_Menu extends AIOWPSecurity_Admin_Menu
         </div>
         <?php
         $detected_os = strtoupper(PHP_OS);
-        if(strpos($detected_os, "WIN") !== false){
+        if(strpos($detected_os, "WIN") !== false && $detected_os != "DARWIN"){
             echo '<div class="aio_yellow_box">';
             echo '<p>'.__('This plugin has detected that your site is running on a Windows server.', 'all-in-one-wp-security-and-firewall').'
             <br />'.__('This feature is not applicable for Windows server installations.', 'all-in-one-wp-security-and-firewall').'
@@ -359,7 +359,7 @@ class AIOWPSecurity_Filesystem_Menu extends AIOWPSecurity_Admin_Menu
         <div class="postbox">
         <h3 class="hndle"><label for="title"><?php _e('View System Logs', 'all-in-one-wp-security-and-firewall'); ?></label></h3>
         <div class="inside">
-            <p>Please click the button below to view the latest system logs:</p>
+            <p><?php _e('Please click the button below to view the latest system logs', 'all-in-one-wp-security-and-firewall'); ?>:</p>
             <form action="" method="POST">
                 <?php wp_nonce_field('aiowpsec-view-system-logs-nonce'); ?>
                 <div><?php _e('Enter System Log File Name', 'all-in-one-wp-security-and-firewall')?>:

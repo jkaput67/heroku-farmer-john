@@ -2,8 +2,8 @@
 Contributors: printfriendly, joostdevalk, jrf
 Tags: print, pdf, email, print button, wp-print, print recipe, print post, print page, print widget, print plugin, printable, wp-pdf, pdf post, pdf page, pdf button, pdf widget, pdf plugin, woocommerce print, woocommerce pdf
 Requires at least: 2.8
-Tested up to: 4.9
-Stable tag: 3.14.2
+Tested up to: 5.2.3
+Stable tag: 3.14.7
 
 
 The #1 Print, PDF, Email button. Stylish, full featured, customizable. Add custom header, footer, and more.
@@ -143,6 +143,19 @@ You can [hide the Print, PDF, and Email button](https://support.printfriendly.co
 
 
 == Changelog ==
+= 3.15.7 =
+* Remove unnessary closing style tag. Add outline:none to printfriendly button link to remove outline on click.
+
+= 3.15.6 =
+* Improvements to CSS and how we load JS. Moved button CSS from page head to a seperate stylesheet. Load JS using async attribute (now that all major browsers support async attribute, we need not insert JS dynamically)
+= 3.14.5 =
+* New Feature: Password protected image option. Select this option if your images are password protected so they can be included in PDFs.
+
+= 3.14.4 =
+* Make save options work without Pro field(email, domain) validation check.
+
+= 3.14.3 =
+* Plugin copy and style changes. No functionality changes.
 
 = 3.14.2 =
 * GDPR Compliant notification for PrintFriendly Pro and links to Privacy Policy.

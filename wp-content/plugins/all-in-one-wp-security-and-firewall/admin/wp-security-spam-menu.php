@@ -125,7 +125,7 @@ class AIOWPSecurity_Spam_Menu extends AIOWPSecurity_Admin_Menu
         <div class="inside">
         <div class="aio_blue_box">
             <?php
-            echo '<p>'.__('This feature will add a simple math captcha field in the WordPress comments form.', 'all-in-one-wp-security-and-firewall').
+            echo '<p>'.__('This feature will add a captcha field in the WordPress comments form.', 'all-in-one-wp-security-and-firewall').
             '<br />'.__('Adding a captcha field in the comment form is a simple way of greatly reducing SPAM comments from bots without using .htaccess rules.', 'all-in-one-wp-security-and-firewall').'</p>';
             ?>
         </div>
@@ -157,7 +157,8 @@ class AIOWPSecurity_Spam_Menu extends AIOWPSecurity_Admin_Menu
         <?php
         //Display security info badge
         $aiowps_feature_mgr->output_feature_details_badge("block-spambots");
-        if (AIOWPSecurity_Utility::is_multisite_install() && get_current_blog_id() != 1)
+        $blog_id = get_current_blog_id(); 
+        if (AIOWPSecurity_Utility::is_multisite_install() && !is_main_site( $blog_id ))
         {
            //Hide config settings if MS and not main site
            AIOWPSecurity_Utility::display_multisite_message();

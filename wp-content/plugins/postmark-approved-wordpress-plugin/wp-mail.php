@@ -3,14 +3,16 @@ require_once(dirname( __FILE__ ).'/postmark.php');
 
 function postmark_determine_mime_content_type( $filename ){
     if (function_exists( 'mime_content_type' )) {
-	return mime_content_type($filename);
+	    return mime_content_type($filename);
     }
-    else
+    else if( function_exists('finfo_open') )
     {
        $finfo = finfo_open( FILEINFO_MIME_TYPE );
        $mime_type = finfo_file( $finfo, $filename );
        finfo_close( $finfo );
        return $mime_type;
+    }else{
+        return 'application/octet-stream';
     }
 }
 
@@ -43,7 +45,8 @@ function wp_mail( $to, $subject, $message, $headers = '', $attachments = array()
         'Bcc'           => array(),
         'Reply-To'      => array(),
         'From'          => array(),
-        'X-PM-Track-Opens' => array()
+        'X-PM-Track-Opens' => array(),
+        'X-PM-TrackLinks' => array()
     );
 
     $headers_list_lowercase = array_change_key_case( $headers_list, CASE_LOWER );
@@ -143,13 +146,29 @@ function wp_mail( $to, $subject, $message, $headers = '', $attachments = array()
         $body['ReplyTo'] = $recognized_headers['Reply-To'];
     }
 
-    $track_opens = (int) $settings['track_opens'];
+    if (isset($settings['track_opens'])) {
+      $track_opens = (int) $settings['track_opens'];
+    }
+
+    if (isset($settings['track_links'])) {
+      $track_links = (int) $settings['track_links'];
+    } else {
+      $track_links = 0;
+    }
 
     if ( isset($recognized_headers['X-PM-Track-Opens'])){
         if ( $recognized_headers['X-PM-Track-Opens'] ) {
             $track_opens = 1;
         }else {
             $track_opens = 0;
+        }
+    }
+
+    if ( isset($recognized_headers['X-PM-TrackLinks'])){
+        if ( $recognized_headers['X-PM-TrackLinks'] != "none" ) {
+            $body['TrackLinks'] = $recognized_headers['X-PM-TrackLinks'];
+        }else {
+            $body['TrackLinks'] = "none";
         }
     }
 
@@ -166,6 +185,10 @@ function wp_mail( $to, $subject, $message, $headers = '', $attachments = array()
 
     if ( 1 == $track_opens ) {
         $body['TrackOpens'] = 'true';
+    }
+
+    if ( 1 == $track_links ) {
+        $body['TrackLinks'] = 'HtmlAndText';
     }
 
     foreach ( $attachments as $attachment ) {
@@ -194,10 +217,43 @@ function wp_mail( $to, $subject, $message, $headers = '', $attachments = array()
     );
     $response = wp_remote_post( 'https://api.postmarkapp.com/email', $args );
 
+    // Logs send attempt, if logging enabled.
+    if ( isset( $settings['enable_logs']) && $settings['enable_logs'] == 1 ) {
+      global $wpdb;
+      $table = $wpdb->prefix . "postmark_log";
+      $to = $body["To"];
+
+      // Only store the To address, not the To name.
+      if ( false !== strpos( $body["To"], '<' ) && false !== strpos( $to, '>' ) ) {
+        $to = substr( $body["To"], strpos( $body["To"], '<' ), -1);
+      }
+
+      // Only store the From address, not the From name.
+      if ( false !== strpos( $from, '<' ) && false !== strpos( $from, '>' ) ) {
+        $from = substr( $from, strpos( $from, "<" ), strpos( $from, ">" ) -1 );
+      }
+
+      $log_entry = array(
+        "log_entry_date" => current_time( 'mysql' ),
+        "fromaddress" => sanitize_email( $from ),
+        "toaddress" => sanitize_email( $to ),
+        "subject" => sanitize_text_field( $subject ),
+      );
+
+      if ( is_array( $response ) ) {
+        $log_entry["response"] = sanitize_text_field( $response['body'] );
+
+      } elseif ( is_wp_error( $response ) ) {
+        $log_entry["response"] = $response->get_error_message();
+      }
+
+      $wpdb->insert($table, $log_entry);
+    }
+
     if ( is_wp_error( $response ) || 200 != wp_remote_retrieve_response_code( $response ) ) {
-        do_action('postmark_error', $response, $headers);
-	Postmark_Mail::$LAST_ERROR = $response;
-        return false;
+      do_action('postmark_error', $response, $headers);
+      Postmark_Mail::$LAST_ERROR = $response;
+      return false;
     }
 
     do_action('postmark_response', $response, $headers);

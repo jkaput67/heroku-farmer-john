@@ -1,10 +1,22 @@
+/* Helper Classes */
+
+.pf-no-margin {
+  margin: 0
+}
+
+.pf-hidden {
+  display: none;
+}
+.clearfloat{
+  clear:both;
+}
 label {
   display: block;
   margin: 1.5em 0;
 }
 
 h3 {
-  margin: 3em 0 2em;
+  margin: 1.5rem 0 1rem;
   border-bottom: 1px solid #ccc;
   padding-bottom:.75em;
   clear: both;
@@ -58,7 +70,7 @@ select{
   display: block;
   margin: .5em .5em 2em 0;
 }
-select#javascript, select#website_protocol {
+select#javascript, select#website_protocol, select#password_protected, select#dynamic_content {
   display: inline-block;
   margin-bottom: 0;
 }
@@ -400,20 +412,34 @@ label.radio-custom-btn {
   width: 200px;
 }
 
+/* Pro Notice Alert Layout */
+.pf-notice {
+  border-left: 4px solid #fff;
+  padding: 0 1.25rem;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  margin: 5px 0 15px;
+  display:inline-block;
+}
+
+.pf-col-1{
+  float:left;
+  margin:0rem 1.5rem 1.5rem 0;
+}
+.pf-col-2{
+  float: left;
+  margin:0rem 1.5rem 1.5rem 0;
+}
+
 .pf-form-element {
   margin: 0 0 15px 0;
 }
 
-.pf-pro {
-  float: left;
-  width: calc(100% - 35px);
-  padding: 20px
+.pf-btn-message {
+  margin-left: .5rem;
 }
 
-.pf-no-margin {
-  margin: 0
-}
-
+/* Colors */
 .pf-error {
   color: red;
   display: none;
@@ -431,35 +457,8 @@ label.radio-custom-btn {
   color: #dc3232;
 }
 
-.pf-col-1{
-  float:left;
-  margin: 1rem 1.5rem 1rem 0;
-}
-.pf-col-2{
-  float:left;
-  margin: 1rem .5rem 1rem 0;
-}
-.pf-btn-message {
-  margin-left: .5rem;
-}
-
-.pf-hidden {
-  display: none;
-}
-
-.pf-notice {
-  border-left: 4px solid #fff;
-  padding: 1px 12px;
-  background: #fff;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-  margin: 5px 0 15px;
-}
-
 .pf-notice-success {
   border-left: 4px solid #46b450;
-}
-.pf-notice-success .pf-pro-features{
-  display:none;
 }
 
 .pf-notice-warning {
@@ -468,4 +467,23 @@ label.radio-custom-btn {
 
 .pf-notice-error {
   border-left: 4px solid #dc3232;
+}
+
+.pf-alert-success{
+  padding:.75rem 1.25rem;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  border-radius: .25rem;
+}
+.pf-alert-warning{
+  padding:.75rem 1.25rem;
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  border-radius: .25rem;
+}
+/* This hides messages depending on pro status */
+.pf-notice-success .pf-pro-features{
+  display:none;
 }

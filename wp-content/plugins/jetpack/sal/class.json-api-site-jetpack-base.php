@@ -29,6 +29,15 @@ abstract class Abstract_Jetpack_Site extends SAL_Site {
 	function before_render() {
 	}
 
+	protected function wp_memory_limit() {
+		return $this->get_constant( 'WP_MEMORY_LIMIT' );
+	}
+
+	protected function wp_max_memory_limit() {
+		return $this->get_constant( 'WP_MAX_MEMORY_LIMIT' );
+	}
+
+
 	function after_render( &$response ) {
 		// Add the updates only make them visible if the user has manage options permission and the site is the main site of the network
 		if ( current_user_can( 'manage_options' ) && $this->is_main_site( $response ) ) {
@@ -80,11 +89,11 @@ abstract class Abstract_Jetpack_Site extends SAL_Site {
 	}
 
 	function get_jetpack_modules() {
-		if ( is_user_member_of_blog() ) {
-			return array_values( Jetpack_Options::get_option( 'active_modules', array() ) );
-		}
+		return array_values( Jetpack_Options::get_option( 'active_modules', array() ) );
+	}
 
-		return null;
+	function is_module_active( $module ) {
+		return in_array ( $module, Jetpack_Options::get_option( 'active_modules', array() ), true );
 	}
 
 	function is_vip() {

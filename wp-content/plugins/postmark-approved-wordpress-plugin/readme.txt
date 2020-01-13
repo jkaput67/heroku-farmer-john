@@ -1,8 +1,8 @@
 === Postmark for Wordpress ===
-Contributors: andy7629, alexknowshtml, mgibbs189, jptoto, atheken
+Contributors: andy7629, alexknowshtml, mgibbs189, jptoto, atheken, prileygraham
 Tags: postmark, email, smtp, notifications, wp_mail, wildbit
 Requires at least: 4.0
-Tested up to: 4.7.4
+Tested up to: 5.3
 Stable tag: trunk
 
 The *officially-supported* Postmark plugin for Wordpress.
@@ -11,7 +11,9 @@ The *officially-supported* Postmark plugin for Wordpress.
 
 If you're still sending email with default SMTP, you're blind to delivery problems! Postmark for Wordpress enables sites of any size to deliver and track WordPress notification emails reliably, with minimal setup time and zero maintenance.
 
-If you don't already have a free Postmark account, you can get one in minutes. Every account comes with 25,000 free credits.
+If you don't already have a Postmark account, you can get one in minutes, sign up at https://postmarkapp.com
+
+Check out our video on how to set up the Postmark for WordPress plugin [here](https://postmarkapp.com/webinars/postmark-wordpress).
 
 == Installation ==
 
@@ -33,11 +35,7 @@ The Postmark for WordPress plugin overrides any usage of the wp_mail() function.
 
 = Does this cost me money? =
 
-This Postmark plugin is 100% free. All new Postmark accounts include 25,000 free credits. Afterwards, they will cost only $1.50 per 1000 sends with no monthly commitments and no expirations.
-
-We will send you multiple warnings as you approach running out of send credits, so you don't need to worry about paying for credits until you absolutely need them.
-
-Sign up for your free Postmark account at https://postmarkapp.com/ and get started now.
+The Postmark service (and this plugin) are free to get started. You can sign up at https://postmarkapp.com/. When you need to process more email, Postmark offers monthly plans to fit your needs.
 
 = My emails are still not sending, or they are going to spam! HELP!? =
 
@@ -47,19 +45,93 @@ No worries, our expert team can help. Just send an email to support@postmarkapp.
 
 Because we've been in this business for many years. We’ve been running an email marketing service, Newsberry, for five years. Through trial and error we already know what it takes to manage a large volume of email. We handle things like whitelisting, ISP throttling, reverse DNS, feedback loops, content scanning, and delivery monitoring to ensure your emails get to the inbox.
 
-We're hosted at Rackspace, where we’re able to offer both the physical (SAS70 data center) and environment security through a completely dedicated cluster of servers. Our servers utilize virtualization and high availability failover protection to properly handle outages and keep your data safe.
-
 Most importantly, a great product requires great support and even better education. Our team is spread out across six time zones to offer fast support on everything from using Postmark to best practices on content and user engagement. A solid infrastructure only goes so far, that’s why improving our customer’s sending practices helps achieve incredible results
 
 = Why aren't my HTML emails being sent? =
 
 This plugin detects HTML by checking the headers sent by other WordPress plugins. If a "text/html" content type isn't set then this plugin won't send the HTML to Postmark to be sent out only the plain text version of the email.
 
+= Why aren't my HTML emails being sent? =
+
+This plugin detects HTML by checking the headers sent by other WordPress plugins. If a "text/html" content type isn't set then this plugin won't send the HTML to Postmark to be sent out only the plain text version of the email.
+
+= Why are password reset links not showing in emails sent with this plugin? =
+
+There are a couple ways to resolve this issue.
+
+1. Open the Postmark plugin settings and uncheck Force HTML and click Save Changes. If the default WordPress password reset email is sent in Plain Text format, the link will render as expected.
+
+2. Access your WordPress site directory and open the wp-login.php file.
+
+Change this line:
+
+    $message .= ‘<‘ . network_site_url(“wp-login.php?action=rp&key=$key&login=” . rawurlencode($user_login), ‘login’) . “>\r\n”;
+
+Remove the brackets, so it becomes:
+
+    $message .= network_site_url(“wp-login.php?action=rp&key=$key&login=” . rawurlencode($user_login), ‘login’) . “\r\n”;
+
+And save the changes to the file.
+
+== Additional Resources ==
+
+[Postmark for WordPress FAQ](https://postmarkapp.com/support/article/1138-postmark-for-wordpress-faq)
+
+[Can I use the Postmark for WordPress plugin with Gravity Forms?](https://postmarkapp.com/support/article/1129-can-i-use-the-postmark-for-wordpress-plugin-with-gravity-forms)
+
+[How do I send with Ninja Forms and Postmark for WordPress?](https://postmarkapp.com/support/article/1047-how-do-i-send-with-ninja-forms-and-postmark-for-wordpress)
+
+[How do I send with Contact Form 7 and Postmark for WordPress?](https://postmarkapp.com/support/article/1072-how-do-i-send-with-contact-form-7-and-postmark-for-wordpress)
+
+[Can I use the Postmark for WordPress plugin with Divi contact forms?](https://postmarkapp.com/support/article/1128-can-i-use-the-postmark-for-wordpress-plugin-with-divi-contact-forms)
+
 == Screenshots ==
 
 1. Postmark WP Plugin Settings screen.
 
 == Changelog ==
+= v1.11.6 =
+* Updates server API token location hint in plugin settings.
+
+= v1.11.5 =
+* Allows using POSTMARK_API_TEST in the plugin settings for generating test send requests that aren't actually delivered.
+
+= v1.11.4 =
+* Fixes handling of situation where call to Postmark API results in WP_Error instead of array for response, such as during incidents of the API being offline and not returning a response.
+
+= v1.11.3 =
+* Fixes log page display of From/To addresses including the From/To names. Only email addresses will now appear in logs page, to avoid confusion, while also preserving the sanitation of email addresses before inserting into db.
+
+= v1.11.2 =
+* Fixes no index error with track links check in wp_mail.
+
+= v1.11.1 =
+* Fixes call of non-global load_settings function during upgrade.
+
+= v1.11.0 =
+* Adds link tracking support.
+* Fixes send test with HTML/open tracking option not being honored in sent test email.
+
+= v1.10.6 =
+* Fixes undefined index error.
+* Adds Upgrade Notice
+
+= v1.10.5 =
+* Corrects logs deletion cron job unscheduling issue.
+
+= v1.10.4 =
+* Removes index on logs table.
+
+= v1.10.3 =
+* Corrects version mismatch in constructor.
+
+= v1.10.1 =
+* Adds a new logging feature that can be enabled to store logs for send attempts. Logs include Date, From address, To address, Subject, and Postmark API response. Logs are displayed in a Logs tab in the plugin setting once enabled.
+* Switch loading of JS/CSS to use enqueue()
+
+= v1.9.6 =
+* Resolves issue when saving settings in UI.
+* Falls attachment Content-Type back to 'application/octet-stream' when other methods fail.
 
 = v1.9.5 =
 * Update javascript to fix settings update issue.
@@ -92,7 +164,7 @@ This plugin detects HTML by checking the headers sent by other WordPress plugins
 = v1.6 =
 * Added open tracking support.
 
-= v1.5 = 
+= v1.5 =
 * Fix issue with new WordPress HTTP API Integration.
 
 = v1.4 =
@@ -110,3 +182,10 @@ This plugin detects HTML by checking the headers sent by other WordPress plugins
 
 = v1.0.0 =
 * First Public release.
+
+== Upgrade Notice ==
+= 1.11 =
+Adds link tracking support.
+
+= 1.10 =
+Adds new feature for enabling logging of send attempts, including the response from the Postmark API.

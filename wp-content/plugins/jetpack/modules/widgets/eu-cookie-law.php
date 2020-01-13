@@ -1,5 +1,7 @@
 <?php
 
+use Automattic\Jetpack\Assets;
+
 /**
  * Disable direct access/execution to/of the widget code.
  */
@@ -63,6 +65,16 @@ if ( ! class_exists( 'Jetpack_EU_Cookie_Law_Widget' ) ) {
 		);
 
 		/**
+		 * Widget position options.
+		 *
+		 * @var array
+		 */
+		private $position_options = array(
+			'bottom',
+			'top',
+		);
+
+		/**
 		 * Constructor.
 		 */
 		function __construct() {
@@ -71,7 +83,7 @@ if ( ! class_exists( 'Jetpack_EU_Cookie_Law_Widget' ) ) {
 				/** This filter is documented in modules/widgets/facebook-likebox.php */
 				apply_filters( 'jetpack_widget_name', esc_html__( 'Cookies & Consents Banner', 'jetpack' ) ),
 				array(
-					'description' => esc_html__( 'Display a banner for EU Cookie Law and GDPR compliance.', 'jetpack' ),
+					'description'                 => esc_html__( 'Display a banner for EU Cookie Law and GDPR compliance.', 'jetpack' ),
 					'customize_selective_refresh' => true,
 				),
 				array()
@@ -89,7 +101,7 @@ if ( ! class_exists( 'Jetpack_EU_Cookie_Law_Widget' ) ) {
 			wp_enqueue_style( 'eu-cookie-law-style', plugins_url( 'eu-cookie-law/style.css', __FILE__ ), array(), '20170403' );
 			wp_enqueue_script(
 				'eu-cookie-law-script',
-				Jetpack::get_file_url_for_environment(
+				Assets::get_file_url_for_environment(
 					'_inc/build/widgets/eu-cookie-law/eu-cookie-law.min.js',
 					'modules/widgets/eu-cookie-law/eu-cookie-law.js'
 				),
@@ -117,6 +129,7 @@ if ( ! class_exists( 'Jetpack_EU_Cookie_Law_Widget' ) ) {
 				'policy-url'         => get_option( 'wp_page_for_privacy_policy' ) ? $this->policy_url_options[1] : $this->policy_url_options[0],
 				'default-policy-url' => 'https://automattic.com/cookies/',
 				'custom-policy-url'  => get_option( 'wp_page_for_privacy_policy' ) ? get_permalink( (int) get_option( 'wp_page_for_privacy_policy' ) ) : '',
+				'position'           => $this->position_options[0],
 				'policy-link-text'   => esc_html__( 'Cookie Policy', 'jetpack' ),
 				'button'             => esc_html__( 'Close and accept', 'jetpack' ),
 				'default-text'       => esc_html__( "Privacy & Cookies: This site uses cookies. By continuing to use this website, you agree to their use. \r\nTo find out more, including how to control cookies, see here:", 'jetpack' ),
@@ -143,14 +156,18 @@ if ( ! class_exists( 'Jetpack_EU_Cookie_Law_Widget' ) ) {
 
 			$instance = wp_parse_args( $instance, $this->defaults() );
 
-			$classes = array();
+			$classes         = array();
 			$classes['hide'] = 'hide-on-' . esc_attr( $instance['hide'] );
 			if ( 'negative' === $instance['color-scheme'] ) {
 				$classes['negative'] = 'negative';
 			}
 
+			if ( 'top' === $instance['position'] ) {
+				$classes['top'] = 'top';
+			}
+
 			if ( Jetpack::is_module_active( 'wordads' ) ) {
-				$classes['ads'] = 'ads-active';
+				$classes['ads']  = 'ads-active';
 				$classes['hide'] = 'hide-on-button';
 			}
 
@@ -174,7 +191,7 @@ if ( ! class_exists( 'Jetpack_EU_Cookie_Law_Widget' ) ) {
 
 			wp_enqueue_script(
 				'eu-cookie-law-widget-admin',
-				Jetpack::get_file_url_for_environment(
+				Assets::get_file_url_for_environment(
 					'_inc/build/widgets/eu-cookie-law/eu-cookie-law-admin.min.js',
 					'modules/widgets/eu-cookie-law/eu-cookie-law-admin.js'
 				),
@@ -200,6 +217,7 @@ if ( ! class_exists( 'Jetpack_EU_Cookie_Law_Widget' ) ) {
 			$instance['text']         = $this->filter_value( isset( $new_instance['text'] ) ? $new_instance['text'] : '', $this->text_options );
 			$instance['color-scheme'] = $this->filter_value( isset( $new_instance['color-scheme'] ) ? $new_instance['color-scheme'] : '', $this->color_scheme_options );
 			$instance['policy-url']   = $this->filter_value( isset( $new_instance['policy-url'] ) ? $new_instance['policy-url'] : '', $this->policy_url_options );
+			$instance['position']     = $this->filter_value( isset( $new_instance['position'] ) ? $new_instance['position'] : '', $this->position_options );
 
 			if ( isset( $new_instance['hide-timeout'] ) ) {
 				// Time can be a value between 3 and 1000 seconds.

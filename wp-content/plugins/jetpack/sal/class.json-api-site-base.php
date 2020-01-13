@@ -51,6 +51,8 @@ abstract class SAL_Site {
 
 	abstract public function is_mapped_domain();
 
+	abstract public function get_unmapped_url();
+
 	abstract public function is_redirect();
 
 	abstract public function is_headstart_fresh();
@@ -60,6 +62,8 @@ abstract class SAL_Site {
 	abstract public function has_wordads();
 
 	abstract public function get_frame_nonce();
+
+	abstract public function get_jetpack_frame_nonce();
 
 	abstract public function allowed_file_types();
 
@@ -77,6 +81,8 @@ abstract class SAL_Site {
 
 	abstract public function get_jetpack_modules();
 
+	abstract public function is_module_active( $module );
+
 	abstract public function is_vip();
 
 	abstract public function is_multisite();
@@ -88,6 +94,8 @@ abstract class SAL_Site {
 	abstract public function get_ak_vp_bundle_enabled();
 
 	abstract public function get_podcasting_archive();
+
+	abstract public function get_import_engine();
 
 	abstract public function get_jetpack_seo_front_page_description();
 
@@ -108,6 +116,24 @@ abstract class SAL_Site {
 	abstract protected function is_a8c_publication( $post_id );
 
 	public function is_automated_transfer() {
+		/**
+		 * Filter if a site is an automated-transfer site.
+		 *
+		 * @module json-api
+		 *
+		 * @since 6.4.0
+		 *
+		 * @param bool is_automated_transfer( $this->blog_id )
+		 * @param int  $blog_id Blog identifier.
+		 */
+		return apply_filters(
+			'jetpack_site_automated_transfer',
+			false,
+			$this->blog_id
+		);
+	}
+
+	public function is_wpcom_atomic() {
 		return false;
 	}
 
@@ -153,7 +179,7 @@ abstract class SAL_Site {
 
 		switch ( $context ) {
 		case 'edit' :
-			if ( ! current_user_can( 'edit_post', $post ) ) {
+			if ( ! current_user_can( 'edit_post', $post->ID ) ) {
 				return new WP_Error( 'unauthorized', 'User cannot edit post', 403 );
 			}
 			break;
@@ -358,7 +384,7 @@ abstract class SAL_Site {
 	}
 
 	function get_xmlrpc_url() {
-		$xmlrpc_scheme = apply_filters( 'wpcom_json_api_xmlrpc_scheme', parse_url( get_option( 'home' ), PHP_URL_SCHEME ) );
+		$xmlrpc_scheme = apply_filters( 'wpcom_json_api_xmlrpc_scheme', wp_parse_url( get_option( 'home' ), PHP_URL_SCHEME ) );
 		return site_url( 'xmlrpc.php', $xmlrpc_scheme );
 	}
 
@@ -453,10 +479,6 @@ abstract class SAL_Site {
 
 	function get_admin_url() {
 		return get_admin_url();
-	}
-
-	function get_unmapped_url() {
-		return get_site_url( get_current_blog_id() );
 	}
 
 	function get_theme_slug() {
@@ -580,12 +602,21 @@ abstract class SAL_Site {
 	}
 
 	function has_pending_automated_transfer() {
-		if ( defined( 'IS_WPCOM' ) && IS_WPCOM ) {
-			require_once( WP_CONTENT_DIR . '/lib/automated-transfer/utils.php' );
-			return A8C\Automated_Transfer\Utils\has_site_pending_automated_transfer( $this->blog_id );
-		}
-
-		return false;
+		/**
+		 * Filter if a site is in pending automated transfer state.
+		 *
+		 * @module json-api
+		 *
+		 * @since 6.4.0
+		 *
+		 * @param bool has_site_pending_automated_transfer( $this->blog_id )
+		 * @param int  $blog_id Blog identifier.
+		 */
+		return apply_filters(
+			'jetpack_site_pending_automated_transfer',
+			false,
+			$this->blog_id
+		);
 	}
 
 	function signup_is_store() {
@@ -604,5 +635,13 @@ abstract class SAL_Site {
 	function get_site_goals() {
 		$options = get_option( 'options' );
 		return empty( $options[ 'siteGoals'] ) ? null : $options[ 'siteGoals' ];
+	}
+
+	function get_launch_status() {
+		return false;
+	}
+
+	function get_site_segment() {
+		return false;
 	}
 }
