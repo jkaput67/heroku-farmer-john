@@ -23,7 +23,7 @@ if( is_tax() ) {
 				<a href="/products" class="filter-all">ALL</a>
 			</div>
 			<div class="column products_archive_filter_item">
-				<a href="/product_category/california-natural-fresh-pork" class="<?php if( is_tax( 'product_category', 'california-natural-fresh-pork' ) ){ echo "active "; } ?>filter-california-natural-fresh-pork">CALIFORNIA NATURAL FRESH PORK</a>
+				<a href="/product_category/all-natural" class="<?php if( is_tax( 'product_category', 'all-natural' ) ){ echo "active "; } ?>filter-all-natural">ALL NATURAL</a>
 			</div>
 			<div class="column products_archive_filter_item">
 				<a href="/product_category/bacon" class="<?php if( is_tax( 'product_category', 'bacon' ) ){ echo "active "; } ?>filter-bacon">BACON</a>
@@ -48,7 +48,7 @@ if( is_tax() ) {
 	<div class="products_archive_filter_nav hide-for-large-up light-yellow-bg">
 		<a class="products_archive_filter_dropdown_toggle text-center">
 			<h2 href="/products" class="filter-all">ALL PRODUCTS</h2>
-			<h2 href="/product_category/california-natural-fresh-pork" class="<?php if( is_tax( 'product_category', 'california-natural-fresh-pork' ) ){ echo "active "; } ?>filter-california-natural-fresh-pork">CALIFORNIA NATURAL FRESH PORK</h2>
+			<h2 href="/product_category/all-natural" class="<?php if( is_tax( 'product_category', 'all-natural' ) ){ echo "active "; } ?>filter-all-natural">ALL NATURAL</h2>
 			<h2 href="/product_category/bacon" class="<?php if( is_tax( 'product_category', 'bacon' ) ){ echo "active "; } ?>filter-bacon">BACON</h2>
 			<h2 href="/product_category/breakfast-sausage" class="<?php if( is_tax( 'product_category', 'breakfast-sausage' ) ){ echo "active "; } ?>filter-breakfast-sausage">BREAKFAST SAUSAGE</h2>
 			<h2 href="/product_category/ham" class="<?php if( is_tax( 'product_category', 'ham' ) ){ echo "active "; } ?>filter-ham">HAM</h2>
@@ -62,8 +62,8 @@ if( is_tax() ) {
 			<div class="column small-12 products_archive_filter_item text-center">
 				<a class="filter-all active">ALL PRODUCTS</a>
 			</div>
-			<div class="column small-12 products_archive_filter_item text-center">
-				<a href="/product_category/california-natural-fresh-pork" class="filter-california-natural-fresh-pork">CALIFORNIA NATURAL FRESH PORK</a>
+			<div class="column products_archive_filter_item">
+				<a href="/product_category/all-natural" class="<?php if( is_tax( 'product_category', 'all-natural' ) ){ echo "active "; } ?>filter-all-natural">ALL NATURAL</a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
 				<a href="/product_category/bacon" class="filter-bacon">BACON</a>

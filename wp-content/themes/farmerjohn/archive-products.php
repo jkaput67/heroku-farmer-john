@@ -71,9 +71,6 @@ get_header(); ?>
 				<a class="filter-all-natural">ALL NATURAL</a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a class="filter-california-natural-fresh-pork">CALIFORNIA NATURAL FRESH PORK</a>
-			</div>
-			<div class="column small-12 products_archive_filter_item text-center">
 				<a class="filter-bacon">BACON</a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
