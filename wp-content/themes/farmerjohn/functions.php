@@ -15,6 +15,9 @@
  * @since FoundationPress 1.0.0
  */
 
+add_filter( 'allow_subdirectory_install',
+    create_function( '', 'return true;' )
+);
 /** Various clean up functions */
 require_once( 'library/cleanup.php' );
 
