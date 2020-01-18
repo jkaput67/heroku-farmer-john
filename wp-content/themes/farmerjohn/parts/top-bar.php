@@ -35,7 +35,7 @@
             <!-- Right Nav Section -->
             <ul class="right" style="width: calc(50% - 117px); display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; justify-content: flex-start; -webkit-justify-content: flex-start;">
                 <li<?php if ( is_page('Where To Buy') ) { echo ' class="active"'; } ?>>
-                    <a target="_blank" href="http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ">><?php _e('Where To Buy','foundationpress')?></a>
+                    <a target="_blank" href="http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ"><?php _e('Where To Buy','foundationpress')?></a>
                 </li>
                 <!-- <li class="has-dropdown<?php //if ( is_page( array('Social Media', 'Partners' ) ) ) { echo ' active'; } ?>">
                     <a href="/social">Social Media</a>
@@ -77,7 +77,7 @@
                 </li>
             
                 <li<?php if ( is_post_type_archive( 'recipes' ) || is_single( 'recipes' ) ) { echo ' class="active"'; } ?>>
-                    <a href="/recipes"<?php _e('>Recipes','foundationpress')?></a>
+                    <a href="/recipes"<?php _e('Recipes','foundationpress')?></a>
                 </li>
             </ul>
         </section>
