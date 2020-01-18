@@ -16,23 +16,23 @@
 	<div class="column large-8">
 		<div class="row footer-nav">
 			<div class="column large-3">
-				<a href="/products">PRODUCTS</a>
-				<a href="/recipes">RECIPES</a>
-				<a href="/our-story">OUR STORY</a>
+				<a href="/products"><?php _e('PRODUCTS', 'foundationpress')?></a>
+				<a href="/recipes"><?php _e('RECIPES', 'foundationpress')?></a>
+				<a href="/our-story"><?php _e('OUR STORY', 'foundationpress')?></a>
 			</div>
 			<div class="column large-3">
-				<a href="/health">HEALTH</a>
-				<a href="/partners">PARTNERS</a>
-				<a href="http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ" target="_blank">WHERE TO BUY</a>
+				<a href="/health"><?php _e('HEALTH', 'foundationpress')?></a>
+				<a href="/partners"><?php _e('PARTNERS', 'foundationpress')?></a>
+				<a href="http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ" target="_blank"><?php _e('WHERE TO BUY', 'foundationpress')?></a>
 			</div>
 			<div class="column large-3">
-				<a href="/ca-transparency-act">CA TRANSPARENCY ACT</a>
-				<a href="/privacy-policy">PRIVACY POLICY</a>
-				<a href="https://www.smithfieldfoods.com/ca-privacy-policy">CALIFORNIA PRIVACY</a>
+				<a href="/ca-transparency-act"><?php _e('CA TRANSPARENCY ACT', 'foundationpress')?></a>
+				<a href="/privacy-policy"><?php _e('PRIVACY POLICY', 'foundationpress')?></a>
+				<a href="https://www.smithfieldfoods.com/ca-privacy-policy"><?php _e('CALIFORNIA PRIVACY', 'foundationpress')?></a>
 			</div>
 			<div class="column large-3">
-				<a target="_blank" href="http://www.smithfieldfoods.com/terms-of-use">TERMS OF USE</a>
-				<a href="/contact">CONTACT</a>
+				<a target="_blank" href="http://www.smithfieldfoods.com/terms-of-use"><?php _e('TERMS OF USE', 'foundationpress')?></a>
+				<a href="/contact"><?php _e('CONTACT', 'foundationpress')?></a>
 				<a href="https://www.smithfieldfoods.com/careers" target="_blank">CAREERS</a>
 			</div>
 		</div>
@@ -65,26 +65,26 @@
 <footer class="hide-for-large-up">
 	<div class="row footer-nav">
 		<div class="column small-7">
-			<a href="/products">PRODUCTS</a>
-			<a href="/recipes">RECIPES</a>
-			<a href="/our-story">OUR STORY</a>
+			<a href="/products"><?php _e('PRODUCTS', 'foundationpress')?></a>
+			<a href="/recipes"><?php _e('RECIPES', 'foundationpress')?></a>
+			<a href="/our-story"><?php _e('OUR STORY', 'foundationpress')?></a>
 		</div>
 		<div class="column small-5">
-			<a href="/health">HEALTH</a>
-			<a href="/partners">PARTNERS</a>
-			<a href="http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ" target="_blank">WHERE TO BUY</a>
+			<a href="/health"><?php _e('HEALTH', 'foundationpress')?></a>
+			<a href="/partners"><?php _e('PARTNERS', 'foundationpress')?></a>
+			<a href="http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ" target="_blank"><?php _e('WHERE TO BUY', 'foundationpress')?></a>
 		</div>
 	</div>
 	<div class="row footer-nav">
 		<div class="column small-7">
-			<a href="/ca-transparency-act" class="ca_transparency_act">CA TRANSPARENCY ACT</a>
-			<a href="/privacy-policy">PRIVACY POLICY</a>
-			<a href="https://www.smithfieldfoods.com/ca-privacy-policy">CALIFORNIA PRIVACY</a>
+			<a href="/ca-transparency-act" class="ca_transparency_act"><?php _e('CA TRANSPARENCY ACT', 'foundationpress')?></a>
+			<a href="/privacy-policy"><?php _e('PRIVACY POLICY', 'foundationpress')?></a>
+			<a href="https://www.smithfieldfoods.com/ca-privacy-policy"><?php _e('CALIFORNIA PRIVACY', 'foundationpress')?></a>
 
 		</div>
 		<div class="column small-5">
-			<a target="_blank" href="http://www.smithfieldfoods.com/terms-of-use">TERMS OF USE</a>
-			<a href="/contact">CONTACT</a>
+			<a target="_blank" href="http://www.smithfieldfoods.com/terms-of-use"><?php _e('TERMS OF USE', 'foundationpress')?></a>
+			<a href="/contact"><?php _e('CONTACT', 'foundationpress')?></a>
 			<a href="https://www.smithfieldfoods.com/careers" target="_blank">CAREERS</a>
 		</div>
 	</div>

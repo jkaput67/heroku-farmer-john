@@ -3,7 +3,7 @@
 if (!defined('ABSPATH')) exit;
 
 class gdttWalker_Terms extends Walker_Category {
-    function start_el(&$output, $term, $depth, $args) {
+    function start_el(&$output, $term, $depth = 0, $args = array(), $id = 0) {
         extract($args);
 
         $term_name = esc_attr( $term->name);
@@ -60,7 +60,7 @@ class gdttWalker_Terms extends Walker_Category {
 }
 
 class gdttWalker_TermsDropdown extends Walker_CategoryDropdown {
-    function start_el(&$output, $term, $depth, $args) {
+    function start_el(&$output, $term, $depth = 0, $args = array(), $id = 0) {
         $pad = str_repeat('&nbsp;', $depth * 3);
 
         $term_name = apply_filters('list_term_name', $term->name, $term);
