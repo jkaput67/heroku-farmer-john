@@ -1,1 +1,0 @@
-<div class="gdcet-field-no-settings"><?php _e("There are no settings available for this field.", "gd-content-tools"); ?></div>

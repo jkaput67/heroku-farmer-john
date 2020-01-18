@@ -1,1 +1,0 @@
-<?php include(GDCET_D4PLIB.'shared/d4p.about-plugins.php'); ?>
