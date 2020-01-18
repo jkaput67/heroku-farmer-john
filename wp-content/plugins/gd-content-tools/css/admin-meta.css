@@ -1,0 +1,408 @@
+.gdcet-only-timepicker .datepicker--nav,
+.gdcet-only-timepicker .datepicker--content {
+    display: none;
+}
+
+.gdcet-only-timepicker .datepicker--time {
+    border-top: none;
+}
+
+.gdcet-field-placeholder {
+    margin: 0 0 15px;
+    border: 1px dashed #0085ba;
+}
+
+h3 .gdcet-field-icon i.fa {
+    float: left;
+    margin-right: 10px;
+}
+
+.gdcet-group-meta-field .d4p-group-inner {
+    text-align: left;
+    padding: 0;
+}
+
+.gdcet-group-meta-field.gdcet-group-meta-field-simple .gdcet-field-block-control {
+    display: none;
+}
+
+.gdcet-group-meta-field.gdcet-group-meta-field-simple .gdcet-field-toggler {
+    display: none;
+}
+
+.gdcet-group-meta-field.gdcet-meta-closed .d4p-group-inner {
+    display: none;
+}
+
+.gdcet-group-meta-field.gdcet-meta-opened .d4p-group-inner {
+    display: block;
+}
+
+.gdcet-group-meta-field .gdcet-field-block-settings textarea,
+.gdcet-group-meta-field textarea.gdcet-field-property-basic-description {
+  height: 80px;
+}
+
+.gdcet-is-required {
+    color: #bb0000;
+    font-weight: bold;
+}
+
+.gdcet-group-meta-field .d4p-group-inner .form-table > tbody > tr > th,
+.gdcet-group-meta-field .d4p-group-inner .form-table > tbody > tr > td {
+    padding: 15px;
+    border-bottom: 1px solid #dddddd;
+    vertical-align: top;
+}
+
+.gdcet-group-meta-field .d4p-group-inner .form-table > tbody > tr > th {
+    line-height: 22px;
+}
+
+.gdcet-group-meta-field .d4p-settings-item-error > td {
+    padding: 15px !important;
+}
+
+.gdcet-group-meta-field .d4p-group-inner .form-table > tbody > tr:last-child th, 
+.gdcet-group-meta-field .d4p-group-inner .form-table > tbody > tr:last-child td {
+    padding: 15px;
+}
+
+.gdcet-group-meta-field .gdcet-select-short {
+    max-width: 160px;
+    vertical-align: top;
+}
+
+.gdcet-group-meta-field input[type="number"].widefat {
+    max-width: 160px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.gdcet-field-block-control {
+    padding: 10px;
+    background-color: #EEEEEE;
+    border-bottom: 1px solid #dddddd;
+}
+
+.gdcet-field-block-control .gdcet-field-move {
+    float: right;
+    line-height: 28px;
+}
+
+.gdcet-field-block-basic {
+    background-color: #F8FAFF;
+}
+
+.gdcet-field-block-extended {
+    background-color: #FEF8FF;
+}
+
+.gdcet-field-block-type {
+    background-color: #FFF8F8;
+}
+
+.gdcet-field-block-settings {
+    background-color: #F8FFF8;
+}
+
+.gdcet-field-block-extras {
+    background-color: #FFFFF8;
+}
+
+.gdcet-field-block-type-loading {
+    background-color: #F8FFF8;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    font-size: 1.2em;
+}
+
+.gdcet-field-no-repeat,
+.gdcet-field-no-settings {
+    text-align: center;
+    padding: 15px;
+    border-left: 10px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    font-weight: bold;
+}
+
+.gdcet-meta-fields-wrapper {
+    margin: 0;
+    max-width: 800px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.gdcet-meta-fields-wrapper .gdcet-meta-fields-control {
+    vertical-align: top;
+    width: 54px;
+    text-align: center;
+    padding: 0 10px 0 0;
+}
+
+.gdcet-meta-fields-wrapper .gdcet-meta-fields-control a {
+    display: block;
+    font-size: 40px;
+    color: #bb0000;
+}
+
+.gdcet-meta-fields-wrapper .gdcet-meta-fields-list {
+    vertical-align: top;
+}
+
+h2.gdcet-box-integration,
+.gdcet-meta-fields-wrapper > caption {
+    text-align: left;
+    padding: 5px;
+    margin: 0 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #888;
+    color: #fff;
+}
+
+h2.gdcet-box-integration {
+    max-width: 800px;
+}
+
+.gdcet-meta-fields-list-wrapper {
+    display: block;
+    overflow: visible;
+    padding: 0 0 36px;
+}
+
+.gdcet-meta-fields-list-wrapper .d4p-group {
+    float: none;
+}
+
+.gdcet-meta-fields-list-wrapper .gdcet-field-move a {
+    text-decoration: none !important;
+}
+
+.gdcet-meta-fields-list-wrapper .gdcet-field-move-up:after {
+    content: " · ";
+    text-decoration: none;
+}
+
+.gdcet-meta-fields-list-wrapper .gdcet-group-meta-field:first-child .gdcet-field-move-up {
+    display: none;
+}
+
+.gdcet-meta-fields-list-wrapper .gdcet-group-meta-field:last-child .gdcet-field-move-up:after,
+.gdcet-meta-fields-list-wrapper .gdcet-group-meta-field:last-child .gdcet-field-move-down {
+    display: none;
+}
+
+.gdcet-field-block-settings .form-table > tbody > tr > th {
+    border-left: 10px solid #dddddd;
+    padding: 15px 15px 15px 10px !important;
+}
+
+.gdcet-field-block-settings .form-table > tbody > tr > td {
+    padding: 15px 15px 15px 10px !important;
+}
+
+.gdcet-field-block-settings .wp-color-result {
+    height: 24px;
+}
+
+.gdcet-meta-items-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.gdcet-meta-items-list td {
+    padding: 2px 0;
+    text-align: center;
+}
+
+.gdcet-meta-items-list td.gdcet-item-move,
+.gdcet-meta-items-list td.gdcet-item-default {
+    width: 24px;
+}
+
+.gdcet-meta-items-list td.gdcet-item-ctrl {
+    padding: 0 0 0 5px;
+    text-align: left;
+    width: 56px;
+}
+
+.gdcet-meta-items-list td.gdcet-item-data {
+    width: calc(100% - 96px);
+}
+
+.gdcet-meta-items-list td.gdcet-item-default input {
+    margin: 0 0 2px;
+}
+
+.gdcet-meta-items-list i.fa {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.gdcet-meta-items-list i.fa.fa-arrows {
+    cursor: ns-resize;
+}
+
+.gdcet-meta-items-list thead th {
+    padding: 2px 0;
+    text-align: center;
+}
+
+.gdcet-meta-items-list tfoot {
+    display: none;
+}
+
+.gdcet-meta-items-list .gdcet-meta-items-list-item:last-of-type i.fa-minus-circle {
+    display: none;
+}
+
+.gdcet-item-data div {
+    display: inline-block;
+    margin: 0 2px;
+    width: calc(50% - 4px);
+}
+
+.gdcet-item-data input {
+    margin: 0 2px;
+    width: calc(50% - 4px);
+}
+
+.gdcet-select-mode-plain .gdcet-item-data div:first-of-type,
+.gdcet-select-mode-plain .gdcet-item-data input:first-of-type {
+    display: none;
+}
+
+.gdcet-select-mode-plain .gdcet-item-data div:last-of-type,
+.gdcet-select-mode-plain .gdcet-item-data input:last-of-type {
+    width: 100%;
+}
+
+.gdcet-fontawesome-selector {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) inset;
+    max-height: 176px;
+    overflow: auto;
+    padding: 2px;
+}
+
+.gdcet-fontawesome-selector .d4p-fa-icon {
+    border: 2px solid #eee;
+    display: inline-block;
+    font-size: 18.6px;
+    margin: 2px;
+    padding: 2px;
+    cursor: pointer;
+    color: #666;
+}
+
+.gdcet-fontawesome-selector .d4p-fa-icon .fa-fw {
+    height: 1.2em;
+    vertical-align: baseline;
+}
+
+.gdcet-fontawesome-selector .d4p-fa-icon.d4p-fa-selected {
+    color: #b00;
+    border-color: #b00;
+}
+
+.gdcet-fontawesome-selector .d4p-fa-icon:hover {
+    color: #e00;
+    border-color: #222;
+}
+
+.gdcet-half-field {
+    vertical-align: top;
+    max-width: 50%
+}
+
+.gdcet-third-field {
+    vertical-align: top;
+    max-width: 33%
+}
+
+.gdcet-group-meta-field input[type="number"].widefat.gdcet-half-field {
+    max-width: 50%
+}
+
+.gdcet-group-meta-field input[type="number"].widefat.gdcet-third-field {
+    max-width: 33%
+}
+
+.gdcet-meta-fields-empty {
+    border: 2px dashed #bbb;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+
+.d4p-page-meta-boxes .subsubsub,
+.d4p-page-meta-fields .subsubsub {
+    margin: 0;
+}
+
+.gdcet-grid-box .column-icon,
+.gdcet-grid-field .column-icon {
+    width: 56px;
+    text-align: center;
+}
+
+.gdcet-grid-field .column-settings {
+    width: 128px;
+}
+
+.gdcet-grid-box td.column-icon i,
+.gdcet-grid-field td.column-icon i {
+    font-size: 28px;
+}
+
+.gdcet-grid-box .column-settings {
+    width: 128px;
+}
+
+.gdcet-php-code-block h4 {
+    font-size: 1.2em;
+    margin: 0 0 1em;
+    padding: 1em 0 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.gdcet-php-code-block h4:first-of-type {
+    padding: 0;
+    border-top: 0;
+}
+
+.gdcet-php-code-block .d4p-group-inner > pre {
+    margin-bottom: 2em;
+}
+
+.gdcet-php-code-block .d4p-group-inner > pre:last-of-type {
+    margin-bottom: .5em;
+}
+
+.gdcet-meta-items-wrapper-textarea textarea {
+    width: 100%;
+    height: 160px !important;
+}
+
+.gdcet-select-source-list a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 640px) {
+    .gdcet-group-meta-field input[type="number"].widefat.gdcet-half-field,
+    .gdcet-group-meta-field input[type="number"].widefat.gdcet-third-field,
+    .gdcet-half-field,
+    .gdcet-third-field {
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .gdcet-group-meta-field input[type="number"].widefat {
+        height: 40px;
+    }
+}
