@@ -77,7 +77,7 @@
                 </li>
             
                 <li<?php if ( is_post_type_archive( 'recipes' ) || is_single( 'recipes' ) ) { echo ' class="active"'; } ?>>
-                    <a href="/recipes"<?php _e('Recipes','foundationpress')?></a>
+                    <a href="/recipes"><?php _e('Recipes','foundationpress')?></a>
                 </li>
             </ul>
         </section>
