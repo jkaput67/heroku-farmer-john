@@ -17,7 +17,7 @@ if ( $the_query->have_posts() ) {?>
 			<div class="row">
 				<div class="column small-12 large-6 large-offset-5 relative-block">
 					<div class="tip_icon_bg absolute-block">
-						<h2>HEALTH TIP #<?php echo ($the_query->current_post+1); ?></h2>
+						<h2><?php _e('HEALTH TIP','foundationpress')?> #<?php echo ($the_query->current_post+1); ?></h2>
 						<div class="homepage-tip-divider"></div>
 						<p><?php the_field('tip_copy'); ?></p>
 					</div>

@@ -105,8 +105,8 @@ $args = array(
 $terms = get_terms($taxonomies, $args); ?>
  				<div class="right diet_filter" style="visibility: hidden;">
 					<select class="diet_dropdown" data-placeholder="FILTER">
-						<option value="none">FILTER</option>
-						<option value="none" selected="selected">SHOW ALL</option>
+						<option value="none"><?php _e('FILTER','foundationpress')?></option>
+						<option value="none" selected="selected"><?php _e('SHOW ALL','foundationpress')?></option>
 <?php foreach ($terms as $term) { ?>
 						<option value="<?php echo $term->slug; ?>"><?php echo $term->name; ?>&nbsp;&nbsp;&nbsp;</option>
 <?php } ?>
@@ -114,18 +114,18 @@ $terms = get_terms($taxonomies, $args); ?>
 				</div>
 			</div>
 			<div class="category_label_and_diet_filter_container hide-for-large-up text-center" style="visibility: hidden;">
-				<h2 class="products_archive_category_filter_label filter-all active">ALL FARMER JOHN PRODUCTS</h2>
-				<h2 class="products_archive_category_filter_label filter-all-natural">ALL NATURAL</h2>
-				<h2 class="products_archive_category_filter_label filter-bacon">BACON</h2>
-				<h2 class="products_archive_category_filter_label filter-breakfast-sausage">BREAKFAST SAUSAGE</h2>
-				<h2 class="products_archive_category_filter_label filter-ham">HAM</h2>
-				<h2 class="products_archive_category_filter_label filter-hot-dogs">HOT DOGS</h2>
-				<h2 class="products_archive_category_filter_label filter-lunch-meat">LUNCH MEAT</h2>
-				<h2 class="products_archive_category_filter_label filter-smoked-sausage">SMOKED SAUSAGE</h2>
+				<h2 class="products_archive_category_filter_label filter-all active"><?php _e('ALL FARMER JOHN PRODUCTS','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label filter-all-natural"><?php _e('ALL NATURAL','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label filter-bacon"><?php _e('BACON','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label filter-ham"><?php _e('HAM','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label filter-hot-dogs"><?php _e('HOT DOGS','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label filter-lunch-meat"><?php _e('LUNCH MEAT','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label filter-smoked-sausage"><?php _e('SMOKED SAUSAGE','foundationpress')?></h2>
  				<div class="diet_filter">
 					<select class="diet_dropdown" data-placeholder="FILTER">
-						<option value="none">FILTER</option>
-						<option value="none" selected="selected">SHOW ALL</option>
+						<option value="none"><?php _e('FILTER','foundationpress')?></option>
+						<option value="none" selected="selected"><?php _e('SHOW ALL','foundationpress')?></option>
 <?php foreach ($terms as $term) { ?>
 						<option value="<?php echo $term->slug; ?>"><?php echo $term->name; ?>&nbsp;&nbsp;&nbsp;</option>
 <?php } ?>

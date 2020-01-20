@@ -19,28 +19,25 @@
           </a>
         </li>
         <li>
-          <a href="/products">Products</a>
+          <a href="/products"><?php _e('Products','foundationpress')?></a>
         </li>
         <li class="has-submenu">
-          <a href="/our-story">About Us</a>
+          <a href="/our-story"><?php _e('About Us','foundationpress')?></a>
           <ul class="right-submenu">
-            <li class="back"><a href="#">Back</a></li>
-            <li><label>About Us</label></li>
-            <li><a href="/our-story">Our Story</a></li>
-            <li><a href="/food-safety">Food Safety</a></li>
-            <li><a href="/careers">Careers</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li class="back"><a href="#"><?php _e('Back','foundationpress')?></a></li>
+            <li><label><?php _e('About Us','foundationpress')?></label></li>
+            <li><a href="/our-story"><?php _e('Our Story','foundationpress')?></a></li>
+            <li><a href="/food-safety"><?php _e('Food Safety','foundationpress')?></a></li>
+            <li><a href="https://www.smithfieldfoods.com/careers"><?php _e('Careers','foundationpress')?></a></li>
+            <li><a href="/contact"><?php _e('Contact','foundationpress')?></a></li>
           </ul>
         </li>
         <li>
-          <a href="/recipes">Recipes</a>
-        </li>
-        <li>
-          <a href="/social">Social Media</a>
+          <a href="/recipes"><?php _e('Recipes','foundationpress')?></a>
         </li>
         <li>
         <li>
-          <a href="http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ" target="_blank">Where To Buy</a>
+          <a href="http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ" target="_blank"><?php _e('Where To Buy','foundationpress')?></a>
         </li>
         <li>
           <ul class="social text-center">

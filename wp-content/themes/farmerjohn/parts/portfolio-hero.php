@@ -42,15 +42,15 @@ a.bacon_party_button {
 
 	<div class="baconparty_hero hero_container relative-block text-center">
 		<div class="absolute-block hero-title">
-			<img class="headerimage-bp" src="http://www.farmerjohn.com/wp-content/uploads/2017/12/tbp-logo.png" alt="The Bacon Party">
+			<img class="headerimage-bp" src="/wp-content/uploads/2017/12/tbp-logo.png" alt="The Bacon Party">
 		</div>
 	</div>
 	
 	<div class="bacon-party-copy text-center">
-		<h2>WANT TO JOIN THE BACON PARTY?</h2>
-		<p class="text-center">No club card needed to get this party started. Get bacon-spiration every day on @thebaconparty IG, enter giveaways for free bacon and fresh pork plus get a chance to attend a live Bacon Party event!</p>
+		<h2><?php _e('WANT TO JOIN THE BACON PARTY?','foundationpress')?></h2>
+		<p class="text-center"><?php _e('No club card needed to get this party started. Get bacon-spiration every day on @thebaconparty IG, enter giveaways for free bacon and fresh pork plus get a chance to attend a live Bacon Party event!','foundationpress')?></p>
 		<div class="column small-12 text-center buttonrow">
-			<a href="https://www.instagram.com/thebaconparty" target="_blank" class="bacon_party_button">Join the Bacon Party!</a>
+			<a href="https://www.instagram.com/thebaconparty" target="_blank" class="bacon_party_button"><?php _e('Join the Bacon Party!','foundationpress')?></a>
 		</div>
 	</div>
 	<div class="clearfix"></div>

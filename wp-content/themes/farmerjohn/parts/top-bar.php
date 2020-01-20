@@ -34,14 +34,11 @@
         <section class="top-bar-section show-for-large-up">
             <!-- Right Nav Section -->
             <ul class="right" style="width: calc(50% - 117px); display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; justify-content: flex-start; -webkit-justify-content: flex-start;">
-                <li<?php if ( is_page('Where To Buy') ) { echo ' class="active"'; } ?>>
+                <li>
                     <a target="_blank" href="http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ"><?php _e('Where To Buy','foundationpress')?></a>
                 </li>
-                <!-- <li class="has-dropdown<?php //if ( is_page( array('Social Media', 'Partners' ) ) ) { echo ' active'; } ?>">
-                    <a href="/social">Social Media</a>
-                </li> -->
                 <li class="has-dropdown<?php if ( is_page( array('Our Story','Food Safety', 'Careers', 'Contact' ) ) ) { echo ' active'; } ?>">
-                    <a>About Us</a>
+                    <a><?php _e('About Us','foundationpress')?></a>
                     <ul class="dropdown">
                         <li class="first-child"><a href="/our-story"><?php _e('Our Story','foundationpress')?></a></li>
                         <li><a href="/food-safety"><?php _e('Food Safety','foundationpress')?></a></li>

@@ -5,8 +5,8 @@
 ?>
     <section class="homepage_recipes text-center hide-for-large-up">
       <div class="homepage_recipes_header">
-        <h2>BACON PARTY RECIPES</h2>
-        <h3 class="dark-grey-button">GET INSPIRED</h3>
+        <h2><?php _e('BACON PARTY RECIPES','foundationpress')?></h2>
+        <h3 class="dark-grey-button"><?php _e('GET INSPIRED','foundationpress')?></h3>
       </div>
 <?php
 $args = array(
@@ -59,7 +59,7 @@ if ( $the_query->have_posts() ) {
           <a href="<?php the_permalink(); ?>" class="recipes_color_overlay absolute-block <?php the_field('recipes_color_overlay'); ?>">
             <div>
               <h2 class="homepage_recipes_recipe_title"><?php the_title(); ?></h2>
-              <div class="see_recipe_cta">SEE RECIPE</div>
+              <div class="see_recipe_cta"><?php _e('SEE RECIPE','foundationpress')?></div>
             </div>
           </a>
         </div>
@@ -69,8 +69,8 @@ if ( $the_query->have_posts() ) {
       <div class="column large-4 homepage_recipes_recipe show-for-large-up homepage_recipes_center_recipe">
         <a href="/recipes" class="recipes_color_overlay absolute-block yellow">
           <div>
-            <h2>BACON PARTY RECIPES</h2>
-            <h3>GET INSPIRED</h3>
+            <h2><?php _e('BACON PARTY RECIPES','foundationpress')?></h2>
+            <h3><?php _e('GET INSPIRED','foundationpress')?></h3>
           </div>
         </a>
       </div>
@@ -89,7 +89,7 @@ if ( $the_query->have_posts() ) {
             <a href="<?php the_permalink(); ?>" class="recipes_color_overlay absolute-block <?php the_field('recipes_color_overlay'); ?>">
               <div>
                 <h2 class="homepage_recipes_recipe_title"><?php the_title(); ?></h2>
-                <div class="see_recipe_cta">SEE RECIPE</div>
+                <div class="see_recipe_cta"><?php _e('SEE RECIPE','foundationpress')?></div>
               </div>
             </a>
           </div>

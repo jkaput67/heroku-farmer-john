@@ -23,7 +23,7 @@
 			<a href="<?php the_permalink(); ?>" class="recipes_color_overlay absolute-block <?php if( get_field('recipes_color_overlay') ) { the_field('recipes_color_overlay'); } else { echo 'blue'; } ?>">
 				<div>
 					<h2 class="homepage_recipes_recipe_title"><?php the_title(); ?></h2>
-					<div class="see_recipe_cta">SEE RECIPE</div>
+					<div class="see_recipe_cta"><?php _e('SEE RECIPE','foundationpress')?></div>
 				</div>
 			</a>
 		</div>

@@ -10,19 +10,19 @@ $departments = array('professional','production','internships');
 <div class="careers_job_openings light-yellow-bg text-center">
 	<div class="row">
 		<div class="column small-8 large-4 small-offset-2 large-offset-4">
-			<h2>JOB OPENINGS</h2>
+			<h2><?php _e('JOB OPENINGS','foundationpress')?></h2>
 		</div>
 		<div class="column large-4 show-for-large-up">
-			<a target="_blank" href="https://www.linkedin.com/vsearch/j?page_num=1&locationType=Y&f_C=307634&trk=careers_promo_module_see_jobs" class="linkedin">View jobs on LinkedIn <i class="fa fa-linkedin-square"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/vsearch/j?page_num=1&locationType=Y&f_C=307634&trk=careers_promo_module_see_jobs" class="linkedin"><?php _e('View jobs on LinkedIn','foundationpress')?> <i class="fa fa-linkedin-square"></i></a>
 		</div>
 	</div>
 	<div class="row">
 		<div class="column small-12 large-4 text-center">
-			<h3>PROFESSIONAL</h3>
-			<p class="text-left">Advance your career by working behind-the-scenes at Farmer John in areas like management, marketing, sales and accounting. Oversee the day-to-day workflow of our operations in a nurturing office environment.</p>
+			<h3><?php _e('PROFESSIONAL','foundationpress')?></h3>
+			<p class="text-left"><?php _e('Advance your career by working behind-the-scenes at Farmer John in areas like management, marketing, sales and accounting. Oversee the day-to-day workflow of our operations in a nurturing office environment.','foundationpress')?></p>
 			<div class="row">
 				<div class="column small-12 large-4 text-center hide-for-large-up">
-					<a class="green-button green-bg" data-open-positions="<?php echo getJobOpeningsCount('professional'); ?>" data-target-department="professional">OPENINGS (<?php echo getJobOpeningsCount('professional'); ?>)</a>
+					<a class="green-button green-bg" data-open-positions="<?php echo getJobOpeningsCount('professional'); ?>" data-target-department="professional"><?php _e('OPENINGS','foundationpress')?> (<?php echo getJobOpeningsCount('professional'); ?>)</a>
 					<div class="green-triangle"></div>
 				</div>
 			</div>
@@ -33,7 +33,7 @@ $departments = array('professional','production','internships');
 					<div class="row">
 						<div class="column-small-12">
 							<div class="row">
-								<h2><?php echo strtoupper('professional'); ?> JOB OPENINGS</h2>
+								<h2><?php echo strtoupper('professional'); ?> <?php _e('JOB OPENINGS','foundationpress')?></h2>
 							</div>
 							<div class="row">
 
@@ -53,11 +53,11 @@ $departments = array('professional','production','internships');
 <?php } ?>
 		</div>
 		<div class="column small-12 large-4 text-center">
-			<h3>PRODUCTION</h3>
-			<p class="text-left">For those who wish to be directly involved in our process, put your skills to use on the ground floor of production in fields like product lab testing, quality control, distribution and mechanical engineering.</p>
+			<h3><?php _e('PRODUCTION','foundationpress')?></h3>
+			<p class="text-left"><?php _e('For those who wish to be directly involved in our process, put your skills to use on the ground floor of production in fields like product lab testing, quality control, distribution and mechanical engineering.','foundationpress')?></p>
 			<div class="row">
 				<div class="column small-12 large-4 text-center hide-for-large-up">
-					<a class="green-button green-bg" data-open-positions="<?php echo getJobOpeningsCount('production'); ?>" data-target-department="production">OPENINGS (<?php echo getJobOpeningsCount('production'); ?>)</a>
+					<a class="green-button green-bg" data-open-positions="<?php echo getJobOpeningsCount('production'); ?>" data-target-department="production"><?php _e('OPENINGS','foundationpress')?> (<?php echo getJobOpeningsCount('production'); ?>)</a>
 					<div class="green-triangle"></div>
 				</div>
 			</div>
@@ -68,7 +68,7 @@ $departments = array('professional','production','internships');
 					<div class="row">
 						<div class="column-small-12">
 							<div class="row">
-								<h2><?php echo strtoupper('production'); ?> JOB OPENINGS</h2>
+								<h2><?php echo strtoupper('production'); ?> <?php _e('JOB OPENINGS','foundationpress')?></h2>
 							</div>
 							<div class="row">
 
@@ -88,8 +88,8 @@ $departments = array('professional','production','internships');
 <?php } ?>
 		</div>
 		<div class="column small-12 large-4 text-center">
-			<h3>INTERNSHIPS</h3>
-			<p class="text-left">Internships are a great way to discover what it's like to work in your field of study. We offer opportunities for hands-on experience in fields such as sales and marketing, human resources, quality assurance and engineering.</p>
+			<h3><?php _e('INTERNSHIPS','foundationpress')?></h3>
+			<p class="text-left"><?php _e('Internships are a great way to discover what it\'s like to work in your field of study. We offer opportunities for hands-on experience in fields such as sales and marketing, human resources, quality assurance and engineering.','foundationpress')?></p>
 			<div class="row">
 				<div class="column small-12 large-4 text-center hide-for-large-up">
 					<a class="green-button green-bg" data-open-positions="<?php echo getJobOpeningsCount('internships'); ?>" data-target-department="internships">OPENINGS (<?php echo getJobOpeningsCount('internships'); ?>)</a>
@@ -103,7 +103,7 @@ $departments = array('professional','production','internships');
 					<div class="row">
 						<div class="column-small-12">
 							<div class="row">
-								<h2><?php echo strtoupper('internships'); ?> JOB OPENINGS</h2>
+								<h2><?php echo strtoupper('internships'); ?> <?php _e('JOB OPENINGS','foundationpress')?></h2>
 							</div>
 							<div class="row">
 
@@ -125,15 +125,15 @@ $departments = array('professional','production','internships');
 	</div>
 	<div class="row show-for-large-up">
 		<div class="column small-12 large-4 text-center">
-			<a class="green-button green-bg" data-open-positions="<?php echo getJobOpeningsCount('professional'); ?>" data-target-department="professional">OPENINGS (<?php echo getJobOpeningsCount('professional'); ?>)</a>
+			<a class="green-button green-bg" data-open-positions="<?php echo getJobOpeningsCount('professional'); ?>" data-target-department="professional"><?php _e('OPENINGS','foundationpress')?> (<?php echo getJobOpeningsCount('professional'); ?>)</a>
 			<div class="green-triangle"></div>
 		</div>
 		<div class="column small-12 large-4 text-center">
-			<a class="green-button green-bg" data-open-positions="<?php echo getJobOpeningsCount('production'); ?>" data-target-department="production">OPENINGS (<?php echo getJobOpeningsCount('production'); ?>)</a>
+			<a class="green-button green-bg" data-open-positions="<?php echo getJobOpeningsCount('production'); ?>" data-target-department="production"><?php _e('OPENINGS','foundationpress')?> (<?php echo getJobOpeningsCount('production'); ?>)</a>
 			<div class="green-triangle"></div>
 		</div>
 		<div class="column small-12 large-4 text-center">
-			<a class="green-button green-bg" data-open-positions="<?php echo getJobOpeningsCount('internships'); ?>" data-target-department="internships">OPENINGS (<?php echo getJobOpeningsCount('internships'); ?>)</a>
+			<a class="green-button green-bg" data-open-positions="<?php echo getJobOpeningsCount('internships'); ?>" data-target-department="internships"><?php _e('OPENINGS','foundationpress')?> (<?php echo getJobOpeningsCount('internships'); ?>)</a>
 			<div class="green-triangle"></div>
 		</div>
 	</div>
@@ -145,7 +145,7 @@ $departments = array('professional','production','internships');
 			<div class="row">
 				<div class="column-small-12">
 					<div class="row">
-						<h2><?php echo strtoupper($department); ?> JOB OPENINGS</h2>
+						<h2><?php echo strtoupper($department); ?> <?php _e('JOB OPENINGS','foundationpress')?></h2>
 					</div>
 					<div class="row text-center">
 <?php
@@ -179,11 +179,11 @@ $departments = array('professional','production','internships');
 			<div class="row">
 				<div class="column-small-12">
 					<div class="row">
-						<h2>NO POSITIONS AVAILABLE</h2>
+						<h2><?php _e('NO POSITIONS AVAILABLE','foundationpress')?></h2>
 					</div>
 					<div class="row text-center">
-						<p>No positions are currently available. Please check back soon.</p>
-						<p>You can send your resume to <a class="careers-email-link" href="mailto:careers@farmerjohn.com">careers@farmerjohn.com</a> and we will keep it on file for future consideration.</p>
+						<p><?php _e('No positions are currently available. Please check back soon.','foundationpress')?></p>
+						<p><?php _e('You can send your resume to','foundationpress')?> <a class="careers-email-link" href="mailto:careers@farmerjohn.com">careers@farmerjohn.com</a> <?php _e('and we will keep it on file for future consideration.','foundationpress')?></p>
 					</div>
 				</div>
 			</div>

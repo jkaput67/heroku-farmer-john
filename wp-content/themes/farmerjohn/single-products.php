@@ -54,7 +54,7 @@ endif; ?>
 	if( get_field('cooking_suggestion') ){ ?>
 				<div class="cooking_suggestion">
 					<div class="cooking_suggestion_header">
-						<div class="cooking_suggestion_heading">COOKING SUGGESTION</div>
+						<div class="cooking_suggestion_heading"><?php _e('COOKING SUGGESTION','foundationpress')?></div>
 						<div class="cooking_suggestion_content"><?php the_field('cooking_suggestion'); ?></div>
 					</div>
 				</div>
@@ -76,7 +76,7 @@ endif; ?>
 	<div class="clearfix"></div>
 	<div class="try_these_recipes row text-center" style="margin-top:50px;">
 		<div class="try_these_recipes_black_line"></div>
-		<h3>TRY THESE RECIPES</h3>
+		<h3><?php _e('TRY THESE RECIPES','foundationpress')?></h3>
 	</div>
 	<?php get_template_part( 'parts/try', 'these-recipes' ); ?>
 </div>
@@ -101,7 +101,7 @@ endif; ?>
 			<div class="cooking_suggestion">
 				<div class="cooking_suggestion_header">
 					<div class="cooking_suggestion_green_divider"></div>
-					<div class="cooking_suggestion_heading">COOKING SUGGESTION</div>
+					<div class="cooking_suggestion_heading"><?php _e('COOKING SUGGESTION','foundationpress')?></div>
 					<div class="cooking_suggestion_content"><?php the_field('cooking_suggestion'); ?></div>
 				</div>
 			</div>

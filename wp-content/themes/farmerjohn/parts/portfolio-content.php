@@ -26,7 +26,7 @@
 </style>
 	
 	<div class="baconpartysingleheader text-center">
-		<h2>CHECK OUT OUR PAST BACON PARTIES!</h2>
+		<h2><?php _e('CHECK OUT OUR PAST BACON PARTIES!','foundationpress')?></h2>
 	</div>
 	
 	<div class="row">

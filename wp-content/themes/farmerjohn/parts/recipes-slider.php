@@ -78,7 +78,7 @@ if( get_field('recipe_title_line_1') != '' && get_field('recipe_title_line_1') !
 }
 ?>
 							</h2>
-							<div class="see_recipe_cta left" style="display:block;color:#fff;border-color:#fff;">SEE RECIPE</div>
+							<div class="see_recipe_cta left" style="display:block;color:#fff;border-color:#fff;"><?php _e('SEE RECIPE','foundationpress')?></div>
 						</div>
 					</div>
 				</a>

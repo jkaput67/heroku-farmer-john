@@ -39,31 +39,31 @@ if( !empty($recipe_image) ) {
 				<div class="recipes_single_recipe_social row">
 
 					<div class="column small-4 recipe_share text-center relative-block">
-						<div class="share_icon"></div>SHARE
+						<div class="share_icon"></div><?php _e('SHARE','foundationpress')?>
 						<div class="absolute-block recipe_triangle"></div>
 						<div class="absolute-block recipe_sharing">
 							<div class="row">
 								<a class="column small-2 small-offset-1 addthis_button_facebook addthis_button_preferred_2 at300b">
 									<i class="fa fa-facebook"></i>
-									<div class="social_sharing_label">SHARE</div>
+									<div class="social_sharing_label"><?php _e('SHARE','foundationpress')?></div>
 								</a>
 								<a class="column small-2 addthis_button_twitter addthis_button_preferred_3 at300b">
 									<i class="fa fa-twitter"></i>
-									<div class="social_sharing_label">TWEET</div>
+									<div class="social_sharing_label"><?php _e('TWEET','foundationpress')?></div>
 								</a>
 								<div class="column small-2" onclick="javascript:return addthis_sendto('pinterest_share');">
 									<i class="fa fa-pinterest-p"></i>
-									<div class="social_sharing_label">PIN</div>
+									<div class="social_sharing_label"><?php _e('PIN','foundationpress')?></div>
 								</div>
 								<div class="column small-2">
 									<a class="column small-2 addthis_button_mail addthis_button_preferred_3 at300b">
 										<i class="fa fa-envelope"></i>
-										<div class="social_sharing_label">EMAIL</div>
+										<div class="social_sharing_label"><?php _e('EMAIL','foundationpress')?></div>
 									</a>
 								</div>
 								<div class="column small-2 end" onclick="window.print(); return false;">
 									<i class="fa fa-print"></i>
-									<div class="social_sharing_label">PRINT</div>
+									<div class="social_sharing_label"><?php _e('PRINT','foundationpress')?></div>
 									<?php if(function_exists('pf_show_link')){echo pf_show_link();} ?>
 								</div>
 							</div>
@@ -76,23 +76,23 @@ if( !empty($recipe_image) ) {
 	<?php } ?>
 			<div class="recipes_single_recipe_meta row">
 				<div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-					<div class="meta_label">SERVINGS</div>
+					<div class="meta_label"><?php _e('SERVINGS','foundationpress')?></div>
 					<div class="meta_value"><?php the_field('servings'); ?></div>
 				</div>
 				<div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-					<div class="meta_label">PREP TIME</div>
+					<div class="meta_label"><?php _e('PREP TIME','foundationpress')?></div>
 					<div class="hours_and_minutes_container"><?php writeHoursAndMinutes(get_field('prep_time')); ?></div>
 				</div>
 				<div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-					<div class="meta_label">COOK TIME</div>
+					<div class="meta_label"><?php _e('COOK TIME','foundationpress')?></div>
 					<div class="hours_and_minutes_container"><?php writeHoursAndMinutes(get_field('cook_time')); ?></div>
 				</div>
 				<div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-					<div class="meta_label">TOTAL TIME</div>
+					<div class="meta_label"><?php _e('TOTAL TIME','foundationpress')?></div>
 					<div class="hours_and_minutes_container"><?php writeHoursAndMinutes(get_field('total_time')); ?></div>
 				</div>
 				<div class="column recipes_single_recipe_meta_item text-center end" data-equalizer-watch>
-					<div class="meta_label">DIFFICULTY</div>
+					<div class="meta_label"><?php _e('DIFFICULTY','foundationpress')?></div>
 					<div class="meta_value difficulty <?php the_field('difficulty'); ?>"></div>
 					<div class="meta_label_bottom difficulty_label"><?php the_field('difficulty'); ?></div>
 				</div>
@@ -101,7 +101,7 @@ if( !empty($recipe_image) ) {
 		</div>
 		<div class="recipes_single_recipe_video">
 			<div class="small-10 small-offset-1">
-				<h3 class="section_label">VIDEO RECIPE:</h3>
+				<h3 class="section_label"><?php _e('VIDEO RECIPE','foundationpress')?>:</h3>
 				<div class="section_label_green_block"></div>
 			</div>
 			<div class="small-12">
@@ -115,19 +115,19 @@ if( !empty($recipe_image) ) {
 		<div class="small-10 small-offset-1" role="main">
 <?php } ?>
 			<div class="recipes_single_ingredients_container">
-				<h3 class="section_label">INGREDIENTS:</h3>
+				<h3 class="section_label"><?php _e('INGREDIENTS','foundationpress')?>:</h3>
 				<div class="section_label_green_block"></div>
 				<div class="recipes_single_ingredients"><?php the_field('ingredients'); ?></div>
 			</div>
 			<div class="recipes_single_directions_container">
-				<h3 class="section_label">DIRECTIONS:</h3>
+				<h3 class="section_label"><?php _e('DIRECTIONS','foundationpress')?>:</h3>
 				<div class="section_label_green_block"></div>
 				<div class="recipes_single_ingredients"><?php the_field('directions'); ?></div>
 			</div>
 <?php if( get_field('cooking_tip') ){ ?>
 			<div class="cooking_tip">
 				<div class="cooking_tip_header">
-					<div class="cooking_tip_heading">COOKING TIP</div>
+					<div class="cooking_tip_heading"><?php _e('COOKING TIP','foundationpress')?></div>
 					<div class="cooking_tip_content"><?php the_field('cooking_tip'); ?></div>
 				</div>
 			</div>
@@ -163,23 +163,23 @@ if( !empty($recipe_image) ) {
 				<div class="column large-12">
 					<div class="recipes_single_recipe_meta row" data-equalizer>
 						<div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-							<div class="meta_label">SERVINGS</div>
+							<div class="meta_label"><?php _e('SERVINGS','foundationpress')?></div>
 							<div class="meta_value"><?php the_field('servings'); ?></div>
 						</div>
 						<div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-							<div class="meta_label">PREP TIME</div>
+							<div class="meta_label"><?php _e('PREP TIME','foundationpress')?></div>
 							<div class="hours_and_minutes_container"><?php writeHoursAndMinutes(get_field('prep_time')); ?></div>
 						</div>
 						<div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-							<div class="meta_label">COOK TIME</div>
+							<div class="meta_label"><?php _e('COOK TIME','foundationpress')?></div>
 							<div class="hours_and_minutes_container"><?php writeHoursAndMinutes(get_field('cook_time')); ?></div>
 						</div>
 						<div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-							<div class="meta_label">TOTAL TIME</div>
+							<div class="meta_label"><?php _e('TOTAL TIME','foundationpress')?></div>
 							<div class="hours_and_minutes_container"><?php writeHoursAndMinutes(get_field('total_time')); ?></div>
 						</div>
 						<div class="column recipes_single_recipe_meta_item text-center end" data-equalizer-watch>
-							<div class="meta_label">DIFFICULTY</div>
+							<div class="meta_label"><?php _e('DIFFICULTY','foundationpress')?></div>
 							<div class="meta_value difficulty <?php the_field('difficulty'); ?>"></div>
 							<div class="meta_label_bottom difficulty_label"><?php the_field('difficulty'); ?></div>
 						</div>
@@ -187,12 +187,12 @@ if( !empty($recipe_image) ) {
 				</div>
 			</div>
 			<div class="recipes_single_ingredients_container">
-				<h3 class="section_label">INGREDIENTS:</h3>
+				<h3 class="section_label"><?php _e('INGREDIENTS','foundationpress')?>:</h3>
 				<div class="section_label_green_block"></div>
 				<div class="recipes_single_ingredients"><?php the_field('ingredients'); ?></div>
 			</div>
 			<div class="recipes_single_directions_container">
-				<h3 class="section_label">DIRECTIONS:</h3>
+				<h3 class="section_label"><?php _e('DIRECTIONS','foundationpress')?>:</h3>
 				<div class="section_label_green_block"></div>
 				<div class="recipes_single_ingredients"><?php the_field('directions'); ?></div>
 			</div>
@@ -215,23 +215,23 @@ if( !empty($recipe_image) ) {
 				<div class="row">
 					<a class="column small-2 small-offset-1 addthis_button_facebook addthis_button_preferred_2 at300b">
 						<i class="fa fa-facebook"></i>
-						<div class="social_sharing_label">SHARE</div>
+						<div class="social_sharing_label"><?php _e('SHARE','foundationpress')?></div>
 					</a>
 					<a class="column small-2 addthis_button_twitter addthis_button_preferred_3 at300b">
 						<i class="fa fa-twitter"></i>
-						<div class="social_sharing_label">TWEET</div>
+						<div class="social_sharing_label"><?php _e('TWEET','foundationpress')?></div>
 					</a>
 					<a class="column small-2" onclick="javascript:return addthis_sendto('pinterest_share');">
 						<i class="fa fa-pinterest-p"></i>
-						<div class="social_sharing_label">PIN</div>
+						<div class="social_sharing_label"><?php _e('PIN','foundationpress')?></div>
 					</a>
 					<a class="column small-2 addthis_button_email addthis_button_preferred_3 at300b">
 						<i class="fa fa-envelope"></i>
-						<div class="social_sharing_label">EMAIL</div>
+						<div class="social_sharing_label"><?php _e('EMAIL','foundationpress')?></div>
 					</a>
 					<a class="column small-2 end" onclick="window.print(); return false;">
 						<i class="fa fa-print"></i>
-						<div class="social_sharing_label">PRINT</div>
+						<div class="social_sharing_label"><?php _e('PRINT','foundationpress')?></div>
 						<?php if(function_exists('pf_show_link')){echo pf_show_link();} ?>
 					</a>
 				</div>
@@ -239,7 +239,7 @@ if( !empty($recipe_image) ) {
             <div id="myxx_lp_tgt" class="myxx-desktop"></div>
 <?php if( get_field('video_recipe_video_url') ){ ?>
 			<div class="recipes_single_recipe_video">
-				<h3 class="section_label">VIDEO RECIPE:</h3>
+				<h3 class="section_label"><?php _e('VIDEO RECIPE','foundationpress')?>:</h3>
 				<div class="section_label_green_block"></div>
 				<div class="videoWrapper">
 <?php			$recipe_video_youtube_url = get_field('video_recipe_video_url');
@@ -251,7 +251,7 @@ if( !empty($recipe_image) ) {
 <?php if( get_field('cooking_tip') ){ ?>
 			<div class="cooking_tip">
 				<div class="cooking_tip_header">
-					<div class="cooking_tip_heading">COOKING TIP</div>
+					<div class="cooking_tip_heading"><?php _e('COOKING TIP','foundationpress')?></div>
 					<div class="cooking_tip_content"><?php the_field('cooking_tip'); ?></div>
 				</div>
 			</div>
@@ -281,41 +281,41 @@ if( !empty($recipe_image) ) {
         </div>
         <div class="recipes_single_recipe_meta row">
             <div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-                <div class="meta_label">SERVINGS</div>
+                <div class="meta_label"><?php _e('SERVINGS','foundationpress')?></div>
                 <div class="meta_value"><?php the_field('servings'); ?></div>
             </div>
             <div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-                <div class="meta_label">PREP TIME</div>
+                <div class="meta_label"><?php _e('PREP TIME','foundationpress')?></div>
                 <div class="hours_and_minutes_container"><?php writeHoursAndMinutes(get_field('prep_time')); ?></div>
             </div>
             <div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-                <div class="meta_label">COOK TIME</div>
+                <div class="meta_label"><?php _e('COOK TIME','foundationpress')?></div>
                 <div class="hours_and_minutes_container"><?php writeHoursAndMinutes(get_field('cook_time')); ?></div>
             </div>
             <div class="column recipes_single_recipe_meta_item text-center" data-equalizer-watch>
-                <div class="meta_label">TOTAL TIME</div>
+                <div class="meta_label"><?php _e('TOTAL TIME','foundationpress')?></div>
                 <div class="hours_and_minutes_container"><?php writeHoursAndMinutes(get_field('total_time')); ?></div>
             </div>
             <div class="column recipes_single_recipe_meta_item text-center end" data-equalizer-watch>
-                <div class="meta_label">DIFFICULTY</div>
+                <div class="meta_label"><?php _e('DIFFICULTY','foundationpress')?></div>
                 <div class="meta_value difficulty <?php the_field('difficulty'); ?>"></div>
                 <div class="meta_label_bottom difficulty_label"><?php the_field('difficulty'); ?></div>
             </div>
         </div>
         <div class="recipes_single_ingredients_container">
-            <h3 class="section_label">INGREDIENTS:</h3>
+            <h3 class="section_label"><?php _e('INGREDIENTS','foundationpress')?>:</h3>
             <div class="section_label_light_brown_block"></div>
             <div class="recipes_single_ingredients"><?php the_field('ingredients'); ?></div>
         </div>
         <div class="recipes_single_directions_container">
-            <h3 class="section_label">DIRECTIONS:</h3>
+            <h3 class="section_label"><?php _e('DIRECTIONS','foundationpress')?>:</h3>
             <div class="section_label_light_brown_block"></div>
             <div class="recipes_single_ingredients"><?php the_field('directions'); ?></div>
         </div>
 
         <div class="pairing_tip">
             <div class="pairing_tip_header">
-                <h3 class="section_label">PAIRING TIP</h3>
+                <h3 class="section_label"><?php _e('PAIRING TIP','foundationpress')?></h3>
                 <div class="section_label_light_brown_block"></div>
                 <div class="pairing_tip_content"><?php the_field('cooking_tip'); ?></div>
             </div>

@@ -6,8 +6,8 @@
 <div class="row">
 	<section class="homepage_recipes text-center hide-for-large-up">
 		<div class="homepage_recipes_header">
-			<h2>RECIPES</h2>
-			<h3>GET INSPIRED</h3>
+			<h2><?php _e('RECIPES','foundationpress')?></h2>
+			<h3><?php _e('GET INSPIRED','foundationpress')?></h3>
 		</div>
 <?php
 
@@ -40,8 +40,8 @@ if ( $the_query->have_posts() ) {
 		<div class="column large-4 homepage_recipes_recipe submit_a_recipe" style="background-image:url(<?php echo $recipe_image_url; ?>); display: none;">
 			<a class="recipes_color_overlay absolute-block opaque-green" data-reveal-id="submit-a-recipe">
 				<div>
-					<h2 class="homepage_recipes_recipe_title">SUBMIT A<br>RECIPE!</h2>
-					<div class="see_recipe_cta">CLICK HERE</div>
+					<h2 class="homepage_recipes_recipe_title"><?php _e('SUBMIT A<br>RECIPE!','foundationpress')?></h2>
+					<div class="see_recipe_cta"><?php _e('CLICK HERE','foundationpress')?></div>
 				</div>
 			</a>
 		</div>

@@ -1,7 +1,7 @@
 <div class="recipes_archive_filters hide-for-large-up">
 	<div class="row">
 		<div class="column small-8">
-			<span class="sort_by">SORT BY:</span>
+			<span class="sort_by"><?php _e('SORT BY','foundationpress')?>:</span>
 		</div>
 		<div class="column small-4 relative-block">
 			<input type="text" class="recipes_archive_search search light-grey-bg" placeholder="SEARCH">
@@ -18,8 +18,8 @@ $args = array(
     'taxonomy'          => 'recipe_categories',
 );
 $terms = get_categories($args); ?>
-				<option value="all" selected="selected">PRODUCT</option>
-				<option value="all">ALL PRODUCTS</option>
+				<option value="all" selected="selected"><?php _e('PRODUCT','foundationpress')?></option>
+				<option value="all"><?php _e('ALL PRODUCTS','foundationpress')?></option>
 <?php foreach ($terms as $term) {
 	if( $term->slug != "featured-on-homepage" ){ ?>
 				<option value="<?php echo $term->slug; ?>"><?php echo $term->name; ?></option>
@@ -29,13 +29,13 @@ $terms = get_categories($args); ?>
 		</div>
 		<div class="column small-4">
 			<select class="filter-dropdown light-grey-bg filter-meal" data-placeholder="MEAL">
-				<option value="all" selected="selected">MEAL</option>
-				<option value="all">ALL MEALS</option>
-				<option value="meals-breakfast">Breakfast</option>
-				<option value="meals-brunch">Brunch</option>
-				<option value="meals-lunch">Lunch</option>
-				<option value="meals-appetizer">Appetizer</option>
-				<option value="meals-dinner">Dinner</option>
+				<option value="all" selected="selected"><?php _e('MEAL','foundationpress')?></option>
+				<option value="all"><?php _e('ALL MEALS','foundationpress')?></option>
+				<option value="meals-breakfast"><?php _e('Breakfast','foundationpress')?></option>
+				<option value="meals-brunch"><?php _e('Brunch','foundationpress')?></option>
+				<option value="meals-lunch"><?php _e('Lunch','foundationpress')?></option>
+				<option value="meals-appetizer"><?php _e('Appetizer','foundationpress')?></option>
+				<option value="meals-dinner"><?php _e('Dinner','foundationpress')?></option>
 			</select>
 		</div>
 		<div class="column small-4">
@@ -54,7 +54,7 @@ $terms = get_categories($args); ?>
 <div class="recipes_archive_filters show-for-large-up">
 	<div class="row">
 		<div class="column small-12">
-			<span class="sort_by">SORT BY:</span>
+			<span class="sort_by"><?php _e('SORT BY','foundationpress')?>:</span>
 			<select class="filter-dropdown light-grey-bg filter-product" data-placeholder="PRODUCT" placeholder="PRODUCT" data-filter-target="category-">
 <?php
 $args = array(
@@ -63,8 +63,8 @@ $args = array(
     'taxonomy'          => 'recipe_categories',
 );
 $terms = get_categories($args); ?>
-				<option value="all" selected="selected">PRODUCT</option>
-				<option value="all">ALL PRODUCTS</option>
+				<option value="all" selected="selected"><?php _e('PRODUCT','foundationpress')?></option>
+				<option value="all"><?php _e('ALL PRODUCTS','foundationpress')?></option>
 <?php foreach ($terms as $term) {
 	if( $term->slug != "featured-on-homepage" ){ ?>
 				<option value="<?php echo $term->slug; ?>"><?php echo $term->name; ?></option>
@@ -72,13 +72,13 @@ $terms = get_categories($args); ?>
 } ?>
 			</select>
 			<select class="filter-dropdown light-grey-bg filter-meal" data-placeholder="MEAL" placeholder="MEAL">
-				<option value="all" selected="selected">MEAL</option>
-				<option value="all">ALL MEALS</option>
-				<option value="meals-breakfast">Breakfast</option>
-				<option value="meals-brunch">Brunch</option>
-				<option value="meals-lunch">Lunch</option>
-				<option value="meals-appetizer">Appetizer</option>
-				<option value="meals-dinner">Dinner</option>
+				<option value="all" selected="selected"><?php _e('MEAL','foundationpress')?></option>
+				<option value="all"><?php _e('ALL MEALS','foundationpress')?></option>
+				<option value="meals-breakfast"><?php _e('Breakfast','foundationpress')?></option>
+				<option value="meals-brunch"><?php _e('Brunch','foundationpress')?></option>
+				<option value="meals-lunch"><?php _e('Lunch','foundationpress')?></option>
+				<option value="meals-appetizer"><?php _e('Appetizer','foundationpress')?></option>
+				<option value="meals-dinner"><?php _e('Dinner','foundationpress')?></option>
 			</select>
 
 			<div class="relative-block right">

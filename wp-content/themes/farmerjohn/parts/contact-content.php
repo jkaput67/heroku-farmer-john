@@ -27,24 +27,24 @@
 
 <div class="page-contact">
 	<div class="row text-center">
-		<h1 class="title">CONTACT INFORMATION</h1>
+		<h1 class="title"><?php _e('CONTACT INFORMATION','foundationpress')?></h1>
 	</div>
 	<div class="row">
 		<div class="column small-12 large-6 text-center">
 			<div class="floating-centered-inline-block text-left">
-				<h4>Mailing Address</h4>
+				<h4><?php _e('Mailing Address','foundationpress')?></h4>
 				<p class="contact_address">
 					Farmer John<br>
 					Consumer Response<br>
 					3049 East Vernon Avenue<br>
 					Los Angeles, CA 90058
 				</p>
-				<p>Phone: 800-846-7635<br>
-					<small>Monday-Friday, 8:00 a.m. to 4:00 p.m. CST,<br>
-					excluding holidays. Summer hours may vary.</small><br><br>
+				<p><?php _e('Phone: 800-846-7635','foundationpress')?><br>
+					<small><?php _e('Monday-Friday, 8:00 a.m. to 4:00 p.m. CST','foundationpress')?>,<br>
+					<?php _e('excluding holidays. Summer hours may vary.','foundationpress')?></small><br><br>
 				</p>
 				<div class="contact_social">
-					<h4>KEEP IN TOUCH!</h4>
+					<h4><?php _e('KEEP IN TOUCH!','foundationpress')?></h4>
 			        <div class="footer-social">
 				        <a target="_blank" href="http://facebook.com/farmerjohn">
 				            <i class="fa fa-facebook"></i>
@@ -83,15 +83,15 @@
 	?>
 				<div class="hidden-form-text">
 					<div class="hidden-form-text-item first-hidden-form-text">
-						<h3>How may we contact you?</h3>
-						<p>In order to receive correspondence back from Clougherty Packing, LLC, you must complete at least one of the following options. Lease note - if you are requesting information on where to purchase a specific product, please include your address and phone number. Our "where to purchase" requests are handled by the sales force located near your city.</p>
+						<h3><?php _e('How may we contact you?','foundationpress')?></h3>
+						<p><?php _e('In order to receive correspondence back from Clougherty Packing, LLC, you must complete at least one of the following options. Lease note - if you are requesting information on where to purchase a specific product, please include your address and phone number. Our "where to purchase" requests are handled by the sales force located near your city.','foundationpress')?></p>
 					</div>
 					<div class="hidden-form-text-item second-hidden-form-text">
-						<p>If you are inquiring about a specific product, please indicate the product information below.</p>
+						<p><?php _e('If you are inquiring about a specific product, please indicate the product information below.','foundationpress')?></p>
 					</div>
 					<div class="hidden-form-text-item third-hidden-form-text">
-						<h3>Suggestion & Idea Submission Policy:</h3>
-						<p>You understand and agree that Clougherty Packing, LLC has many resources both internal and external, which may have developed or may develop information identical or similar to that disclosed to us here. Information here is not submitted in confidence and Clougherty Packing, LLC assumes no obligation by considering it. All comments, offers, suggestions, ideas, recipes, concepts, artwork, or other information ("Submissions") disclosed to us using this site or in response to solicitations on this site are the property of Clougherty Packing, LLC, including its business units, divisions and wholly-owned subsidiaries. Without limitation, Cloughterty PAcking, LLC shall exclusively own all rights, known or hereafter existing, to the Submissions and shall be entitled to unrestricted use of the same for any purpose whatsoever, commercial or otherwise, without compensation to the submitter. Clougherty Packing, LLS will consier Submissions only on these terms.<br><br>Please click the submit button below to indicate your agreement with these terms and submit your information.</p>
+						<h3><?php _e('Suggestion & Idea Submission Policy','foundationpress')?>:</h3>
+						<p><?php _e('You understand and agree that Clougherty Packing, LLC has many resources both internal and external, which may have developed or may develop information identical or similar to that disclosed to us here. Information here is not submitted in confidence and Clougherty Packing, LLC assumes no obligation by considering it. All comments, offers, suggestions, ideas, recipes, concepts, artwork, or other information ("Submissions") disclosed to us using this site or in response to solicitations on this site are the property of Clougherty Packing, LLC, including its business units, divisions and wholly-owned subsidiaries. Without limitation, Cloughterty PAcking, LLC shall exclusively own all rights, known or hereafter existing, to the Submissions and shall be entitled to unrestricted use of the same for any purpose whatsoever, commercial or otherwise, without compensation to the submitter. Clougherty Packing, LLS will consier Submissions only on these terms.<br><br>Please click the submit button below to indicate your agreement with these terms and submit your information.','foundationpress')?></p>
 					</div>
 				</div>
 			</div>

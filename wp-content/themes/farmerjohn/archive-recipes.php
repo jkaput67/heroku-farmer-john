@@ -46,7 +46,7 @@ get_template_part( 'parts/recipes', 'archive-filters' );
 <?php
 get_template_part( 'parts/recipes', 'content' ); ?>
 <div class="text-center load-more-button-container">
-	<a class="load-more-button green-button green-bg">LOAD MORE</a>
+	<a class="load-more-button green-button green-bg"><?php _e('LOAD MORE','foundationpress')?></a>
 </div>
 <?php
 get_template_part( 'parts/tips' );

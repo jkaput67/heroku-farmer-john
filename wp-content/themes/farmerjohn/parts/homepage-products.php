@@ -4,7 +4,7 @@
  */
 ?>
 	<section class="homepage_products light-yellow-bg text-center">
-		<h2>OUR PRODUCTS</h2>
+		<h2><?php _e('OUR PRODUCTS','foundationpress')?></h2>
 		<div class="row text-center">
 			<a href="/product_category/bacon" class="homepage-product-column">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/products/baconblack.png">
