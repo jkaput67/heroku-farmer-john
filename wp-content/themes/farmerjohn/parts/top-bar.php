@@ -40,10 +40,10 @@
                 <li class="has-dropdown<?php if ( is_page( array('Our Story','Food Safety', 'Careers', 'Contact' ) ) ) { echo ' active'; } ?>">
                     <a><?php _e('About Us','foundationpress')?></a>
                     <ul class="dropdown">
-                        <li class="first-child"><a href="/our-story"><?php _e('Our Story','foundationpress')?></a></li>
-                        <li><a href="/food-safety"><?php _e('Food Safety','foundationpress')?></a></li>
+                        <li class="first-child"><a href="<?php echo get_page_link(414)?>"><?php _e('Our Story','foundationpress')?></a></li>
+                        <li><a href="<?php echo get_page_link(368)?>"><?php _e('Food Safety','foundationpress')?></a></li>
                         <li><a href="https://www.smithfieldfoods.com/careers" target="_blank"><?php _e('Careers','foundationpress')?></a></li>
-                        <li><a href="/contact"><?php _e('Contact','foundationpress')?></a></li>
+                        <li><a href="<?php echo get_page_link(405)?>"><?php _e('Contact','foundationpress')?></a></li>
                     </ul>
                 </li>
                 <li>
@@ -70,7 +70,11 @@
             <!-- Left Nav Section -->
             <ul class="left" style="width: calc(50% - 117px); display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; justify-content: flex-end; -webkit-justify-content: flex-end;">
                 <li<?php if ( is_post_type_archive( 'products' ) || is_singular( 'products' ) ) { echo ' class="active"'; } ?>>
-                    <a href="/products"><?php _e('Products','foundationpress')?></a>
+                    <?php if ( get_locale() == 'es_MX' ):?>
+                        <a href="/productos"><?php _e('Products','foundationpress')?></a>
+                    <?php else: ?>
+                        <a href="/products"><?php _e('Products','foundationpress')?></a>
+                    <?php endif ?>
                 </li>
             
                 <li<?php if ( is_post_type_archive( 'recipes' ) || is_single( 'recipes' ) ) { echo ' class="active"'; } ?>>
