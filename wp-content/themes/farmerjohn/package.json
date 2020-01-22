@@ -3,7 +3,16 @@
   "title": "FoundationPress",
   "version": "1.3.0",
   "description": "FoundationPress is a WordPress starter theme based on Foundation 5 by Zurb",
-  "keywords": [ "FoundationPress", "WordPress", "starter theme", "Foundation", "semantic", "mobile first", "customizable", "responsive" ],
+  "keywords": [
+    "FoundationPress",
+    "WordPress",
+    "starter theme",
+    "Foundation",
+    "semantic",
+    "mobile first",
+    "customizable",
+    "responsive"
+  ],
   "homepage": "http://foundationpress.olefredrik.com/",
   "bugs": "https://github.com/olefredrik/FoundationPress/issues",
   "license": "MIT",
@@ -22,7 +31,7 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-sass": "1.0.0",
     "grunt-string-replace": "~0.2.7",
-    "node-sass": "3.2.0",
+    "node-sass": "4.12.0",
     "time-grunt": "^1.1.0"
   },
   "scripts": {

@@ -116,3 +116,70 @@ body.single-products .homepage_recipes_header, body.single-products .homepage_re
 		display:none !important;
 	}
 }
+
+table.nutrition-table {
+	width: 100%;
+	background-color: #f2f2f2;
+	h1, h2 {
+		font-family: 'DIN OT Bold';
+		font-size: 18px;
+		color: #000;
+		border-bottom: 3px solid #000;
+		@media screen and (min-width:$medium-breakpoint) and (max-width:1199px) {
+			font-size: 13px;
+		}
+	}
+	h2 {
+		text-align: right;
+		font-size: 17px;
+		color: #808080;
+		padding-top: 10px;
+		@media screen and (min-width:$medium-breakpoint) and (max-width:1199px) {
+			font-size: 13px;
+		}
+	}
+	tr {
+		background-color: #f2f2f2;
+	}
+	tr.tr-dark {
+		background-color: #e7e7e7;
+	}
+	td.td-label, td.td-value {
+		padding: 3px 16px;
+		@media screen and (max-width:$medium-breakpoint) {
+			padding: 8px 16px;
+			line-height: 1.5rem;
+		}
+		font-family: 'DIN OT Bold';
+		font-size: 17px;
+		color: #808080;
+		text-transform: uppercase;
+		@media screen and (min-width:$medium-breakpoint) and (max-width:1199px) {
+			font-size: 12px;
+		}
+
+		span.dv-label {
+			font-size: 12px;
+			font-family: 'DIN OT Regular';
+			font-weight: 300;
+			@media screen and (min-width:$medium-breakpoint) and (max-width:1199px) {
+				font-size: 8px;
+			}
+		}
+	}
+	td.td-value {
+		text-align: right;
+	}
+	td.no-upper {
+		text-transform: none;
+	}
+	td.sub-label {
+		font-family: 'DIN OT Regular';
+		font-weight: 300;
+		padding-left: 30px;
+	}
+	td.td-header {
+		color: #000;
+		padding: 2px 10px;
+	}
+}
