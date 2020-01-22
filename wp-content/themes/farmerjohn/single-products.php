@@ -67,15 +67,15 @@ endif; ?>
 		<table class = "nutrition-table">
 			<tr>
 				<td class = "td-label td-header" colspan = 2>
-					<h1>NUTRITIONAL INFORMATION</h1>
+					<h1><?php _e('NUTRITIONAL INFORMATION','foundationpress')?></h1>
 				</td>
 			</tr>
 			<tr>
-				<td class = "td-label">SERVING SIZE</td>
+				<td class = "td-label"><?php _e('SERVING SIZE','foundationpress')?></td>
 				<td class = "td-value"><?php the_field('serving_size')?></td>
 			</tr>
 			<tr class = "tr-dark">
-				<td class = "td-label">SERVINGS PER CONTAINER</td>
+				<td class = "td-label"><?php _e('SERVINGS PER CONTAINER','foundationpress')?></td>
 				<td class = "td-value"><?php the_field('servings_per_container')?></td>
 			</tr>
 			<tr>
@@ -83,62 +83,62 @@ endif; ?>
 				<td class = "td-value">&nbsp;</td>
 			</tr>
 			<tr class = "tr-dark">
-				<td class = "td-label">AMOUNT PER SERVING</td>
+				<td class = "td-label"><?php _e('AMOUNT PER SERVING','foundationpress')?></td>
 				<td class = "td-value">&nbsp;</td>
 			</tr>
 			<tr>
-				<td class = "td-label">CALORIES</td>
+				<td class = "td-label"><?php _e('CALORIES','foundationpress')?></td>
 				<td class = "td-value"><?php the_field('calories')?></td>
 			</tr>
 			<tr class = "tr-dark">
-				<td class = "td-label">CALORIES FROM FAT</td>
+				<td class = "td-label"><?php _e('CALORIES FROM FAT','foundationpress')?></td>
 				<td class = "td-value"><?php the_field('calories_from_fat')?></td>
 			</tr>
 			<tr>
 				<td class = "td-label td-header" colspan = "2">
-					<h2>% DAILY VALUE*</h2>
+					<h2>% <?php _e('DAILY VALUE','foundationpress')?>*</h2>
 				</td>
 			</tr>
 			<tr class = "tr-dark">
-				<td class = "td-label no-upper">TOTAL FAT <?php the_field('total_fat_amount')?></td>
+				<td class = "td-label no-upper"><?php _e('TOTAL FAT','foundationpress')?> <?php the_field('total_fat_amount')?></td>
 				<td class = "td-value"><?php the_field('total_fat_percentage')?>%</td>
 			</tr>
 			<tr>
-				<td class = "td-label no-upper sub-label">SATURATED FAT <?php the_field('saturated_fat_amount')?></td>
+				<td class = "td-label no-upper sub-label"><?php _e('SATURATED FAT','foundationpress')?> <?php the_field('saturated_fat_amount')?></td>
 				<td class = "td-value"><?php the_field('saturated_fat_percentage')?>%</td>
 			</tr>
 			<tr class = "tr-dark">
-				<td class = "td-label no-upper sub-label">TRANS FAT <?php the_field('trans_fat_amount')?></td>
+				<td class = "td-label no-upper sub-label"><?php _e('TRANS FAT','foundationpress')?> <?php the_field('trans_fat_amount')?></td>
 				<td class = "td-value"><?php if (!empty(get_field('trans_fat_percentage'))) { echo get_field('trans_fat_percentage') . '%'; } ?></td>
 			</tr>
 			<tr>
-				<td class = "td-label no-upper">CHOLESTEROL <?php the_field('cholesterol_amount')?></td>
+				<td class = "td-label no-upper"><?php _e('CHOLESTEROL','foundationpress')?> <?php the_field('cholesterol_amount')?></td>
 				<td class = "td-value"><?php the_field('cholesterol_percentage')?>%</td>
 			</tr>
 			<tr class = "tr-dark">
-				<td class = "td-label no-upper">SODIUM <?php the_field('sodium_amount')?></td>
+				<td class = "td-label no-upper"><?php _e('SODIUM','foundationpress')?> <?php the_field('sodium_amount')?></td>
 				<td class = "td-value"><?php the_field('sodium_percentage')?>%</td>
 			</tr>
 			<tr>
-				<td class = "td-label no-upper">TOTAL CARB <?php the_field('total_carbohydrates_amount')?></td>
+				<td class = "td-label no-upper"><?php _e('TOTAL CARB','foundationpress')?> <?php the_field('total_carbohydrates_amount')?></td>
 				<td class = "td-value"><?php if (!empty(get_field('total_carbohydrates_percentage'))) { echo get_field('total_carbohydrates_percentage') . '%'; } ?></td>
 			</tr>
 			<tr class = "tr-dark">
-				<td class = "td-label no-upper sub-label">DIETARY FIBER <?php the_field('dietary_fiber_amount')?></td>
+				<td class = "td-label no-upper sub-label"><?php _e('DIETARY FIBER','foundationpress')?> <?php the_field('dietary_fiber_amount')?></td>
 				<td class = "td-value"><?php the_field('dietary_fiber_percentage')?>%</td>
 			</tr>
 			<tr>
-				<td class = "td-label no-upper sub-label">SUGARS <?php the_field('sugars_amount')?></td>
+				<td class = "td-label no-upper sub-label"><?php _e('SUGARS','foundationpress')?> <?php the_field('sugars_amount')?></td>
 				<td class = "td-value"><?php if (!empty(get_field('sugars_percentage'))) { echo get_field('sugars_percentage') . '%'; } ?></td>
 			</tr>
 			<tr class = "tr-dark">
-				<td class = "td-label no-upper">PROTEIN <?php the_field('protein_amount')?></td>
+				<td class = "td-label no-upper"><?php _e('PROTEIN','foundationpress')?> <?php the_field('protein_amount')?></td>
 				<td class = "td-value"><?php if (!empty(get_field('protein_percentage'))) { echo get_field('protein_percentage') . '%'; } ?></td>
 			</tr>
 			<tr>
 				<td class = "td-label" colspan = "2">
-					VITAMIN A <?php the_field('vitamin_a')?>% &nbsp;&nbsp;&nbsp;VITAMIN C <?php the_field('vitamin_c')?>% &nbsp;&nbsp;&nbsp;CALCIUM <?php the_field('calcium')?>% &nbsp;&nbsp;&nbsp;IRON <?php the_field('iron')?>%<br/>
-					<span class = "dv-label">* PERCENT DAILY VALUES (DV) ARE BASED ON A 2,000 CALORIE DIET</span>
+					<?php _e('VITAMIN A','foundationpress')?> <?php the_field('vitamin_a')?>% &nbsp;&nbsp;&nbsp;<?php _e('VITAMIN C','foundationpress')?> <?php the_field('vitamin_c')?>% &nbsp;&nbsp;&nbsp;<?php _e('CALCIUM','foundationpress')?> <?php the_field('calcium')?>% &nbsp;&nbsp;&nbsp;<?php _e('IRON','foundationpress')?> <?php the_field('iron')?>%<br/>
+					<span class = "dv-label">* <?php _e('PERCENT DAILY VALUES (DV) ARE BASED ON A 2,000 CALORIE DIET','foundationpress')?></span>
 				</td>
 			</tr>
 
@@ -198,15 +198,15 @@ endif; ?>
 				<table class = "nutrition-table">
 					<tr>
 						<td class = "td-label td-header" colspan = 2>
-							<h1>NUTRITIONAL INFORMATION</h1>
+							<h1><?php _e('NUTRITIONAL INFORMATION','foundationpress')?></h1>
 						</td>
 					</tr>
 					<tr>
-						<td class = "td-label">SERVING SIZE</td>
+						<td class = "td-label"><?php _e('SERVING SIZE','foundationpress')?></td>
 						<td class = "td-value"><?php the_field('serving_size')?></td>
 					</tr>
 					<tr class = "tr-dark">
-						<td class = "td-label">SERVINGS PER CONTAINER</td>
+						<td class = "td-label"><?php _e('SERVINGS PER CONTAINER','foundationpress')?></td>
 						<td class = "td-value"><?php the_field('servings_per_container')?></td>
 					</tr>
 					<tr>
@@ -214,62 +214,62 @@ endif; ?>
 						<td class = "td-value">&nbsp;</td>
 					</tr>
 					<tr class = "tr-dark">
-						<td class = "td-label">AMOUNT PER SERVING</td>
+						<td class = "td-label"><?php _e('AMOUNT PER SERVING','foundationpress')?></td>
 						<td class = "td-value">&nbsp;</td>
 					</tr>
 					<tr>
-						<td class = "td-label">CALORIES</td>
+						<td class = "td-label"><?php _e('CALORIES','foundationpress')?></td>
 						<td class = "td-value"><?php the_field('calories')?></td>
 					</tr>
 					<tr class = "tr-dark">
-						<td class = "td-label">CALORIES FROM FAT</td>
+						<td class = "td-label"><?php _e('CALORIES FROM FAT','foundationpress')?></td>
 						<td class = "td-value"><?php the_field('calories_from_fat')?></td>
 					</tr>
 					<tr>
 						<td class = "td-label td-header" colspan = "2">
-							<h2>% DAILY VALUE*</h2>
+							<h2>% <?php _e('DAILY VALUE','foundationpress')?>*</h2>
 						</td>
 					</tr>
 					<tr class = "tr-dark">
-						<td class = "td-label no-upper">TOTAL FAT <?php the_field('total_fat_amount')?></td>
+						<td class = "td-label no-upper"><?php _e('TOTAL FAT','foundationpress')?> <?php the_field('total_fat_amount')?></td>
 						<td class = "td-value"><?php the_field('total_fat_percentage')?>%</td>
 					</tr>
 					<tr>
-						<td class = "td-label no-upper sub-label">SATURATED FAT <?php the_field('saturated_fat_amount')?></td>
+						<td class = "td-label no-upper sub-label"><?php _e('SATURATED FAT','foundationpress')?> <?php the_field('saturated_fat_amount')?></td>
 						<td class = "td-value"><?php the_field('saturated_fat_percentage')?>%</td>
 					</tr>
 					<tr class = "tr-dark">
-						<td class = "td-label no-upper sub-label">TRANS FAT <?php the_field('trans_fat_amount')?></td>
+						<td class = "td-label no-upper sub-label"><?php _e('TRANS FAT','foundationpress')?> <?php the_field('trans_fat_amount')?></td>
 						<td class = "td-value"><?php if (!empty(get_field('trans_fat_percentage'))) { echo get_field('trans_fat_percentage') . '%'; } ?></td>
 					</tr>
 					<tr>
-						<td class = "td-label no-upper">CHOLESTEROL <?php the_field('cholesterol_amount')?></td>
+						<td class = "td-label no-upper"><?php _e('CHOLESTEROL','foundationpress')?> <?php the_field('cholesterol_amount')?></td>
 						<td class = "td-value"><?php the_field('cholesterol_percentage')?>%</td>
 					</tr>
 					<tr class = "tr-dark">
-						<td class = "td-label no-upper">SODIUM <?php the_field('sodium_amount')?></td>
+						<td class = "td-label no-upper"><?php _e('SODIUM','foundationpress')?> <?php the_field('sodium_amount')?></td>
 						<td class = "td-value"><?php the_field('sodium_percentage')?>%</td>
 					</tr>
 					<tr>
-						<td class = "td-label no-upper">TOTAL CARB <?php the_field('total_carbohydrates_amount')?></td>
+						<td class = "td-label no-upper"><?php _e('TOTAL CARB','foundationpress')?> <?php the_field('total_carbohydrates_amount')?></td>
 						<td class = "td-value"><?php if (!empty(get_field('total_carbohydrates_percentage'))) { echo get_field('total_carbohydrates_percentage') . '%'; } ?></td>
 					</tr>
 					<tr class = "tr-dark">
-						<td class = "td-label no-upper sub-label">DIETARY FIBER <?php the_field('dietary_fiber_amount')?></td>
+						<td class = "td-label no-upper sub-label"><?php _e('DIETARY FIBER','foundationpress')?> <?php the_field('dietary_fiber_amount')?></td>
 						<td class = "td-value"><?php the_field('dietary_fiber_percentage')?>%</td>
 					</tr>
 					<tr>
-						<td class = "td-label no-upper sub-label">SUGARS <?php the_field('sugars_amount')?></td>
+						<td class = "td-label no-upper sub-label"><?php _e('SUGARS','foundationpress')?> <?php the_field('sugars_amount')?></td>
 						<td class = "td-value"><?php if (!empty(get_field('sugars_percentage'))) { echo get_field('sugars_percentage') . '%'; } ?></td>
 					</tr>
 					<tr class = "tr-dark">
-						<td class = "td-label no-upper">PROTEIN <?php the_field('protein_amount')?></td>
+						<td class = "td-label no-upper"><?php _e('PROTEIN','foundationpress')?> <?php the_field('protein_amount')?></td>
 						<td class = "td-value"><?php if (!empty(get_field('protein_percentage'))) { echo get_field('protein_percentage') . '%'; } ?></td>
 					</tr>
 					<tr>
 						<td class = "td-label" colspan = "2">
-							VITAMIN A <?php the_field('vitamin_a')?>% &nbsp;&nbsp;&nbsp;VITAMIN C <?php the_field('vitamin_c')?>% &nbsp;&nbsp;&nbsp;CALCIUM <?php the_field('calcium')?>% &nbsp;&nbsp;&nbsp;IRON <?php the_field('iron')?>%<br/>
-							<span class = "dv-label">* PERCENT DAILY VALUES (DV) ARE BASED ON A 2,000 CALORIE DIET</span>
+							<?php _e('VITAMIN A','foundationpress')?> <?php the_field('vitamin_a')?>% &nbsp;&nbsp;&nbsp;<?php _e('VITAMIN C','foundationpress')?> <?php the_field('vitamin_c')?>% &nbsp;&nbsp;&nbsp;<?php _e('CALCIUM','foundationpress')?> <?php the_field('calcium')?>% &nbsp;&nbsp;&nbsp;<?php _e('IRON','foundationpress')?> <?php the_field('iron')?>%<br/>
+							<span class = "dv-label">* <?php _e('PERCENT DAILY VALUES (DV) ARE BASED ON A 2,000 CALORIE DIET','foundationpress')?></span>
 						</td>
 					</tr>
 
