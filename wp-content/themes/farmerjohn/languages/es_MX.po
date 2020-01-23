@@ -1,0 +1,1607 @@
+# #-#-#-#-#  farmerjohn.pot (FoundationPress 1.3.0)  #-#-#-#-#
+# Copyright (C) 2020 Ole Fredrik Lie
+# This file is distributed under the MIT License.
+msgid ""
+msgstr ""
+"Project-Id-Version: FoundationPress 1.3.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/farmerjohn\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-01-23T15:45:13+00:00\n"
+"PO-Revision-Date: 2020-01-23 09:54-0600\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Domain: foundationpress\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-01-23T15:45:36+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: foundationpress\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_MX\n"
+
+#. Theme Name of the theme
+msgid "FoundationPress"
+msgstr "PRODUCTOS"
+
+#. Theme URI of the theme
+msgid "http://foundationpress.olefredrik.com"
+msgstr "http://foundationpress.olefredrik.com"
+
+#. Description of the theme
+msgid ""
+"FoundationPress is a WordPress starter theme based on Foundation 5 by Zurb"
+msgstr ""
+"FoundationPress es un tema inicial de WordPress basado en Foundation 5 de "
+"Zurb"
+
+#. Author of the theme
+msgid "Ole Fredrik Lie"
+msgstr "Ole Fredrik Lie"
+
+#. Author URI of the theme
+msgid "http://olefredrik.com/"
+msgstr "http://olefredrik.com/"
+
+#: 404.php:17
+msgid "File Not Found"
+msgstr "Archivo no encontrado"
+
+#: 404.php:21
+msgid ""
+"The page you are looking for might have been removed, had its name changed, "
+"or is temporarily unavailable."
+msgstr ""
+"La página que está buscando se ha eliminado,  cambiado de nombre o no está "
+"disponible temporalmente."
+
+#: 404.php:23
+msgid "Please try the following:"
+msgstr "Por favor, intente lo siguiente:"
+
+#: 404.php:25
+msgid "Check your spelling"
+msgstr "Corrige tu ortografía"
+
+#: 404.php:26
+msgid "Return to the <a href=\"%s\">home page</a>"
+msgstr "Volver a la <a href=\"%s\">página de inicio</a>"
+
+#: 404.php:27
+msgid "Click the <a href=\"javascript:history.back()\">Back</a> button"
+msgstr "Haga clic en el botón <a href=\"javascript:history.back()\">Atrás</a>"
+
+#: archive-products.php:21 taxonomy-product_category.php:23
+msgid "ALL"
+msgstr "TODO"
+
+#: archive-products.php:24 archive-products.php:49 archive-products.php:64
+#: archive-products.php:90 archive-products.php:118
+#: taxonomy-product_category.php:26 taxonomy-product_category.php:51
+#: taxonomy-product_category.php:66
+msgid "ALL NATURAL"
+msgstr "TODO NATURAL"
+
+#: archive-products.php:27 archive-products.php:50 archive-products.php:67
+#: archive-products.php:91 archive-products.php:119
+#: taxonomy-product_category.php:29 taxonomy-product_category.php:52
+#: taxonomy-product_category.php:69
+msgid "BACON"
+msgstr "BACON"
+
+#: archive-products.php:30 archive-products.php:51 archive-products.php:70
+#: archive-products.php:92 archive-products.php:120
+#: taxonomy-product_category.php:32 taxonomy-product_category.php:53
+#: taxonomy-product_category.php:72
+msgid "BREAKFAST SAUSAGE"
+msgstr "SALCHICHA DE DESAYUNO"
+
+#: archive-products.php:33 archive-products.php:52 archive-products.php:73
+#: archive-products.php:93 archive-products.php:121
+#: taxonomy-product_category.php:35 taxonomy-product_category.php:54
+#: taxonomy-product_category.php:75
+msgid "HAM"
+msgstr "HAM"
+
+#: archive-products.php:36 archive-products.php:53 archive-products.php:76
+#: archive-products.php:94 archive-products.php:122
+#: taxonomy-product_category.php:38 taxonomy-product_category.php:55
+#: taxonomy-product_category.php:78
+msgid "HOT DOGS"
+msgstr "PERROS CALIENTES"
+
+#: archive-products.php:39 archive-products.php:54 archive-products.php:79
+#: archive-products.php:95 archive-products.php:123
+#: taxonomy-product_category.php:41 taxonomy-product_category.php:56
+#: taxonomy-product_category.php:81
+msgid "LUNCH MEAT"
+msgstr "CARNE ALMUERZO"
+
+#: archive-products.php:42 archive-products.php:55 archive-products.php:82
+#: archive-products.php:96 archive-products.php:124
+#: taxonomy-product_category.php:44 taxonomy-product_category.php:57
+#: taxonomy-product_category.php:84
+msgid "SMOKED SAUSAGE"
+msgstr "SALCHICHAS AHUMADAS"
+
+#: archive-products.php:48 archive-products.php:61
+#: parts/recipes-archive-filters.php:22 parts/recipes-archive-filters.php:67
+#: taxonomy-product_category.php:50 taxonomy-product_category.php:63
+#: recipes-archive-filters.php:22 recipes-archive-filters.php:67
+msgid "ALL PRODUCTS"
+msgstr "TODOS LOS PRODUCTOS"
+
+#: archive-products.php:89 archive-products.php:117
+msgid "ALL FARMER JOHN PRODUCTS"
+msgstr "TODOS LOS PRODUCTOS FARMER JOHN"
+
+#: archive-products.php:108 archive-products.php:127
+msgid "FILTER"
+msgstr "FILTRO"
+
+#: archive-products.php:109 archive-products.php:128
+msgid "SHOW ALL"
+msgstr "VER TODO"
+
+#: archive-products.php:136 taxonomy-product_category.php:97
+msgid ""
+"No products match your search filter. Click 'All' to see all Farmer "
+"John&reg; products."
+msgstr ""
+"No hay productos que coincidan con su filtro de búsqueda. Haga clic en "
+"'Todo' para ver todos los productos de Farmer John&reg."
+
+#: archive-recipes.php:49
+msgid "LOAD MORE"
+msgstr "Cargar más"
+
+#: archive.php:40 index.php:39 search.php:35
+msgid "&larr; Older posts"
+msgstr "&larr; Publicaciones antiguas"
+
+#: archive.php:41 index.php:40 search.php:36
+msgid "Newer posts &rarr;"
+msgstr "Publicaciones más nuevas &rarr;"
+
+#: comments.php:27
+msgid "Reply"
+msgstr "Responder"
+
+#: comments.php:36
+msgid "Your comment is awaiting moderation."
+msgstr "Tu comentario está en espera de moderación."
+
+#: comments.php:55
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Por favor, no cargues esta página directamente. ¡Gracias!"
+
+#: comments.php:60
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Esta publicación esta protegida con contraseña, introduce la contraseña para "
+"continuar."
+
+#: comments.php:73
+msgid "Leave a Reply"
+msgstr "Deja una respuesta"
+
+#: comments.php:73
+msgid "Leave a Reply to %s"
+msgstr "Dejar una respuesta a %s"
+
+#: comments.php:76
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Debe estar <a href=\"%s\"> conectado </a> para publicar un comentario."
+
+#: comments.php:80
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "Conectado como <a href=\" %s/wp-admin/profile. php\">%s</a>."
+
+#: comments.php:80
+msgid "Log out of this account"
+msgstr "Salir de esta cuenta"
+
+#: comments.php:80
+msgid "Log out &raquo;"
+msgstr "Cerrar sesión &raquo;"
+
+#: comments.php:85
+msgid "Name"
+msgstr "Nombre"
+
+#: comments.php:85 comments.php:93
+msgid " (required)"
+msgstr " (requerido)"
+
+#: comments.php:93
+msgid "Email (will not be published)"
+msgstr "Correo Electrónico (no será publicado)"
+
+#: comments.php:101
+msgid "Website"
+msgstr "Sitio Web"
+
+#: comments.php:110
+msgid "Comment"
+msgstr "Comentario"
+
+#: comments.php:117
+msgid "You can use these tags:"
+msgstr "Puedes usar estas etiquetas:"
+
+#: comments.php:123
+msgid "Submit Comment"
+msgstr "Enviar Comentario"
+
+#: content-none.php:15
+msgid "Nothing Found"
+msgstr "No se encontró nada"
+
+#: content-none.php:21
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Listo para publicar su primer post? <a href=\"%1$s\">Comience aquí</a>."
+
+#: content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Lo sentimos, pero nada coincide con sus términos de búsqueda. Inténtelo de "
+"nuevo con algunas palabras clave diferentes."
+
+#: content-none.php:30
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Parece que no podemos encontrar lo que estás buscando. Talvez una búsqueda "
+"pueda ayudar."
+
+#: content.php:20
+msgid "Continue reading..."
+msgstr "Continúe leyendo..."
+
+#: footer.php:19 footer.php:68
+msgid "PRODUCTS"
+msgstr "PRODUCTOS"
+
+#: footer.php:20 footer.php:69 parts/homepage-recipes.php:8
+#: parts/homepage-recipes.php:76 parts/recipes-content.php:9
+#: homepage-recipes.php:8 homepage-recipes.php:76 recipes-content.php:9
+msgid "RECIPES"
+msgstr "RECETAS"
+
+#: footer.php:21 footer.php:70 parts/our-story-hero.php:3 our-story-hero.php:3
+msgid "OUR STORY"
+msgstr "NUESTRA HISTORIA"
+
+#: footer.php:24 footer.php:73 parts/health-hero.php:3 health-hero.php:3
+msgid "HEALTH"
+msgstr "SALUD"
+
+#: footer.php:25 footer.php:74 parts/partners-hero.php:3 partners-hero.php:3
+msgid "PARTNERS"
+msgstr "SOCIOS"
+
+#: footer.php:26 footer.php:75 parts/where-to-buy-hero.php:3
+#: where-to-buy-hero.php:3
+msgid "WHERE TO BUY"
+msgstr "DÓNDE COMPRAR"
+
+#: footer.php:29 footer.php:80
+msgid "CA TRANSPARENCY ACT"
+msgstr "LEY DE TRANSPARENCIA DE CA"
+
+#: footer.php:30 footer.php:81
+msgid "PRIVACY POLICY"
+msgstr "POLITICA DE PRIVACIDAD"
+
+#: footer.php:31 footer.php:82
+msgid "CALIFORNIA PRIVACY"
+msgstr "PRIVACIDAD DE CALIFORNIA"
+
+#: footer.php:34 footer.php:86
+msgid "TERMS OF USE"
+msgstr "TÉRMINOS DE USO"
+
+#: footer.php:35 footer.php:87
+msgid "CONTACT"
+msgstr "CONTACTO"
+
+#: library/custom-nav.php:16
+msgid "Mobile Menu Settings"
+msgstr "Configuración del menú del móvil"
+
+#: library/custom-nav.php:17
+msgid "Controls the mobile menu"
+msgstr "Controla el menú del móvil"
+
+#: library/custom-nav.php:22
+msgid "Mobile navigation layout"
+msgstr "Diseño de navegación móvil"
+
+#: library/custom-nav.php:29
+msgid "Mobile navigation position"
+msgstr "Posición de navegación móvil"
+
+#: library/custom-nav.php:38
+msgid "offcanvas"
+msgstr "offcanvas"
+
+#: library/custom-nav.php:46
+msgid "left"
+msgstr "izquierda"
+
+#: library/entry-meta.php:12
+msgid "Posted on %s at %s."
+msgstr "Publicado en %s at %s."
+
+#: library/entry-meta.php:13
+msgid "Written by"
+msgstr "Escrito por"
+
+#: library/foundation.php:25
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: library/foundation.php:26
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#. Translators 1: Link to Menus, 2: Link to Customize.
+#: library/foundation.php:54
+msgid ""
+"Please assign a menu to the primary menu location under %1$s or %2$s the "
+"design."
+msgstr ""
+"Por favor, asigne un menú a la ubicación del menú principal bajo %1$s o %2$s "
+"el diseño."
+
+#. Translators 1: Link to Menus, 2: Link to Customize.
+#: library/foundation.php:55
+msgid "<a href=\"%s\">Menus</a>"
+msgstr "<a href=\"%s\">Menús</a>"
+
+#: library/foundation.php:58
+msgid "<a href=\"%s\">Customize</a>"
+msgstr "<a href=\"%s\">Personaliza</a>"
+
+#: library/foundation.php:106
+msgid "No Responses to"
+msgstr "No hay respuestas a"
+
+#: library/foundation.php:106
+msgid "One Response to"
+msgstr "One Response to"
+
+#: library/foundation.php:106
+msgid "% Responses to"
+msgstr "% Respuestas a"
+
+#: library/foundation.php:146
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#: library/foundation.php:147
+msgid "%1$s"
+msgstr "%1$s"
+
+#: library/offcanvas-walker.php:46 parts/off-canvas-menu.php:27
+#: off-canvas-menu.php:27
+msgid "Back"
+msgstr "Volver"
+
+#: library/widget-areas.php:14
+msgid "Sidebar widgets"
+msgstr "Widgets de barra lateral"
+
+#: library/widget-areas.php:15
+msgid "Drag widgets to this sidebar container."
+msgstr "Arrastre los widgets a este contenedor de la barra lateral."
+
+#: library/widget-areas.php:24
+msgid "Footer widgets"
+msgstr "Widgets de pie de página"
+
+#: library/widget-areas.php:25
+msgid "Drag widgets to this footer container"
+msgstr "Arrastre los widgets a este contenedor de pie de página"
+
+#: page.php:32 single.php:38 templates/front.php:39
+#: templates/kitchen-sink.php:730 templates/page-full.php:22
+#: templates/page-sidebar-left.php:24 woocommerce.php:27
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: parts/careers-equal-rights.php:19 careers-equal-rights.php:19
+msgid ""
+"Farmer John is an equal opportunity employer. All qualified applicants will "
+"receive consideration for employment without regard to race, color, age, "
+"religion, gender, sexual orientation, gender identity, national origin, "
+"disability, or veteran status. For more information, download the documents "
+"below."
+msgstr ""
+"El agricultor John es un empleador que ofrece igualdad de oportunidades. "
+"Todos los solicitantes calificados serán considerados para el empleo sin "
+"importar su raza, color, edad, religión, género, orientación sexual, "
+"identidad de género, origen nacional, discapacidad o condición de veterano. "
+"Para obtener más información, descargue los siguientes documentos."
+
+#: parts/careers-equal-rights.php:21 careers-equal-rights.php:21
+msgid "E-VERIFY"
+msgstr "E-VERIFY"
+
+#: parts/careers-equal-rights.php:22 parts/careers-equal-rights.php:26
+#: parts/careers-equal-rights.php:30 careers-equal-rights.php:22
+#: careers-equal-rights.php:26 careers-equal-rights.php:30
+msgid "ENGLISH"
+msgstr "INGLÉS"
+
+#: parts/careers-equal-rights.php:23 parts/careers-equal-rights.php:27
+#: parts/careers-equal-rights.php:31 careers-equal-rights.php:23
+#: careers-equal-rights.php:27 careers-equal-rights.php:31
+msgid "SPANISH"
+msgstr "ESPAÑOL"
+
+#: parts/careers-equal-rights.php:25 careers-equal-rights.php:25
+msgid "RIGHT TO WORK"
+msgstr "DERECHO AL TRABAJO"
+
+#: parts/careers-equal-rights.php:29 careers-equal-rights.php:29
+msgid "EQUAL OPPORTUNITY"
+msgstr "IGUALDAD DE OPORTUNIDADES"
+
+#: parts/careers-hero.php:3 careers-hero.php:3
+msgid "CAREERS"
+msgstr "Carreras"
+
+#: parts/careers-job-openings.php:13 parts/careers-job-openings.php:36
+#: parts/careers-job-openings.php:71 parts/careers-job-openings.php:106
+#: parts/careers-job-openings.php:148 careers-job-openings.php:13
+#: careers-job-openings.php:36 careers-job-openings.php:71
+#: careers-job-openings.php:106 careers-job-openings.php:148
+msgid "JOB OPENINGS"
+msgstr "APERTURA DE PUESTOS DE TRABAJO"
+
+#: parts/careers-job-openings.php:16 careers-job-openings.php:16
+msgid "View jobs on LinkedIn"
+msgstr "Ver trabajos en LinkedIn"
+
+#: parts/careers-job-openings.php:21 careers-job-openings.php:21
+msgid "PROFESSIONAL"
+msgstr "PROFESIONAL"
+
+#: parts/careers-job-openings.php:22 careers-job-openings.php:22
+msgid ""
+"Advance your career by working behind-the-scenes at Farmer John in areas "
+"like management, marketing, sales and accounting. Oversee the day-to-day "
+"workflow of our operations in a nurturing office environment."
+msgstr ""
+"Avance en su carrera trabajando entre bastidores en Farmer John en áreas "
+"como gestión, marketing, ventas y contabilidad. Supervisar el flujo de "
+"trabajo diario de nuestras operaciones en un entorno de oficina propicio."
+
+#: parts/careers-job-openings.php:25 parts/careers-job-openings.php:60
+#: parts/careers-job-openings.php:128 parts/careers-job-openings.php:132
+#: parts/careers-job-openings.php:136 careers-job-openings.php:25
+#: careers-job-openings.php:60 careers-job-openings.php:128
+#: careers-job-openings.php:132 careers-job-openings.php:136
+msgid "OPENINGS"
+msgstr "INAUGURACIONES"
+
+#: parts/careers-job-openings.php:56 careers-job-openings.php:56
+msgid "PRODUCTION"
+msgstr "PRODUCCIÓN"
+
+#: parts/careers-job-openings.php:57 careers-job-openings.php:57
+msgid ""
+"For those who wish to be directly involved in our process, put your skills "
+"to use on the ground floor of production in fields like product lab testing, "
+"quality control, distribution and mechanical engineering."
+msgstr ""
+"Para aquellos que deseen estar directamente involucrados en nuestro proceso, "
+"pongan sus habilidades a disposición de la planta baja de producción en "
+"campos como pruebas de laboratorio de productos, control de calidad, "
+"distribución e ingeniería mecánica."
+
+#: parts/careers-job-openings.php:91 careers-job-openings.php:91
+msgid "INTERNSHIPS"
+msgstr "PRÁCTICAS"
+
+#: parts/careers-job-openings.php:92 careers-job-openings.php:92
+msgid ""
+"Internships are a great way to discover what it's like to work in your field "
+"of study. We offer opportunities for hands-on experience in fields such as "
+"sales and marketing, human resources, quality assurance and engineering."
+msgstr ""
+"Las pasantías son una gran manera de descubrir lo que es trabajar en tu "
+"campo de estudio. Ofrecemos oportunidades de experiencia práctica en campos "
+"como ventas y marketing, recursos humanos, control de calidad e ingeniería."
+
+#: parts/careers-job-openings.php:182 careers-job-openings.php:182
+msgid "NO POSITIONS AVAILABLE"
+msgstr "NO HAY POSICIONES DISPONIBLES"
+
+#: parts/careers-job-openings.php:185 careers-job-openings.php:185
+msgid "No positions are currently available. Please check back soon."
+msgstr "No hay posiciones disponibles actualmente. Por favor, vuelva pronto."
+
+#: parts/careers-job-openings.php:186 careers-job-openings.php:186
+msgid "You can send your resume to"
+msgstr "Puede enviar su currículum a"
+
+#: parts/careers-job-openings.php:186 careers-job-openings.php:186
+msgid "and we will keep it on file for future consideration."
+msgstr "y lo mantendremos archivado para futuras consideraciones."
+
+#: parts/careers-who-we-are.php:2 careers-who-we-are.php:2
+msgid "WHO WE ARE"
+msgstr "QUIENES SOMOS"
+
+#: parts/careers-who-we-are.php:3 careers-who-we-are.php:3
+msgid ""
+"Farmer John employees are hard workers who understand the importance of "
+"teamwork and togetherness. That's why when you work at Farmer John, you "
+"become part of the Farmer John family. And while this family works hard as a "
+"team, we always find ways to have fun! From year-round trips to Dodger "
+"Stadium to group retreats and endless taste testings, a career with Farmer "
+"John offers a world of excitement and more ways than one to bring home the "
+"bacon."
+msgstr ""
+"Los empleados de Farmer John son trabajadores duros que entienden la "
+"importancia del trabajo en equipo y la unión. Por eso cuando trabajas en el "
+"Farmer John, te conviertes en parte de la familia Farmer John. Y mientras "
+"esta familia trabaja duro como un equipo, siempre encontramos maneras de "
+"divertirnos! Desde viajes durante todo el año al Estadio de los Dodgers "
+"hasta retiros de grupo y pruebas de sabor interminables, una carrera con "
+"Farmer John ofrece un mundo de emoción y más de una manera de llevar el "
+"tocino a casa."
+
+#: parts/careers-why-work-at-farmer-john.php:3
+#: careers-why-work-at-farmer-john.php:3
+msgid "WHY WORK AT FARMER JOHN"
+msgstr "¿POR QUÉ TRABAJAR EN FARMER JOHN"
+
+#: parts/careers-why-work-at-farmer-john.php:8
+#: careers-why-work-at-farmer-john.php:8
+msgid "HEALTH<br>BENEFITS"
+msgstr "BENEFICIOS DE SALUD"
+
+#: parts/careers-why-work-at-farmer-john.php:10
+#: careers-why-work-at-farmer-john.php:10
+msgid "Medical and prescription drug plans"
+msgstr "Planes médicos y de medicamentos con receta"
+
+#: parts/careers-why-work-at-farmer-john.php:11
+#: careers-why-work-at-farmer-john.php:11
+msgid "Dental and vision insurance"
+msgstr "Seguro dental y de visión"
+
+#: parts/careers-why-work-at-farmer-john.php:12
+#: careers-why-work-at-farmer-john.php:12
+msgid "Group life insurance"
+msgstr "Seguro de vida colectivo"
+
+#: parts/careers-why-work-at-farmer-john.php:13
+#: careers-why-work-at-farmer-john.php:13
+msgid "Short-term disability"
+msgstr "Incapacidad a corto plazo"
+
+#: parts/careers-why-work-at-farmer-john.php:14
+#: careers-why-work-at-farmer-john.php:14
+msgid "Long-term disability insurance"
+msgstr "Seguro de discapacidad a largo plazo"
+
+#: parts/careers-why-work-at-farmer-john.php:15
+#: careers-why-work-at-farmer-john.php:15
+msgid "Wellness Program"
+msgstr "Programa de Bienestar"
+
+#: parts/careers-why-work-at-farmer-john.php:20
+#: careers-why-work-at-farmer-john.php:20
+msgid "RETIREMENT<br>BENEFITS"
+msgstr "BENEFICIOS DE JUBILACIÓN"
+
+#: parts/careers-why-work-at-farmer-john.php:22
+#: careers-why-work-at-farmer-john.php:22
+msgid "Retirement plan"
+msgstr "Plan de jubilación"
+
+#: parts/careers-why-work-at-farmer-john.php:23
+#: careers-why-work-at-farmer-john.php:23
+msgid "Tax deferred incentive plan – 401(k)"
+msgstr "Plan de incentivos de impuestos diferidos - 401(k)"
+
+#: parts/careers-why-work-at-farmer-john.php:28
+#: careers-why-work-at-farmer-john.php:28
+msgid "PROFESSIONAL<br>DEVELOPMENT"
+msgstr "DESARROLLO PROFESIONAL"
+
+#: parts/careers-why-work-at-farmer-john.php:30
+#: careers-why-work-at-farmer-john.php:30
+msgid "Tuition reimbursement"
+msgstr "Reembolso de matrícula"
+
+#: parts/careers-why-work-at-farmer-john.php:31
+#: careers-why-work-at-farmer-john.php:31
+msgid "Dale Carnegie training"
+msgstr "Entrenamiento Dale Carnegie"
+
+#: parts/careers-why-work-at-farmer-john.php:32
+#: careers-why-work-at-farmer-john.php:32
+msgid "English as a second language"
+msgstr "Inglés como segunda lengua"
+
+#: parts/careers-why-work-at-farmer-john.php:33
+#: careers-why-work-at-farmer-john.php:33
+msgid "Excel classes on site"
+msgstr "Clases de Excel en el sitio"
+
+#: parts/careers-why-work-at-farmer-john.php:34
+#: careers-why-work-at-farmer-john.php:34
+msgid "Employee Assistance Program (EAP)"
+msgstr "Programa de Asistencia al Empleado (EAP)"
+
+#: parts/careers-why-work-at-farmer-john.php:35
+#: careers-why-work-at-farmer-john.php:35
+msgid "Career Development Tools"
+msgstr "Herramientas para el desarrollo de la carrera"
+
+#: parts/careers-why-work-at-farmer-john.php:40
+#: careers-why-work-at-farmer-john.php:40
+msgid "ADDITIONAL<br>BENEFITS"
+msgstr "BENEFICIOS ADICIONALES"
+
+#: parts/careers-why-work-at-farmer-john.php:42
+#: careers-why-work-at-farmer-john.php:42
+msgid "Paid vacation"
+msgstr "Vacaciones pagadas"
+
+#: parts/careers-why-work-at-farmer-john.php:43
+#: careers-why-work-at-farmer-john.php:43
+msgid "Company vehicle for sales representatives"
+msgstr "Vehículo de la empresa para los representantes de ventas"
+
+#: parts/careers-why-work-at-farmer-john.php:44
+#: careers-why-work-at-farmer-john.php:44
+msgid "Performance-based compensation"
+msgstr "Compensación basada en el desempeño"
+
+#: parts/careers-why-work-at-farmer-john.php:45
+#: careers-why-work-at-farmer-john.php:45
+msgid "Stock purchase plan"
+msgstr "Plan de adquisición de acciones"
+
+#: parts/careers-why-work-at-farmer-john.php:46
+#: careers-why-work-at-farmer-john.php:46
+msgid "AD&amp;D insurance"
+msgstr "Seguro de AD&amp;d"
+
+#: parts/careers-why-work-at-farmer-john.php:47
+#: careers-why-work-at-farmer-john.php:47
+msgid "Funeral pay"
+msgstr "Pago de los funerales"
+
+#: parts/careers-why-work-at-farmer-john.php:48
+#: careers-why-work-at-farmer-john.php:48
+msgid "Paid jury duty"
+msgstr "Servicio de jurado remunerado"
+
+#: parts/careers-why-work-at-farmer-john.php:49
+#: careers-why-work-at-farmer-john.php:49
+msgid "Employee discounts"
+msgstr "Descuentos para empleados"
+
+#: parts/contact-content.php:30 contact-content.php:30
+msgid "CONTACT INFORMATION"
+msgstr "DATOS DE CONTACTO"
+
+#: parts/contact-content.php:35 contact-content.php:35
+msgid "Mailing Address"
+msgstr "Dirección postal"
+
+#: parts/contact-content.php:42 contact-content.php:42
+msgid "Phone: 800-846-7635"
+msgstr "Teléfono: 800-846-7635"
+
+#: parts/contact-content.php:43 contact-content.php:43
+msgid "Monday-Friday, 8:00 a.m. to 4:00 p.m. CST"
+msgstr "De lunes a viernes, de 8:00 a.m. a 4:00 p.m. CST"
+
+#: parts/contact-content.php:44 contact-content.php:44
+msgid "excluding holidays. Summer hours may vary."
+msgstr "excluyendo los días festivos. Las horas de verano pueden variar."
+
+#: parts/contact-content.php:47 contact-content.php:47
+msgid "KEEP IN TOUCH!"
+msgstr "¡MANTÉNGASE EN CONTACTO!"
+
+#: parts/contact-content.php:86 contact-content.php:86
+msgid "How may we contact you?"
+msgstr "¿Cómo podemos contactar con usted?"
+
+#: parts/contact-content.php:87 contact-content.php:87
+msgid ""
+"In order to receive correspondence back from Clougherty Packing, LLC, you "
+"must complete at least one of the following options. Lease note - if you are "
+"requesting information on where to purchase a specific product, please "
+"include your address and phone number. Our \"where to purchase\" requests "
+"are handled by the sales force located near your city."
+msgstr ""
+"Para recibir correspondencia de Clougherty Packing, LLC, debe completar al "
+"menos una de las siguientes opciones. Nota de alquiler: si solicita "
+"información sobre dónde comprar un producto específico, incluya su dirección "
+"y número de teléfono. Nuestras solicitudes de \"dónde comprar\" son "
+"atendidas por la fuerza de ventas ubicada cerca de su ciudad."
+
+#: parts/contact-content.php:90 contact-content.php:90
+msgid ""
+"If you are inquiring about a specific product, please indicate the product "
+"information below."
+msgstr ""
+"Si desea hacer una consulta sobre un producto específico, por favor indique "
+"la información del producto a continuación."
+
+#: parts/contact-content.php:93 contact-content.php:93
+msgid "Suggestion & Idea Submission Policy"
+msgstr "Política de presentación de sugerencias e ideas"
+
+#: parts/contact-content.php:94 contact-content.php:94
+msgid ""
+"You understand and agree that Clougherty Packing, LLC has many resources "
+"both internal and external, which may have developed or may develop "
+"information identical or similar to that disclosed to us here. Information "
+"here is not submitted in confidence and Clougherty Packing, LLC assumes no "
+"obligation by considering it. All comments, offers, suggestions, ideas, "
+"recipes, concepts, artwork, or other information (\"Submissions\") disclosed "
+"to us using this site or in response to solicitations on this site are the "
+"property of Clougherty Packing, LLC, including its business units, divisions "
+"and wholly-owned subsidiaries. Without limitation, Cloughterty PAcking, LLC "
+"shall exclusively own all rights, known or hereafter existing, to the "
+"Submissions and shall be entitled to unrestricted use of the same for any "
+"purpose whatsoever, commercial or otherwise, without compensation to the "
+"submitter. Clougherty Packing, LLS will consier Submissions only on these "
+"terms.<br><br>Please click the submit button below to indicate your "
+"agreement with these terms and submit your information."
+msgstr ""
+"Usted entiende y acepta que Clougherty Packing, LLC tiene muchos recursos "
+"tanto internos como externos, que pueden haber desarrollado o pueden "
+"desarrollar información idéntica o similar a la que se nos ha revelado aquí. "
+"La información aquí presentada no es confidencial y Clougherty Packing, LLC "
+"no asume ninguna obligación al considerarla. Todos los comentarios, ofertas, "
+"sugerencias, ideas, recetas, conceptos, obras de arte u otra información "
+"(\"Presentaciones\") que se nos revelen usando este sitio o en respuesta a "
+"solicitudes en este sitio son propiedad de Clougherty Packing, LLC, "
+"incluyendo sus unidades de negocios, divisiones y subsidiarias de propiedad "
+"total. Sin limitación, Cloughterty PAcking, LLC será propietaria exclusiva "
+"de todos los derechos, conocidos o que existan en el futuro, de las "
+"presentaciones y tendrá derecho a usarlas sin restricciones para cualquier "
+"propósito, comercial o de otro tipo, sin compensación para el presentador. "
+"Clougherty Packing, LLS sólo considerará las presentaciones bajo estos "
+"términos.<br><br>Por favor, haga clic en el botón de envío abajo para "
+"indicar su acuerdo con estos términos y enviar su información."
+
+#: parts/contact-hero.php:3 contact-hero.php:3
+msgid "CONTACT US"
+msgstr "CONTACTO"
+
+#: parts/food-safety-content.php:4 food-safety-content.php:4
+msgid "SAFETY &amp; QUALITY ASSURANCE"
+msgstr "SEGURIDAD &amp; GARANTÍA DE CALIDAD"
+
+#: parts/food-safety-content.php:5 food-safety-content.php:5
+msgid "SAFETY &amp; QUALITY<br>ASSURANCE"
+msgstr "SEGURIDAD Y GARANTÍA DE CALIDAD"
+
+#: parts/food-safety-content.php:9 food-safety-content.php:9
+msgid ""
+"Food Safety Is a Complex Undertaking. Yet, our food safety philosophy is "
+"actually quite simple: If we don’t feel confident about serving a product to "
+"our own families, we’re not going to sell it to consumers. Producing safe, "
+"high-quality, and nourishing food is fundamental to our company’s very "
+"existence. Our customers and consumers put their trust in us every time they "
+"sit down to a meal of one of our many products. Food safety starts on the "
+"farm, where we have rigorous systems in place to raise healthy animals. It "
+"continues at the processing plants, where we follow meticulous and exacting "
+"procedures that allow us to produce the safest products."
+msgstr ""
+"La seguridad alimentaria es una empresa compleja. Sin embargo, nuestra "
+"filosofía de seguridad alimentaria es en realidad bastante simple: Si no nos "
+"sentimos seguros de servir un producto a nuestras propias familias, no vamos "
+"a venderlo a los consumidores. Producir alimentos seguros, de alta calidad y "
+"nutritivos es fundamental para la existencia de nuestra empresa. Nuestros "
+"clientes y consumidores confían en nosotros cada vez que se sientan a comer "
+"uno de nuestros muchos productos. La seguridad alimentaria comienza en la "
+"granja, donde tenemos sistemas rigurosos para criar animales sanos. Continúa "
+"en las plantas de procesamiento, donde seguimos procedimientos meticulosos y "
+"exigentes que nos permiten producir los productos más seguros."
+
+#: parts/food-safety-content.php:15 food-safety-content.php:15
+msgid "ANIMAL CARE"
+msgstr "CUIDADO DE LOS ANIMALES"
+
+#: parts/food-safety-content.php:19 food-safety-content.php:19
+msgid ""
+"Treating animals humanely is a primary concern for us simply because it’s "
+"the right thing to do. Farmer John is committed to being the industry leader "
+"in animal care practices to assure respectful and humane treatment of "
+"animals, to produce wholesome food products, and to analyze our operations "
+"and practices, including internal and independent third-party audits, to "
+"ensure continual improvement. Adherence to the principles of this policy is "
+"a responsibility and requirement of those who interact with animals that are "
+"owned or processed by Farmer John. Willful neglect or abuse of animals will "
+"not be tolerated and will result in immediate termination. Offenders may "
+"also be subject to criminal prosecution under applicable laws."
+msgstr ""
+"Tratar a los animales con humanidad es una preocupación primordial para "
+"nosotros simplemente porque es lo correcto. El agricultor John está "
+"comprometido a ser el líder de la industria en prácticas de cuidado animal "
+"para asegurar un tratamiento respetuoso y humanitario de los animales, para "
+"producir productos alimenticios saludables y para analizar nuestras "
+"operaciones y prácticas, incluyendo auditorías internas e independientes de "
+"terceros, para asegurar una mejora continua. La adhesión a los principios de "
+"esta política es una responsabilidad y un requisito de aquellos que "
+"interactúan con los animales que son propiedad de o procesados por Farmer "
+"John. La negligencia voluntaria o el abuso de los animales no será tolerado "
+"y resultará en la terminación inmediata. Los delincuentes también pueden ser "
+"objeto de enjuiciamiento penal en virtud de las leyes aplicables."
+
+#: parts/food-safety-content.php:25 food-safety-content.php:25
+msgid "FARM TO FORK"
+msgstr "GRANJA A HORQUILLA"
+
+#: parts/food-safety-content.php:29 food-safety-content.php:29
+msgid ""
+"The journey of every Farmer John product from farm to fork is as short as "
+"can be. That's because we believe food should be prepared near you and "
+"arrive fresh to your grocery store every time. Our California Natural® "
+"products arrive at your grocer within just 24-48 hours of preparation, and "
+"our other products take only 3-5 days. Farmer John pays a premium for "
+"properly-sorted, lean hogs so you can enjoy meats of the highest quality and "
+"nutrition. All of our hogs are healthy, top-quality animals that are "
+"ethically managed and humanely treated. As we source and supply Farmer John "
+"products only on the West Coast, you can be sure that our wholesome food "
+"arrives fast and fresh."
+msgstr ""
+"El viaje de cada producto de Farmer John desde la granja hasta el tenedor es "
+"tan corto como puede ser. Eso es porque creemos que la comida debe ser "
+"preparada cerca de usted y llegar fresca a su tienda de comestibles cada "
+"vez. Nuestros productos California Natural® llegan al supermercado en sólo "
+"24-48 horas de preparación, y nuestros otros productos tardan sólo 3-5 días. "
+"El granjero John paga una prima por los cerdos magros y debidamente "
+"clasificados para que usted pueda disfrutar de carnes de la más alta calidad "
+"y nutrición. Todos nuestros cerdos son animales sanos y de alta calidad que "
+"son manejados de manera ética y tratados humanamente. Dado que sólo "
+"suministramos productos Farmer John en la Costa Oeste, puede estar seguro de "
+"que nuestra comida sana llega rápida y fresca."
+
+#: parts/food-safety-slider.php:20 food-safety-slider.php:20
+msgid "SAFETY TIP"
+msgstr "CONSEJO DE SEGURIDAD"
+
+#: parts/health-content.php:6 health-content.php:6
+msgid "UP YOUR PROTEIN"
+msgstr "AUMENTE SUS PROTEÍNAS"
+
+#: parts/health-content.php:8 parts/health-content.php:37 health-content.php:8
+#: health-content.php:37
+msgid ""
+"Pork is a key source of protein—the macro-nutrient essential to the body’s "
+"ability to grow and develop—and various Farmer John products are chockful of "
+"it."
+msgstr ""
+"La carne de cerdo es una fuente clave de proteína -el macro-nutriente "
+"esencial para la habilidad del cuerpo de crecer y desarrollarse- y varios "
+"productos de Farmer John están llenos de ella."
+
+#: parts/health-content.php:9 parts/health-content.php:17
+#: parts/health-content.php:56 parts/health-content.php:59
+#: parts/health-content.php:62 health-content.php:9 health-content.php:17
+#: health-content.php:56 health-content.php:59 health-content.php:62
+msgid "MORE"
+msgstr "MÁS"
+
+#: parts/health-content.php:14 health-content.php:14
+msgid "KEEP A BALANCED DIET"
+msgstr "MANTENER UNA DIETA EQUILIBRADA"
+
+#: parts/health-content.php:16 parts/health-content.php:44
+#: health-content.php:16 health-content.php:44
+msgid ""
+"With countless ways to mix and match our meats with other healthy options, "
+"Farmer John can help you prep your next nutritious meal as part of a "
+"balanced diet."
+msgstr ""
+"Con innumerables formas de mezclar y combinar nuestras carnes con otras "
+"opciones saludables, Farmer John puede ayudarte a preparar tu próxima comida "
+"nutritiva como parte de una dieta balanceada."
+
+#: parts/health-content.php:22 health-content.php:22
+msgid "BOOST YOUR NUTRITION"
+msgstr "AUMENTAR LA NUTRICIÓN"
+
+#: parts/health-content.php:24 parts/health-content.php:51
+#: health-content.php:24 health-content.php:51
+msgid ""
+"Many Farmer John products support good health. When it comes to pork, "
+"certain California Natural&reg; Fresh Pork products offer a rich blend of "
+"daily nutrients."
+msgstr ""
+"Muchos productos de Farmer John apoyan la buena salud. Cuando se trata de "
+"carne de cerdo, ciertos productos de California Natural&reg; Fresh Pork "
+"ofrecen una rica mezcla de nutrientes diarios."
+
+#: parts/health-content.php:35 health-content.php:35
+msgid "UP YOUR<br>PROTEIN"
+msgstr "SOBRE SU PROTEINA"
+
+#: parts/health-content.php:42 health-content.php:42
+msgid "KEEP A<br>BALANCED DIET"
+msgstr "MANTENER<br> UNA</br> DIETA EQUILIBRADA"
+
+#: parts/health-content.php:49 health-content.php:49
+msgid "BOOST YOUR<br>NUTRITION"
+msgstr "AUMENTAR LA NUTRICIÓN"
+
+#: parts/health-content.php:84 health-content.php:84
+msgid ""
+"Farmer John offers several high-protein, carb-conscious products to meet a "
+"wide range of dietary needs. Whether you’re looking for fulfillment on the "
+"daily food pyramid, a reliable go-to for The Paleo Diet™, or even low-carb "
+"choices with the Atkins Diet™, Farmer John has you covered. Our 100% natural "
+"CALIFORNIA NATURAL® Fresh Pork products like the FARMER JOHN® Pork "
+"Tenderloin and the FARMER JOHN® Extra Lean Ground Pork are good sources of "
+"protein as part of a well-balanced diet. You can also rely on Farmer John "
+"for lean protein; 7 cuts of our pork meet USDA guidelines for “lean” by "
+"containing fewer than 10 grams of fat, 4.5 grams of saturated fat and 95mg "
+"of cholesterol per 100 grams of meat."
+msgstr ""
+"El agricultor John ofrece varios productos con alto contenido de proteínas y "
+"carbohidratos para satisfacer una amplia gama de necesidades dietéticas. Ya "
+"sea que busque satisfacción en la pirámide alimenticia diaria, una salida "
+"confiable para The Paleo Diet™, o incluso opciones bajas en carbohidratos "
+"con el Atkins Diet™, el granjero John lo tiene cubierto. Nuestros productos "
+"de cerdo fresco CALIFORNIA NATURAL®, 100% naturales, como el Lomo de Cerdo "
+"FARMER JOHN® y el Cerdo Molido Extra Magro FARMER JOHN®, son buenas fuentes "
+"de proteína como parte de una dieta bien equilibrada. También puede confiar "
+"en Farmer John para la proteína magra; 7 cortes de nuestra carne de cerdo "
+"cumplen con las directrices del USDA para \"magro\" al contener menos de 10 "
+"gramos de grasa, 4,5 gramos de grasa saturada y 95mg de colesterol por cada "
+"100 gramos de carne."
+
+#: parts/health-content.php:96 health-content.php:96
+msgid ""
+"Offering more than 50 varieties of tasty meats, the ways Farmer John can "
+"support a well-balanced diet are numerous. We encourage you to incorporate "
+"Farmer John products into delicious dishes to create nutritious meals for "
+"breakfast, lunch and dinner. By adding products like our fresh pork or "
+"sausages to a plate of veggies, you can benefit from a well-rounded meal. "
+"Get inventive and have fun cooking up endless nutritious food pairings. "
+"Visit our <a href=\"/recipes\">Recipes</a> section for some inspiration and "
+"explore new approaches to cooking well-balanced meals."
+msgstr ""
+"Ofreciendo más de 50 variedades de carnes sabrosas, las formas en que el "
+"agricultor John puede apoyar una dieta bien balanceada son numerosas. Le "
+"animamos a incorporar los productos Farmer John en deliciosos platos para "
+"crear comidas nutritivas para el desayuno, el almuerzo y la cena. Añadiendo "
+"productos como nuestra carne de cerdo fresca o salchichas a un plato de "
+"verduras, usted puede beneficiarse de una comida completa. Sea inventivo y "
+"diviértase cocinando un sinfín de maridajes de alimentos nutritivos. Visite "
+"nuestra sección de <a href=\"/recipes\">Recetas</a> para inspirarse y "
+"explorar nuevos enfoques para cocinar comidas bien balanceadas."
+
+#: parts/health-content.php:108 health-content.php:108
+msgid ""
+"A lot of Farmer John products are naturally nutrient-rich. Pork happens to "
+"be low in sodium and high in potassium. For this reason, leaner cuts of pork "
+"such as our CALIFORNIA NATURAL® Fresh Pork Tenderloin are considered a heart-"
+"healthy option according to the American Heart Association®. Many cuts of "
+"our high-quality, fresh pork contain healthy nutrients, and a 3 oz. serving "
+"of pork is considered a good source of vitamins and minerals like vitamin "
+"B6, phosphorus, niacin, riboflavin, selenium zinc and potassium. For a "
+"clearer idea of just how nutritious pork can be, refer to our comparison "
+"chart below."
+msgstr ""
+"Muchos productos de Farmer John son naturalmente ricos en nutrientes. La "
+"carne de cerdo es baja en sodio y alta en potasio. Por esta razón, los "
+"cortes de cerdo más magros como nuestro Lomo de Cerdo Fresco CALIFORNIA "
+"NATURAL® se consideran una opción saludable para el corazón según la "
+"Asociación Americana del Corazón®. Muchos cortes de nuestra carne de cerdo "
+"fresca y de alta calidad contienen nutrientes saludables, y una porción de 3 "
+"onzas de cerdo es considerada una buena fuente de vitaminas y minerales como "
+"la vitamina B6, fósforo, niacina, riboflavina, selenio, zinc y potasio. Para "
+"tener una idea más clara de cuán nutritiva puede ser la carne de cerdo, "
+"consulte nuestra tabla de comparación que aparece a continuación."
+
+#: parts/health-content.php:116 health-content.php:116
+msgid "PORK HEALTH COMPARISON"
+msgstr "COMPARACIÓN DE LA SALUD DEL CERDO"
+
+#: parts/health-content.php:125 health-content.php:125
+msgid "Which protein has less calories per 3oz serving?"
+msgstr "¿Qué proteína tiene menos calorías por cada porción de 3 onzas?"
+
+#: parts/health-content.php:133 parts/health-content.php:143
+#: parts/health-content.php:165 parts/health-content.php:175
+#: health-content.php:133 health-content.php:143 health-content.php:165
+#: health-content.php:175
+msgid "Pork is the correct answer."
+msgstr "El cerdo es la respuesta correcta."
+
+#: parts/health-content.php:136 health-content.php:136
+msgid "Chicken"
+msgstr "Pollo"
+
+#: parts/health-content.php:138 parts/health-content.php:170
+#: parts/health-content.php:206 parts/health-content.php:239
+#: parts/health-content.php:273 health-content.php:138 health-content.php:170
+#: health-content.php:206 health-content.php:239 health-content.php:273
+msgid "VS"
+msgstr "VS"
+
+#: parts/health-content.php:146 parts/health-content.php:178
+#: parts/health-content.php:281 health-content.php:146 health-content.php:178
+#: health-content.php:281
+msgid "Pork"
+msgstr "Cerdo"
+
+#: parts/health-content.php:157 health-content.php:157
+msgid "Which item has more potassium?"
+msgstr "¿Qué artículo tiene más potasio?"
+
+#: parts/health-content.php:168 health-content.php:168
+msgid "Banana"
+msgstr "Plátano"
+
+#: parts/health-content.php:192 health-content.php:192
+msgid "Which item has more cholesterol per 3oz serving?"
+msgstr "¿Qué artículo tiene más colesterol por cada porción de 3 onzas?"
+
+#: parts/health-content.php:200 parts/health-content.php:212
+#: health-content.php:200 health-content.php:212
+msgid "Shrimp is the correct answer."
+msgstr "Las gambas son la respuesta correcta."
+
+#: parts/health-content.php:203 health-content.php:203
+msgid "Boneless Top Loin Pork Chop"
+msgstr "Chuleta de lomo superior deshuesada"
+
+#: parts/health-content.php:215 health-content.php:215
+msgid "Shrimp"
+msgstr "Gambas"
+
+#: parts/health-content.php:226 health-content.php:226
+msgid "Which item has less fat per 3oz serving?"
+msgstr "¿Qué producto tiene menos grasa por cada porción de 3 onzas?"
+
+#: parts/health-content.php:234 parts/health-content.php:244
+#: health-content.php:234 health-content.php:244
+msgid "Pork Tenderloin is the correct answer."
+msgstr "Lomo de cerdo es la respuesta correcta."
+
+#: parts/health-content.php:237 health-content.php:237
+msgid "Beef Top Sirloin"
+msgstr "Solomillo de ternera"
+
+#: parts/health-content.php:247 health-content.php:247
+msgid "Pork Tenderloin"
+msgstr "Lomo de cerdo"
+
+#: parts/health-content.php:260 health-content.php:260
+msgid "Which meat is more marbled with fat?"
+msgstr "¿Qué carne es más marmoleada con grasa?"
+
+#: parts/health-content.php:268 parts/health-content.php:278
+#: health-content.php:268 health-content.php:278
+msgid "Beef is the correct answer."
+msgstr "La carne es la respuesta correcta."
+
+#: parts/health-content.php:271 health-content.php:271
+msgid "Beef"
+msgstr "Carne de vacuno"
+
+#: parts/health-slider.php:20 parts/tips.php:16 health-slider.php:20
+#: tips.php:16
+msgid "HEALTH TIP"
+msgstr "CONSEJO DE SALUD"
+
+#: parts/homepage-dodgers.php:9 parts/homepage-our-story.php:9
+#: parts/homepage-our-story.php:15 homepage-dodgers.php:9
+#: homepage-our-story.php:9 homepage-our-story.php:15
+msgid "READ MORE"
+msgstr "LEER MÁS"
+
+#: parts/homepage-our-story.php:8 homepage-our-story.php:8
+msgid ""
+"Pioneering a revolution in the supply of locally flavorful meats,<br>FARMER "
+"JOHN has been a Southern California staple since practically forever.<br>See "
+"how the Clougherty Family’s commitment to high-quality MEATS<br>transformed "
+"their humble Vernon farm into the farm of the West."
+msgstr ""
+"Pionero en una revolución en el suministro de carnes con sabor local<br>, "
+"FARMER JOHN ha sido un alimento básico del sur de California desde "
+"prácticamente</br> siempre.<br><br> Vea cómo el compromiso de la familia "
+"Clougherty con las carnes de alta calidad</br></br> transformó<br><br> su "
+"humilde granja de Vernon en la granja del Oeste.</br></br>"
+
+#: parts/homepage-our-story.php:12 homepage-our-story.php:12
+msgid ""
+"Pioneering a revolution in the supply of locally flavorful meats, FARMER "
+"JOHN has been a Southern California staple since practically forever."
+msgstr ""
+"Pionero en una revolución en el suministro de carnes con sabor local, FARMER "
+"JOHN ha sido un alimento básico del sur de California desde prácticamente "
+"siempre."
+
+#: parts/homepage-our-story.php:13 homepage-our-story.php:13
+msgid ""
+"See how the Clougherty Family’s commitment to high-quality MEATS transformed "
+"their humble Vernon farm into the farm of the West."
+msgstr ""
+"Vea cómo el compromiso de la familia Clougherty con las carnes de alta "
+"calidad transformó su humilde granja de Vernon en la granja del Oeste."
+
+#: parts/homepage-products.php:7 homepage-products.php:7
+msgid "OUR PRODUCTS"
+msgstr "NUESTROS PRODUCTOS"
+
+#: parts/homepage-recipes.php:9 parts/homepage-recipes.php:77
+#: parts/portfolio-slider.php:9 parts/portfolio-slider.php:73
+#: parts/recipes-content.php:10 homepage-recipes.php:9 homepage-recipes.php:77
+#: portfolio-slider.php:9 portfolio-slider.php:73 recipes-content.php:10
+msgid "GET INSPIRED"
+msgstr "INSPÍRATE"
+
+#: parts/homepage-recipes.php:66 parts/homepage-recipes.php:96
+#: parts/portfolio-slider.php:62 parts/portfolio-slider.php:92
+#: parts/recipes-archive-recipe.php:26 parts/recipes-slider.php:81
+#: homepage-recipes.php:66 homepage-recipes.php:96 portfolio-slider.php:62
+#: portfolio-slider.php:92 recipes-archive-recipe.php:26 recipes-slider.php:81
+msgid "SEE RECIPE"
+msgstr "VER RECETA"
+
+#: parts/off-canvas-menu.php:22 parts/top-bar.php:74 parts/top-bar.php:76
+#: off-canvas-menu.php:22 top-bar.php:74 top-bar.php:76
+msgid "Products"
+msgstr "PRODUCTOS"
+
+#: parts/off-canvas-menu.php:25 parts/off-canvas-menu.php:28
+#: parts/top-bar.php:41 off-canvas-menu.php:25 off-canvas-menu.php:28
+#: top-bar.php:41
+msgid "About Us"
+msgstr "Nosotros"
+
+#: parts/off-canvas-menu.php:29 parts/top-bar.php:43 off-canvas-menu.php:29
+#: top-bar.php:43
+msgid "Our Story"
+msgstr "NUESTRA HISTORIA"
+
+#: parts/off-canvas-menu.php:30 parts/top-bar.php:44 off-canvas-menu.php:30
+#: top-bar.php:44
+msgid "Food Safety"
+msgstr "Seguridad de los alimentos"
+
+#: parts/off-canvas-menu.php:31 parts/top-bar.php:45 off-canvas-menu.php:31
+#: top-bar.php:45
+msgid "Careers"
+msgstr "Carreras"
+
+#: parts/off-canvas-menu.php:32 parts/top-bar.php:46 off-canvas-menu.php:32
+#: top-bar.php:46
+msgid "Contact"
+msgstr "CONTACTO"
+
+#: parts/off-canvas-menu.php:36 parts/top-bar.php:81 off-canvas-menu.php:36
+#: top-bar.php:81
+msgid "Recipes"
+msgstr "RECETAS"
+
+#: parts/off-canvas-menu.php:40 parts/top-bar.php:38 off-canvas-menu.php:40
+#: top-bar.php:38
+msgid "Where To Buy"
+msgstr "DÓNDE COMPRAR"
+
+#: parts/partners-content.php:19 partners-content.php:19
+msgid ""
+"Building strong ties with the local community is a priority at Farmer John. "
+"Having originated from a partnership of two brothers, Farmer John knows "
+"first-hand what can be accomplished when two minds come together."
+msgstr ""
+"La construcción de fuertes lazos con la comunidad local es una prioridad "
+"para el agricultor John. Habiendo sido originado por una sociedad de dos "
+"hermanos, el granjero John conoce de primera mano lo que se puede lograr "
+"cuando dos mentes se unen."
+
+#: parts/partners-content.php:20 partners-content.php:20
+msgid ""
+"As a mainstay in and around Los Angeles, Farmer John makes it a priority to "
+"build relationships that create a strong sense of community."
+msgstr ""
+"Como pilar en Los Ángeles y sus alrededores, el agricultor John tiene como "
+"prioridad construir relaciones que creen un fuerte sentido de comunidad."
+
+#: parts/partners-content.php:26 partners-content.php:26
+msgid ""
+"Building strong ties with the local community is a priority at Farmer John. "
+"Having originated from a partnership of two brothers, Farmer John knows "
+"first-hand what can be accomplished when two minds come together. As a "
+"mainstay in and around Los Angeles, Farmer John makes it a priority to build "
+"relationships that create a strong sense of community."
+msgstr ""
+"La construcción de fuertes lazos con la comunidad local es una prioridad "
+"para el agricultor John. Habiendo sido originado por una sociedad de dos "
+"hermanos, el granjero John conoce de primera mano lo que se puede lograr "
+"cuando dos mentes se unen. Como pilar en Los Ángeles y sus alrededores, el "
+"agricultor John tiene como prioridad construir relaciones que creen un "
+"fuerte sentido de comunidad."
+
+#: parts/partners-content.php:33 parts/partners-content.php:59
+#: partners-content.php:33 partners-content.php:59
+msgid "LOS ANGELES DODGERS"
+msgstr "LOS ÁNGELES DODGERS"
+
+#: parts/partners-content.php:34 parts/partners-content.php:60
+#: partners-content.php:34 partners-content.php:60
+msgid ""
+"For more than 50 years, Farmer John has been the official Dodger Dog&reg; "
+"hot dog. Selling more than 3 million dogs a year, Farmer John Official "
+"Dodger Dog&reg; hot dogs have become synonymous with the crack of the bat "
+"and the smell of the grass. So much so, in fact, that legendary announcer "
+"Vin Scully, a proud endorser, was once introduced as “Farmer John” himself. "
+"Naturally, we can’t think of a bigger compliment."
+msgstr ""
+"Durante más de 50 años, el granjero John ha sido el perro caliente oficial "
+"de los Dodgers Dog&reg. Vendiendo más de 3 millones de perros al año, el "
+"granjero John Official Dodger Dog&reg; los perros calientes se han "
+"convertido en sinónimo del chasquido del murciélago y el olor de la hierba. "
+"Tanto es así, que el legendario locutor Vin Scully, un orgulloso "
+"patrocinador, fue presentado una vez como el propio \"Granjero John\". "
+"Naturalmente, no podemos pensar en un cumplido mayor."
+
+#: parts/partners-content.php:38 parts/partners-content.php:67
+#: partners-content.php:38 partners-content.php:67
+msgid "ANAHEIM ANGELS"
+msgstr "ANGELES ANAHEIM"
+
+#: parts/partners-content.php:39 parts/partners-content.php:68
+#: partners-content.php:39 partners-content.php:68
+msgid ""
+"Farmer John is a strong supporter of all things Los Angeles, which is why we "
+"are proud to be the official sausage of the Los Angeles Angels of Anaheim. "
+"Grab one the next time you’re at the stadium, and be sure to check out all "
+"of our delicious sausage varieties on our products page."
+msgstr ""
+"El granjero John es un gran partidario de todo lo relacionado con Los "
+"Ángeles, por lo que estamos orgullosos de ser la salchicha oficial de Los "
+"Ángeles de Anaheim. Agarra una la próxima vez que estés en el estadio, y "
+"asegúrate de ver todas nuestras deliciosas variedades de salchichas en "
+"nuestra página de productos."
+
+#: parts/partners-content.php:43 parts/partners-content.php:75
+#: partners-content.php:43 partners-content.php:75
+msgid "GOLDEN STATE WARRIORS"
+msgstr "GUERREROS DEL ESTADO DORADO"
+
+#: parts/partners-content.php:44 parts/partners-content.php:76
+#: partners-content.php:44 partners-content.php:76
+msgid ""
+"Farmer John&reg; is proud to be an official sponsor of the 2017 NBA "
+"Champions, the Golden State Warriors. Throughout the regular season and come "
+"playoff time, make every Dubs game memorable with mouth-watering Farmer "
+"John® sausage or bacon."
+msgstr ""
+"El granjero John&reg; se enorgullece de ser el patrocinador oficial de los "
+"Campeones de la NBA de 2017, los Golden State Warriors. A lo largo de la "
+"temporada regular y en el tiempo de los playoffs, haz que cada partido de "
+"los Dubs sea memorable con la deliciosa salchicha o el tocino Farmer John®."
+
+#: parts/partners-content.php:48 parts/partners-content.php:83
+#: partners-content.php:48 partners-content.php:83
+msgid "THE ROSE BOWL"
+msgstr "LA CUENCA DE ROSA"
+
+#: parts/partners-content.php:49 parts/partners-content.php:84
+#: partners-content.php:49 partners-content.php:84
+msgid ""
+"Farmer John is the exclusive hot dog provider of concession stands at the "
+"Rose Bowl. Whenever possible, we like to give away tickets to the big games. "
+"Be sure to follow us on Facebook and Twitter so you don’t miss out on your "
+"chance to win."
+msgstr ""
+"El granjero John es el proveedor exclusivo de perritos calientes de los "
+"puestos de concesión en el Rose Bowl. Siempre que es posible, nos gusta "
+"regalar entradas para los grandes partidos. Asegúrese de seguirnos en "
+"Facebook y Twitter para no perder su oportunidad de ganar."
+
+#: parts/portfolio-content.php:29 portfolio-content.php:29
+msgid "CHECK OUT OUR PAST BACON PARTIES!"
+msgstr "¡MIRA NUESTRAS PASADAS FIESTAS DE TOCINO!"
+
+#: parts/portfolio-hero.php:50 portfolio-hero.php:50
+msgid "WANT TO JOIN THE BACON PARTY?"
+msgstr "¿QUIERES UNIRTE A LA FIESTA DEL TOCINO?"
+
+#: parts/portfolio-hero.php:51 portfolio-hero.php:51
+msgid ""
+"No club card needed to get this party started. Get bacon-spiration every day "
+"on @thebaconparty IG, enter giveaways for free bacon and fresh pork plus get "
+"a chance to attend a live Bacon Party event!"
+msgstr ""
+"No es necesario tener una tarjeta del club para empezar la fiesta. Obtenga "
+"inspiración de tocino todos los días en @thebaconparty IG, participe en los "
+"sorteos de tocino y cerdo fresco gratis, además de tener la oportunidad de "
+"asistir a un evento de Fiesta de Tocino en vivo!"
+
+#: parts/portfolio-hero.php:53 portfolio-hero.php:53
+msgid "Join the Bacon Party!"
+msgstr "Únete a la Fiesta del Tocino!"
+
+#: parts/portfolio-slider.php:8 parts/portfolio-slider.php:72
+#: portfolio-slider.php:8 portfolio-slider.php:72
+msgid "BACON PARTY RECIPES"
+msgstr "RECETAS DE FIESTAS CON TOCINO"
+
+#: parts/recipes-archive-filters.php:4 parts/recipes-archive-filters.php:57
+#: recipes-archive-filters.php:4 recipes-archive-filters.php:57
+msgid "SORT BY"
+msgstr "ORDENAR POR"
+
+#: parts/recipes-archive-filters.php:21 parts/recipes-archive-filters.php:66
+#: recipes-archive-filters.php:21 recipes-archive-filters.php:66
+msgid "PRODUCT"
+msgstr "PRODUCTO"
+
+#: parts/recipes-archive-filters.php:32 parts/recipes-archive-filters.php:75
+#: recipes-archive-filters.php:32 recipes-archive-filters.php:75
+msgid "MEAL"
+msgstr "COMIDA"
+
+#: parts/recipes-archive-filters.php:33 parts/recipes-archive-filters.php:76
+#: recipes-archive-filters.php:33 recipes-archive-filters.php:76
+msgid "ALL MEALS"
+msgstr "TODAS LAS COMIDAS"
+
+#: parts/recipes-archive-filters.php:34 parts/recipes-archive-filters.php:77
+#: recipes-archive-filters.php:34 recipes-archive-filters.php:77
+msgid "Breakfast"
+msgstr "Desayuno"
+
+#: parts/recipes-archive-filters.php:35 parts/recipes-archive-filters.php:78
+#: recipes-archive-filters.php:35 recipes-archive-filters.php:78
+msgid "Brunch"
+msgstr "Brunch"
+
+#: parts/recipes-archive-filters.php:36 parts/recipes-archive-filters.php:79
+#: recipes-archive-filters.php:36 recipes-archive-filters.php:79
+msgid "Lunch"
+msgstr "Almuerzo"
+
+#: parts/recipes-archive-filters.php:37 parts/recipes-archive-filters.php:80
+#: recipes-archive-filters.php:37 recipes-archive-filters.php:80
+msgid "Appetizer"
+msgstr "Aperitivo"
+
+#: parts/recipes-archive-filters.php:38 parts/recipes-archive-filters.php:81
+#: recipes-archive-filters.php:38 recipes-archive-filters.php:81
+msgid "Dinner"
+msgstr "Cena"
+
+#: parts/recipes-content.php:43 recipes-content.php:43
+msgid "SUBMIT A<br>RECIPE!"
+msgstr "PRESENTAR<br> ARECIPE!</br>"
+
+#: parts/recipes-content.php:44 recipes-content.php:44
+msgid "CLICK HERE"
+msgstr "HAGA CLIC AQUÍ"
+
+#: parts/social-hero.php:3 social-hero.php:3
+msgid "SOCIAL"
+msgstr "Social"
+
+#: parts/tips.php:9 single-recipes.php:130 single-recipes.php:254 tips.php:9
+msgid "COOKING TIP"
+msgstr "CONSEJO DE COCINA"
+
+#: parts/tips.php:11 tips.php:11
+msgid ""
+"Meal prep is a key ingredient to artful cooking. Always set aside all "
+"equipment, utensils, ingredients and spices before you start cooking."
+msgstr ""
+"La preparación de las comidas es un ingrediente clave para la cocina "
+"artística. Siempre deje a un lado todo el equipo, los utensilios, los "
+"ingredientes y las especias antes de empezar a cocinar."
+
+#: parts/tips.php:18 tips.php:18
+msgid ""
+"Spice it up! Even eating just one meal with the compound capsaicin, commonly "
+"found in hot sauce, can reduce levels of the hunger-inducing hormone ghrelin."
+msgstr ""
+"¡Prepárelo! Incluso comer sólo una comida con el compuesto capsaicina, que "
+"se encuentra comúnmente en la salsa picante, puede reducir los niveles de la "
+"hormona grelina que induce el hambre."
+
+#: search.php:17
+msgid "Search Results for"
+msgstr "Resultados de búsqueda para"
+
+#: searchform.php:15 searchform.php:19
+msgid "Search"
+msgstr "Buscar"
+
+#: single-products.php:57 single-products.php:182
+msgid "COOKING SUGGESTION"
+msgstr "SUGERENCIA DE COCINA"
+
+#: single-products.php:70 single-products.php:208
+msgid "NUTRITIONAL INFORMATION"
+msgstr "INFORMACIÓN SOBRE NUTRICIÓN"
+
+#: single-products.php:74 single-products.php:212
+msgid "SERVING SIZE"
+msgstr "TAMAÑO DEL SERVICIO"
+
+#: single-products.php:78 single-products.php:216
+msgid "SERVINGS PER CONTAINER"
+msgstr "RACIONES POR ENVASE"
+
+#: single-products.php:86 single-products.php:224
+msgid "AMOUNT PER SERVING"
+msgstr "CANTIDAD POR PORCIÓN"
+
+#: single-products.php:90 single-products.php:228
+msgid "CALORIES"
+msgstr "CALORÍAS"
+
+#: single-products.php:94 single-products.php:232
+msgid "CALORIES FROM FAT"
+msgstr "CALORÍAS DE LA GRASA"
+
+#: single-products.php:99 single-products.php:237
+msgid "DAILY VALUE"
+msgstr "VALOR DIARIO"
+
+#: single-products.php:103 single-products.php:241
+msgid "TOTAL FAT"
+msgstr "GRASA TOTAL"
+
+#: single-products.php:107 single-products.php:245
+msgid "SATURATED FAT"
+msgstr "GRASA SATURADA"
+
+#: single-products.php:111 single-products.php:249
+msgid "TRANS FAT"
+msgstr "GRASA TRANS"
+
+#: single-products.php:115 single-products.php:253
+msgid "CHOLESTEROL"
+msgstr "COLESTEROL"
+
+#: single-products.php:119 single-products.php:257
+msgid "SODIUM"
+msgstr "SODIO"
+
+#: single-products.php:123 single-products.php:261
+msgid "TOTAL CARB"
+msgstr "TOTAL CARB"
+
+#: single-products.php:127 single-products.php:265
+msgid "DIETARY FIBER"
+msgstr "FIBRA DIETÉTICA"
+
+#: single-products.php:131 single-products.php:269
+msgid "SUGARS"
+msgstr "AZÚCARES"
+
+#: single-products.php:135 single-products.php:273
+msgid "PROTEIN"
+msgstr "PROTEINAS"
+
+#: single-products.php:139 single-products.php:277
+msgid "VITAMIN A"
+msgstr "VITAMINA A"
+
+#: single-products.php:140 single-products.php:278
+msgid "VITAMIN C"
+msgstr "VITAMINA C"
+
+#: single-products.php:143 single-products.php:281
+msgid "CALCIUM"
+msgstr "CALCIO"
+
+#: single-products.php:144 single-products.php:282
+msgid "IRON"
+msgstr "HIERRO"
+
+#: single-products.php:148 single-products.php:286
+msgid "PERCENT DAILY VALUES (DV) ARE BASED ON A 2,000 CALORIE DIET"
+msgstr ""
+"LOS VALORES DIARIOS PORCENTUALES (DV) SE BASAN EN UNA DIETA DE 2.000 CALORÍAS"
+
+#: single-products.php:157
+msgid "TRY THESE RECIPES"
+msgstr "PRUEBE ESTAS RECETAS"
+
+#: single-recipes.php:42 single-recipes.php:48 single-recipes.php:218
+msgid "SHARE"
+msgstr "COMPARTIR"
+
+#: single-recipes.php:52 single-recipes.php:222
+msgid "TWEET"
+msgstr "TWEET"
+
+#: single-recipes.php:56 single-recipes.php:226
+msgid "PIN"
+msgstr "PIN"
+
+#: single-recipes.php:61 single-recipes.php:230
+msgid "EMAIL"
+msgstr "Email"
+
+#: single-recipes.php:66 single-recipes.php:234
+msgid "PRINT"
+msgstr "IMPRIMIR"
+
+#: single-recipes.php:79 single-recipes.php:166 single-recipes.php:284
+msgid "SERVINGS"
+msgstr "SERVIDORES"
+
+#: single-recipes.php:83 single-recipes.php:170 single-recipes.php:288
+msgid "PREP TIME"
+msgstr "TIEMPO DE PREPARACIÓN"
+
+#: single-recipes.php:87 single-recipes.php:174 single-recipes.php:292
+msgid "COOK TIME"
+msgstr "TIEMPO DE COCCIÓN"
+
+#: single-recipes.php:91 single-recipes.php:178 single-recipes.php:296
+msgid "TOTAL TIME"
+msgstr "TIEMPO TOTAL"
+
+#: single-recipes.php:95 single-recipes.php:182 single-recipes.php:300
+msgid "DIFFICULTY"
+msgstr "NO. DE INVITADOS"
+
+#: single-recipes.php:104 single-recipes.php:242
+msgid "VIDEO RECIPE"
+msgstr "RECETA DE VIDEO"
+
+#: single-recipes.php:118 single-recipes.php:190 single-recipes.php:306
+msgid "INGREDIENTS"
+msgstr "INGREDIENTES"
+
+#: single-recipes.php:123 single-recipes.php:195 single-recipes.php:311
+msgid "DIRECTIONS"
+msgstr "INSTRUCCIONES"
+
+#: single-recipes.php:318
+msgid "PAIRING TIP"
+msgstr "CONSEJO DE EMPAREJAMIENTO"
+
+#. Template Name of the theme
+msgid "Front"
+msgstr "Frente"
+
+#. Template Name of the theme
+msgid "Kitchen Sink"
+msgstr "Fregadero de la cocina"
+
+#. Template Name of the theme
+msgid "Full Width"
+msgstr "Ancho completo"
+
+#. Template Name of the theme
+msgid "Left Sidebar"
+msgstr "Barra lateral izquierda"
+
+#. Template Name of the theme
+msgid "Portfolio View"
+msgstr "Vista de la cartera"
