@@ -24,6 +24,10 @@ RewriteRule . index.php [L]
 
 # Redirect old file path to new file path
 Redirect 301 /where-to-buy/ http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ
+Redirect 301 /es/products /es/productos
+Redirect 301 /productos /products
+Redirect 301 /recetas /recipes
+Redirect 301 /es/recipes /es/recetas
 
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>

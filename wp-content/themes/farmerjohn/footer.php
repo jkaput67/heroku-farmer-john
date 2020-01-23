@@ -16,23 +16,23 @@
 	<div class="column large-8">
 		<div class="row footer-nav">
 			<div class="column large-3">
-				<a href="/products"><?php _e('PRODUCTS', 'foundationpress')?></a>
-				<a href="/recipes"><?php _e('RECIPES', 'foundationpress')?></a>
-				<a href="/our-story"><?php _e('OUR STORY', 'foundationpress')?></a>
+				<a href="<?php echo get_locale() == 'es_MX' ? '/es/productos' : '/products' ?>"><?php _e('PRODUCTS', 'foundationpress')?></a>
+				<a href="<?php echo get_locale() == 'es_MX' ? '/es/recetas' : '/recipes' ?>"><?php _e('RECIPES', 'foundationpress')?></a>
+				<a href="<?php echo get_page_link(414)?>"><?php _e('OUR STORY', 'foundationpress')?></a>
 			</div>
 			<div class="column large-3">
-				<a href="/health"><?php _e('HEALTH', 'foundationpress')?></a>
-				<a href="/partners"><?php _e('PARTNERS', 'foundationpress')?></a>
+				<a href="<?php echo get_page_link(380)?>"><?php _e('HEALTH', 'foundationpress')?></a>
+				<a href="<?php echo get_page_link(376)?>"><?php _e('PARTNERS', 'foundationpress')?></a>
 				<a href="http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ" target="_blank"><?php _e('WHERE TO BUY', 'foundationpress')?></a>
 			</div>
 			<div class="column large-3">
-				<a href="/ca-transparency-act"><?php _e('CA TRANSPARENCY ACT', 'foundationpress')?></a>
-				<a href="/privacy-policy"><?php _e('PRIVACY POLICY', 'foundationpress')?></a>
+				<a href="<?php echo get_page_link(403)?>"><?php _e('CA TRANSPARENCY ACT', 'foundationpress')?></a>
+				<a href="<?php echo get_page_link(399)?>"><?php _e('PRIVACY POLICY', 'foundationpress')?></a>
 				<a href="https://www.smithfieldfoods.com/ca-privacy-policy"><?php _e('CALIFORNIA PRIVACY', 'foundationpress')?></a>
 			</div>
 			<div class="column large-3">
 				<a target="_blank" href="http://www.smithfieldfoods.com/terms-of-use"><?php _e('TERMS OF USE', 'foundationpress')?></a>
-				<a href="/contact"><?php _e('CONTACT', 'foundationpress')?></a>
+				<a href="<?php echo get_page_link(405)?>"><?php _e('CONTACT', 'foundationpress')?></a>
 				<a href="https://www.smithfieldfoods.com/careers" target="_blank">CAREERS</a>
 			</div>
 		</div>
@@ -65,26 +65,26 @@
 <footer class="hide-for-large-up">
 	<div class="row footer-nav">
 		<div class="column small-7">
-			<a href="/products"><?php _e('PRODUCTS', 'foundationpress')?></a>
-			<a href="/recipes"><?php _e('RECIPES', 'foundationpress')?></a>
-			<a href="/our-story"><?php _e('OUR STORY', 'foundationpress')?></a>
+			<a href="<?php echo get_locale() == 'es_MX' ? '/es/productos' : '/products' ?>"><?php _e('PRODUCTS', 'foundationpress')?></a>
+			<a href="<?php echo get_locale() == 'es_MX' ? '/es/recetas' : '/recipes' ?>"><?php _e('RECIPES', 'foundationpress')?></a>
+			<a href="<?php echo get_page_link(414)?>"><?php _e('OUR STORY', 'foundationpress')?></a>
 		</div>
 		<div class="column small-5">
-			<a href="/health"><?php _e('HEALTH', 'foundationpress')?></a>
-			<a href="/partners"><?php _e('PARTNERS', 'foundationpress')?></a>
+			<a href="<?php echo get_page_link(380)?>"><?php _e('HEALTH', 'foundationpress')?></a>
+			<a href="<?php echo get_page_link(376)?>"><?php _e('PARTNERS', 'foundationpress')?></a>
 			<a href="http://productlocator.infores.com/productlocator/keg/keg.pli?client_id=156&productfamilyid=RIOJ" target="_blank"><?php _e('WHERE TO BUY', 'foundationpress')?></a>
 		</div>
 	</div>
 	<div class="row footer-nav">
 		<div class="column small-7">
-			<a href="/ca-transparency-act" class="ca_transparency_act"><?php _e('CA TRANSPARENCY ACT', 'foundationpress')?></a>
-			<a href="/privacy-policy"><?php _e('PRIVACY POLICY', 'foundationpress')?></a>
+			<a href="<?php echo get_page_link(403)?>" class="ca_transparency_act"><?php _e('CA TRANSPARENCY ACT', 'foundationpress')?></a>
+			<a href="<?php echo get_page_link(399)?>"><?php _e('PRIVACY POLICY', 'foundationpress')?></a>
 			<a href="https://www.smithfieldfoods.com/ca-privacy-policy"><?php _e('CALIFORNIA PRIVACY', 'foundationpress')?></a>
 
 		</div>
 		<div class="column small-5">
 			<a target="_blank" href="http://www.smithfieldfoods.com/terms-of-use"><?php _e('TERMS OF USE', 'foundationpress')?></a>
-			<a href="/contact"><?php _e('CONTACT', 'foundationpress')?></a>
+			<a href="<?php echo get_page_link(405)?>"><?php _e('CONTACT', 'foundationpress')?></a>
 			<a href="https://www.smithfieldfoods.com/careers" target="_blank">CAREERS</a>
 		</div>
 	</div>

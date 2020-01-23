@@ -69,16 +69,23 @@
 
             <!-- Left Nav Section -->
             <ul class="left" style="width: calc(50% - 117px); display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; justify-content: flex-end; -webkit-justify-content: flex-end;">
+                <li>
+                    <?php if ( function_exists( 'the_msls' ) ) the_msls(); ?>
+                </li>
                 <li<?php if ( is_post_type_archive( 'products' ) || is_singular( 'products' ) ) { echo ' class="active"'; } ?>>
                     <?php if ( get_locale() == 'es_MX' ):?>
-                        <a href="/productos"><?php _e('Products','foundationpress')?></a>
+                        <a href="/es/productos"><?php _e('Products','foundationpress')?></a>
                     <?php else: ?>
                         <a href="/products"><?php _e('Products','foundationpress')?></a>
                     <?php endif ?>
                 </li>
             
                 <li<?php if ( is_post_type_archive( 'recipes' ) || is_single( 'recipes' ) ) { echo ' class="active"'; } ?>>
-                    <a href="/recipes"><?php _e('Recipes','foundationpress')?></a>
+                    <?php if ( get_locale() == 'es_MX' ):?>
+                        <a href="/es/recetas"><?php _e('Recipes','foundationpress')?></a>
+                    <?php else: ?>
+                        <a href="/recipes"><?php _e('Recipes','foundationpress')?></a>
+                    <?php endif ?>
                 </li>
             </ul>
         </section>
