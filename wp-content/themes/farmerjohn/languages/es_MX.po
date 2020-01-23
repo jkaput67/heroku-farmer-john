@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-01-23T15:45:13+00:00\n"
-"PO-Revision-Date: 2020-01-23 09:54-0600\n"
+"PO-Revision-Date: 2020-01-23 17:10-0600\n"
 "X-Generator: Poedit 2.2.4\n"
 "X-Domain: foundationpress\n"
 "Project-Id-Version: \n"
@@ -94,7 +94,7 @@ msgstr "TODO NATURAL"
 #: taxonomy-product_category.php:29 taxonomy-product_category.php:52
 #: taxonomy-product_category.php:69
 msgid "BACON"
-msgstr "BACON"
+msgstr "TOCINO"
 
 #: archive-products.php:30 archive-products.php:51 archive-products.php:70
 #: archive-products.php:92 archive-products.php:120
@@ -108,7 +108,7 @@ msgstr "SALCHICHA DE DESAYUNO"
 #: taxonomy-product_category.php:35 taxonomy-product_category.php:54
 #: taxonomy-product_category.php:75
 msgid "HAM"
-msgstr "HAM"
+msgstr "JAMÓN"
 
 #: archive-products.php:36 archive-products.php:53 archive-products.php:76
 #: archive-products.php:94 archive-products.php:122
@@ -1447,7 +1447,7 @@ msgstr "INFORMACIÓN SOBRE NUTRICIÓN"
 
 #: single-products.php:74 single-products.php:212
 msgid "SERVING SIZE"
-msgstr "TAMAÑO DEL SERVICIO"
+msgstr "TAMAÑO DE LA PORCIÓN"
 
 #: single-products.php:78 single-products.php:216
 msgid "SERVINGS PER CONTAINER"
@@ -1552,15 +1552,15 @@ msgstr "IMPRIMIR"
 
 #: single-recipes.php:79 single-recipes.php:166 single-recipes.php:284
 msgid "SERVINGS"
-msgstr "SERVIDORES"
+msgstr "PORCIONES"
 
 #: single-recipes.php:83 single-recipes.php:170 single-recipes.php:288
 msgid "PREP TIME"
-msgstr "TIEMPO DE PREPARACIÓN"
+msgstr "TIEMPO DE PREP"
 
 #: single-recipes.php:87 single-recipes.php:174 single-recipes.php:292
 msgid "COOK TIME"
-msgstr "TIEMPO DE COCCIÓN"
+msgstr "TIEMPO DE COCINAR"
 
 #: single-recipes.php:91 single-recipes.php:178 single-recipes.php:296
 msgid "TOTAL TIME"
@@ -1568,7 +1568,7 @@ msgstr "TIEMPO TOTAL"
 
 #: single-recipes.php:95 single-recipes.php:182 single-recipes.php:300
 msgid "DIFFICULTY"
-msgstr "NO. DE INVITADOS"
+msgstr "DIFICULTAD"
 
 #: single-recipes.php:104 single-recipes.php:242
 msgid "VIDEO RECIPE"
