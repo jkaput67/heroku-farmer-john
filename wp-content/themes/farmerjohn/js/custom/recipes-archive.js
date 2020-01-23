@@ -40,6 +40,7 @@ function addRecipes(){
 	// Count the number of objects in the recipes container
 	numRecipesDisplayedMobile = $('.homepage_recipes.hide-for-large-up .homepage_recipes_recipe').length-1;
 	numRecipesDisplayedDesktop = $('.homepage_recipes.show-for-large-up .homepage_recipes_recipe').not('.submit_a_recipe').length;
+	//numRecipesDisplayedDesktop = $('.homepage_recipes.show-for-large-up .homepage_recipes_recipe').length;
 	// Add the new recipes into the results container for mobile
 	$('.all-recipes-container > div.homepage_recipes_recipe').each(function(){
 		if( $(this).index() > numRecipesDisplayedMobile && $(this).index() < (numRecipesDisplayedMobile+9) ){
@@ -70,6 +71,7 @@ function bookEnd(){
 	// Clear out the 'end' class from recipes and make the last item an end
 	$('.homepage_recipes > div.homepage_recipes_recipe ').removeClass('end');
 	$('.homepage_recipes').find('div.homepage_recipes_recipe:visible:last').addClass('end');
+	$('.submit_a_recipe').hide();
 }
 
 $(document).ready(function(){

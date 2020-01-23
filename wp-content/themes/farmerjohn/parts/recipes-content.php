@@ -82,6 +82,6 @@ the_content();
 wp_reset_postdata(); ?>
   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
-<script src="<?php echo get_template_directory_uri(); ?>/js/custom/recipes-archive.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/custom/recipes-archive.js?v=1"></script>
 <?php /* Restore original Post Data */
 wp_reset_postdata(); ?>
