@@ -136,8 +136,15 @@ endif; ?>
 				<td class = "td-value"><?php if (!empty(get_field('protein_percentage'))) { echo get_field('protein_percentage') . '%'; } ?></td>
 			</tr>
 			<tr>
-				<td class = "td-label" colspan = "2">
-					<?php _e('VITAMIN A','foundationpress')?> <?php the_field('vitamin_a')?>% &nbsp;&nbsp;&nbsp;<?php _e('VITAMIN C','foundationpress')?> <?php the_field('vitamin_c')?>% &nbsp;&nbsp;&nbsp;<?php _e('CALCIUM','foundationpress')?> <?php the_field('calcium')?>% &nbsp;&nbsp;&nbsp;<?php _e('IRON','foundationpress')?> <?php the_field('iron')?>%<br/>
+				<td class = "td-label"><?php _e('VITAMIN A','foundationpress')?> <?php the_field('vitamin_a')?>%</td>
+				<td class = "td-label"><?php _e('VITAMIN C','foundationpress')?> <?php the_field('vitamin_c')?>%</td>
+			</tr>
+			<tr>
+				<td class = "td-label"><?php _e('CALCIUM','foundationpress')?> <?php the_field('calcium')?>%</td>
+				<td class = "td-label"><?php _e('IRON','foundationpress')?> <?php the_field('iron')?>%</td>
+			</tr>
+			<tr>
+				<td class = "td-label" colspan ="2">
 					<span class = "dv-label">* <?php _e('PERCENT DAILY VALUES (DV) ARE BASED ON A 2,000 CALORIE DIET','foundationpress')?></span>
 				</td>
 			</tr>
@@ -267,8 +274,15 @@ endif; ?>
 						<td class = "td-value"><?php if (!empty(get_field('protein_percentage'))) { echo get_field('protein_percentage') . '%'; } ?></td>
 					</tr>
 					<tr>
-						<td class = "td-label" colspan = "2">
-							<?php _e('VITAMIN A','foundationpress')?> <?php the_field('vitamin_a')?>% &nbsp;&nbsp;&nbsp;<?php _e('VITAMIN C','foundationpress')?> <?php the_field('vitamin_c')?>% &nbsp;&nbsp;&nbsp;<?php _e('CALCIUM','foundationpress')?> <?php the_field('calcium')?>% &nbsp;&nbsp;&nbsp;<?php _e('IRON','foundationpress')?> <?php the_field('iron')?>%<br/>
+						<td class = "td-label"><?php _e('VITAMIN A','foundationpress')?> <?php the_field('vitamin_a')?>%</td>
+						<td class = "td-label"><?php _e('VITAMIN C','foundationpress')?> <?php the_field('vitamin_c')?>%</td>
+					</tr>
+					<tr>
+						<td class = "td-label"><?php _e('CALCIUM','foundationpress')?> <?php the_field('calcium')?>%</td>
+						<td class = "td-label"><?php _e('IRON','foundationpress')?> <?php the_field('iron')?>%</td>
+					</tr>
+					<tr>
+						<td class = "td-label" colspan ="2">
 							<span class = "dv-label">* <?php _e('PERCENT DAILY VALUES (DV) ARE BASED ON A 2,000 CALORIE DIET','foundationpress')?></span>
 						</td>
 					</tr>
