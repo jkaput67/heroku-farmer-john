@@ -5,6 +5,7 @@ wp-content/uploads/
 wp-content/upgrade/
 wp-content/cache/
 wp-content/languages/wpml/
+wp-content/aiowps_backups/
 
 node_modules/
 
