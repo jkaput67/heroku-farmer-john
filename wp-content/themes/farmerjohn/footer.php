@@ -33,7 +33,7 @@
 			<div class="column large-3">
 				<a target="_blank" href="http://www.smithfieldfoods.com/terms-of-use"><?php _e('TERMS OF USE', 'foundationpress')?></a>
 				<a href="<?php echo get_page_link(405)?>"><?php _e('CONTACT', 'foundationpress')?></a>
-				<a href="https://www.smithfieldfoods.com/careers" target="_blank">CAREERS</a>
+				<a href="https://www.smithfieldfoods.com/careers" target="_blank"><?php _e('CAREERS', 'foundationpress')?></a>
 			</div>
 		</div>
 	</div>
