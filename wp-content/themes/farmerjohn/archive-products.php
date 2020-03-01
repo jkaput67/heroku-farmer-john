@@ -4,7 +4,24 @@
  *
  */
 
-get_header(); ?>
+get_header(); 
+
+if (get_locale() == 'es_MX') {
+	$filter_all_natural = 'filter-todo-natural';
+	$filter_bacon = 'filter-tocino';
+	$filter_breakfast_sausage = 'filter-salchichas-desayuno';
+	$filter_ham = 'filter-jamon';
+	$filter_lunch_meat = 'filter-carne-almuerzo';
+	$filter_smoked_sausage = 'filter-salchicha-ahumada';
+} else {
+	$filter_all_natural = 'filter-all-natural';
+	$filter_bacon = 'filter-bacon';
+	$filter_breakfast_sausage = 'filter-breakfast-sausage';
+	$filter_ham = 'filter-ham';
+	$filter_lunch_meat = 'filter-lunch-meat';
+	$filter_smoked_sausage = 'filter-smoked-sausage';
+}
+?>
 
 <style>
 	.products_archive_filter_nav > .row {
@@ -21,38 +38,38 @@ get_header(); ?>
 				<a class="filter-all active"><?php _e('ALL', 'foundationpress')?></a>
 			</div>
 			<div class="column products_archive_filter_item" style="width:10%">
-				<a class="filter-all-natural"><?php _e('ALL NATURAL', 'foundationpress')?></a>
+				<a class="<?php echo $filter_all_natural?>"><?php _e('ALL NATURAL', 'foundationpress')?></a>
 			</div>
 			<div class="column products_archive_filter_item" style="width:10%">
-				<a class="filter-bacon"><?php _e('BACON', 'foundationpress')?></a>
+				<a class="<?php echo $filter_bacon?>"><?php _e('BACON', 'foundationpress')?></a>
 			</div>
 			<div class="column products_archive_filter_item" style="width:10%">
-				<a class="filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE', 'foundationpress')?></a>
+				<a class="<?php echo $filter_breakfast_sausage?>"><?php _e('BREAKFAST SAUSAGE', 'foundationpress')?></a>
 			</div>
 			<div class="column products_archive_filter_item" style="width:10%">
-				<a class="filter-ham"><?php _e('HAM', 'foundationpress')?></a>
+				<a class="<?php echo $filter_ham?>"><?php _e('HAM', 'foundationpress')?></a>
 			</div>
 			<div class="column products_archive_filter_item" style="width:10%">
 				<a class="filter-hot-dogs"><?php _e('HOT DOGS', 'foundationpress')?></a>
 			</div>
 			<div class="column products_archive_filter_item" style="width:10%">
-				<a class="filter-lunch-meat"><?php _e('LUNCH MEAT', 'foundationpress')?></a>
+				<a class="<?php echo $filter_lunch_meat?>"><?php _e('LUNCH MEAT', 'foundationpress')?></a>
 			</div>
 			<div class="column products_archive_filter_item" style="width:10%; border: 0">
-				<a class="filter-smoked-sausage"><?php _e('SMOKED SAUSAGE', 'foundationpress')?></a>
+				<a class="<?php echo $filter_smoked_sausage?>"><?php _e('SMOKED SAUSAGE', 'foundationpress')?></a>
 			</div>
 		</div>
 	</div>
 	<div class="products_archive_filter_nav hide-for-large-up light-yellow-bg">
 		<a class="products_archive_filter_dropdown_toggle text-center">
 			<h2 class="filter-all active"><?php _e('ALL PRODUCTS', 'foundationpress')?></h2>
-			<h2 class="filter-all-natural"><?php _e('ALL NATURAL', 'foundationpress')?></h2>
-			<h2 class="filter-bacon"><?php _e('BACON', 'foundationpress')?></h2>
-			<h2 class="filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE', 'foundationpress')?></h2>
-			<h2 class="filter-ham"><?php _e('HAM', 'foundationpress')?></h2>
+			<h2 class="<?php echo $filter_all_natural?>"><?php _e('ALL NATURAL', 'foundationpress')?></h2>
+			<h2 class="<?php echo $filter_bacon?>"><?php _e('BACON', 'foundationpress')?></h2>
+			<h2 class="<?php echo $filter_breakfast_sausage?>"><?php _e('BREAKFAST SAUSAGE', 'foundationpress')?></h2>
+			<h2 class="<?php echo $filter_ham?>"><?php _e('HAM', 'foundationpress')?></h2>
 			<h2 class="filter-hot-dogs"><?php _e('HOT DOGS', 'foundationpress')?></h2>
-			<h2 class="filter-lunch-meat"><?php _e('LUNCH MEAT', 'foundationpress')?></h2>
-			<h2 class="filter-smoked-sausage"><?php _e('SMOKED SAUSAGE', 'foundationpress')?></h2>
+			<h2 class="<?php echo $filter_lunch_meat?>"><?php _e('LUNCH MEAT', 'foundationpress')?></h2>
+			<h2 class="<?php echo $filter_smoked_sausage?>"><?php _e('SMOKED SAUSAGE', 'foundationpress')?></h2>
 			<div class="right dropdown-toggle collapsed"></div>
 		</a>
 		<div class="products_archive_filter_dropdown row">
@@ -61,25 +78,25 @@ get_header(); ?>
 				<a class="filter-all active"><?php _e('ALL PRODUCTS', 'foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a class="filter-all-natural"><?php _e('ALL NATURAL', 'foundationpress')?></a>
+				<a class="<?php echo $filter_all_natural?>"><?php _e('ALL NATURAL', 'foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a class="filter-bacon"><?php _e('BACON', 'foundationpress')?></a>
+				<a class="<?php echo $filter_bacon?>"><?php _e('BACON', 'foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a class="filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE', 'foundationpress')?></a>
+				<a class="<?php echo $filter_breakfast_sausage?>"><?php _e('BREAKFAST SAUSAGE', 'foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a class="filter-ham"><?php _e('HAM', 'foundationpress')?></a>
+				<a class="<?php echo $filter_ham?>"><?php _e('HAM', 'foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
 				<a class="filter-hot-dogs"><?php _e('HOT DOGS', 'foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a class="filter-lunch-meat"><?php _e('LUNCH MEAT', 'foundationpress')?></a>
+				<a class="<?php echo $filter_lunch_meat?>"><?php _e('LUNCH MEAT', 'foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a class="filter-smoked-sausage"><?php _e('SMOKED SAUSAGE', 'foundationpress')?></a>
+				<a class="<?php echo $filter_smoked_sausage?>"><?php _e('SMOKED SAUSAGE', 'foundationpress')?></a>
 			</div>
 		</div>
 	</div>
@@ -87,13 +104,13 @@ get_header(); ?>
 		<div class="column small-12">
 			<div class="category_label_and_diet_filter_container show-for-large-up">
 				<h2 class="products_archive_category_filter_label filter-all active"><?php _e('ALL FARMER JOHN PRODUCTS', 'foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-all-natural"><?php _e('ALL NATURAL', 'foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-bacon"><?php _e('BACON', 'foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE', 'foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-ham"><?php _e('HAM', 'foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_all_natural?>"><?php _e('ALL NATURAL', 'foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_bacon?>"><?php _e('BACON', 'foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_breakfast_sausage?>"><?php _e('BREAKFAST SAUSAGE', 'foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_ham?>"><?php _e('HAM', 'foundationpress')?></h2>
 				<h2 class="products_archive_category_filter_label filter-hot-dogs"><?php _e('HOT DOGS', 'foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-lunch-meat"><?php _e('LUNCH MEAT', 'foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-smoked-sausage"><?php _e('SMOKED SAUSAGE', 'foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_lunch_meat?>"><?php _e('LUNCH MEAT', 'foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_smoked_sausage?>"><?php _e('SMOKED SAUSAGE', 'foundationpress')?></h2>
 <?php
 $taxonomies = array(
     'diet',
@@ -115,13 +132,13 @@ $terms = get_terms($taxonomies, $args); ?>
 			</div>
 			<div class="category_label_and_diet_filter_container hide-for-large-up text-center" style="visibility: hidden;">
 				<h2 class="products_archive_category_filter_label filter-all active"><?php _e('ALL FARMER JOHN PRODUCTS','foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-all-natural"><?php _e('ALL NATURAL','foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-bacon"><?php _e('BACON','foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE','foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-ham"><?php _e('HAM','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_all_natural?>"><?php _e('ALL NATURAL','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_bacon?>"><?php _e('BACON','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_breakfast_sausage?>"><?php _e('BREAKFAST SAUSAGE','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_ham?>"><?php _e('HAM','foundationpress')?></h2>
 				<h2 class="products_archive_category_filter_label filter-hot-dogs"><?php _e('HOT DOGS','foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-lunch-meat"><?php _e('LUNCH MEAT','foundationpress')?></h2>
-				<h2 class="products_archive_category_filter_label filter-smoked-sausage"><?php _e('SMOKED SAUSAGE','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_lunch_meat?>"><?php _e('LUNCH MEAT','foundationpress')?></h2>
+				<h2 class="products_archive_category_filter_label <?php echo $filter_smoked_sausage?>"><?php _e('SMOKED SAUSAGE','foundationpress')?></h2>
  				<div class="diet_filter">
 					<select class="diet_dropdown" data-placeholder="FILTER">
 						<option value="none"><?php _e('FILTER','foundationpress')?></option>
