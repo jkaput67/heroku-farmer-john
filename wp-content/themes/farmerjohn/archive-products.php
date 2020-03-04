@@ -24,7 +24,7 @@ if (get_locale() == 'es_MX') {
 ?>
 
 <style>
-	.products_archive_filter_nav > .row {
+	.filter_centered > .row {
 		display: flex;
 		justify-content: center;
 	}
@@ -32,7 +32,7 @@ if (get_locale() == 'es_MX') {
 
 <section class="products_archive">
 	<div class="products_archive_hero"></div>
-	<div class="products_archive_filter_nav show-for-large-up light-yellow-bg">
+	<div class="products_archive_filter_nav show-for-large-up light-yellow-bg filter_centered">
 		<div class="row">
 			<div class="column products_archive_filter_item" style="width:10%">
 				<a class="filter-all active"><?php _e('ALL', 'foundationpress')?></a>
