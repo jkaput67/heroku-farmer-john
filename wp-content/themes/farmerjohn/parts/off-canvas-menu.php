@@ -6,7 +6,11 @@
  * @subpackage FoundationPress
  * @since FoundationPress 1.0.0
  */
-
+if (get_locale() == 'es_MX') {
+  $lang_switch = '<a href="/"><img src="/wp-content/plugins/multisite-language-switcher/flags/us.png"> English</a>';
+} else {
+  $lang_switch = '<a href="/es/"><img src="/wp-content/plugins/multisite-language-switcher/flags/mx.png"> Español</a>';
+}
 ?>
     <a class="left-off-canvas-toggle" href="#"></a>
 
@@ -17,6 +21,9 @@
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png">
           </a>
+        </li>
+        <li>
+          <?php echo $lang_switch ?>
         </li>
         <li>
           <a href="/products"><?php _e('Products','foundationpress')?></a>
