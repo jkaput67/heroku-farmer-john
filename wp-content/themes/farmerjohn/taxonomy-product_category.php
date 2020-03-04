@@ -92,9 +92,9 @@ if (get_locale() == 'es_MX') {
 		<div class="products_archive_filter_dropdown row">
 			<div class="vertical-divider"></div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a class="filter-all active"><?php _e('ALL PRODUCTS','foundationpress')?></a>
+				<a class="filter-all"><?php _e('ALL PRODUCTS','foundationpress')?></a>
 			</div>
-			<div class="column products_archive_filter_item">
+			<div class="column products_archive_filter_item text-center">
 				<a href="<?php echo $subdir?>/product_category/<?php echo $natural?>" class="<?php if( is_tax( 'product_category', $natural ) ){ echo "active "; } ?> filter-all-natural"><?php _e('ALL NATURAL','foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
