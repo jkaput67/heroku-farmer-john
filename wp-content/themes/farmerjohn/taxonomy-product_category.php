@@ -13,48 +13,60 @@ if( is_tax() ) {
     $cat_slug = $term->slug;
 }
 
+if (get_locale() == 'es_MX') {
+	$subdir = '/es';
+} else {
+	$subdir = '';
+}
 ?>
+
+<style>
+	.products_archive_filter_nav > .row {
+		display: flex;
+		justify-content: center;
+	}
+</style>
 
 <section class="products_archive">
 	<div class="products_archive_hero <?php echo $cat_slug; ?>"></div>
 	<div class="products_archive_filter_nav show-for-large-up light-yellow-bg">
 		<div class="row">
-			<div class="column products_archive_filter_item">
-				<a href="/products" class="filter-all"><?php _e('ALL','foundationpress')?></a>
+			<div class="column products_archive_filter_item" style="width:10%">
+				<a href="<?php echo $subdir?>/products" class="filter-all"><?php _e('ALL','foundationpress')?></a>
 			</div>
-			<div class="column products_archive_filter_item">
-				<a href="/product_category/all-natural" class="<?php if( is_tax( 'product_category', 'all-natural' ) ){ echo "active "; } ?>filter-all-natural"><?php _e('ALL NATURAL','foundationpress')?></a>
+			<div class="column products_archive_filter_item" style="width:10%">
+				<a href="<?php echo $subdir?>/product_category/all-natural" class="<?php if( is_tax( 'product_category', 'all-natural' ) ){ echo "active "; } ?>filter-all-natural"><?php _e('ALL NATURAL','foundationpress')?></a>
 			</div>
-			<div class="column products_archive_filter_item">
-				<a href="/product_category/bacon" class="<?php if( is_tax( 'product_category', 'bacon' ) ){ echo "active "; } ?>filter-bacon"><?php _e('BACON','foundationpress')?></a>
+			<div class="column products_archive_filter_item" style="width:10%">
+				<a href="<?php echo $subdir?>/product_category/bacon" class="<?php if( is_tax( 'product_category', 'bacon' ) ){ echo "active "; } ?>filter-bacon"><?php _e('BACON','foundationpress')?></a>
 			</div>
-			<div class="column products_archive_filter_item">
-				<a href="/product_category/breakfast-sausage" class="<?php if( is_tax( 'product_category', 'breakfast-sausage' ) ){ echo "active "; } ?>filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE','foundationpress')?></a>
+			<div class="column products_archive_filter_item" style="width:10%">
+				<a href="<?php echo $subdir?>/product_category/breakfast-sausage" class="<?php if( is_tax( 'product_category', 'breakfast-sausage' ) ){ echo "active "; } ?>filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE','foundationpress')?></a>
 			</div>
-			<div class="column products_archive_filter_item">
-				<a href="/product_category/ham" class="<?php if( is_tax( 'product_category', 'ham' ) ){ echo "active "; } ?>filter-ham"><?php _e('HAM','foundationpress')?></a>
+			<div class="column products_archive_filter_item" style="width:10%">
+				<a href="<?php echo $subdir?>/product_category/ham" class="<?php if( is_tax( 'product_category', 'ham' ) ){ echo "active "; } ?>filter-ham"><?php _e('HAM','foundationpress')?></a>
 			</div>
-			<div class="column products_archive_filter_item">
-				<a href="/product_category/hot-dogs" class="<?php if( is_tax( 'product_category', 'hot-dogs' ) ){ echo "active "; } ?>filter-hot-dogs"><?php _e('HOT DOGS','foundationpress')?></a>
+			<div class="column products_archive_filter_item" style="width:10%">
+				<a href="<?php echo $subdir?>/product_category/hot-dogs" class="<?php if( is_tax( 'product_category', 'hot-dogs' ) ){ echo "active "; } ?>filter-hot-dogs"><?php _e('HOT DOGS','foundationpress')?></a>
 			</div>
-			<div class="column products_archive_filter_item">
-				<a href="/product_category/lunch-meat" class="<?php if( is_tax( 'product_category', 'lunch-meat' ) ){ echo "active "; } ?>filter-lunch-meat"><?php _e('LUNCH MEAT','foundationpress')?></a>
+			<div class="column products_archive_filter_item" style="width:10%">
+				<a href="<?php echo $subdir?>/product_category/lunch-meat" class="<?php if( is_tax( 'product_category', 'lunch-meat' ) ){ echo "active "; } ?>filter-lunch-meat"><?php _e('LUNCH MEAT','foundationpress')?></a>
 			</div>
-			<div class="column products_archive_filter_item">
-				<a href="/product_category/smoked-sausage" class="<?php if( is_tax( 'product_category', 'smoked-sausage' ) ){ echo "active "; } ?>filter-smoked-sausage"><?php _e('SMOKED SAUSAGE','foundationpress')?></a>
+			<div class="column products_archive_filter_item" style="width:10%; border: 0">
+				<a href="<?php echo $subdir?>/product_category/smoked-sausage" class="<?php if( is_tax( 'product_category', 'smoked-sausage' ) ){ echo "active "; } ?>filter-smoked-sausage"><?php _e('SMOKED SAUSAGE','foundationpress')?></a>
 			</div>
 		</div>
 	</div>
 	<div class="products_archive_filter_nav hide-for-large-up light-yellow-bg">
 		<a class="products_archive_filter_dropdown_toggle text-center">
-			<h2 href="/products" class="filter-all"><?php _e('ALL PRODUCTS','foundationpress')?></h2>
-			<h2 href="/product_category/all-natural" class="<?php if( is_tax( 'product_category', 'all-natural' ) ){ echo "active "; } ?>filter-all-natural"><?php _e('ALL NATURAL','foundationpress')?></h2>
-			<h2 href="/product_category/bacon" class="<?php if( is_tax( 'product_category', 'bacon' ) ){ echo "active "; } ?>filter-bacon"><?php _e('BACON','foundationpress')?></h2>
-			<h2 href="/product_category/breakfast-sausage" class="<?php if( is_tax( 'product_category', 'breakfast-sausage' ) ){ echo "active "; } ?>filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE','foundationpress')?></h2>
-			<h2 href="/product_category/ham" class="<?php if( is_tax( 'product_category', 'ham' ) ){ echo "active "; } ?>filter-ham"><?php _e('HAM','foundationpress')?></h2>
-			<h2 href="/product_category/hot-dogs" class="<?php if( is_tax( 'product_category', 'hot-dogs' ) ){ echo "active "; } ?>filter-hot-dogs"><?php _e('HOT DOGS','foundationpress')?></h2>
-			<h2 href="/product_category/lunch-meat" class="<?php if( is_tax( 'product_category', 'lunch-meat' ) ){ echo "active "; } ?>filter-lunch-meat"><?php _e('LUNCH MEAT','foundationpress')?></h2>
-			<h2 href="/product_category/smoked-sausage" class="<?php if( is_tax( 'product_category', 'smoked-sausage' ) ){ echo "active "; } ?>filter-smoked-sausage"><?php _e('SMOKED SAUSAGE','foundationpress')?></h2>
+			<h2 href="<?php echo $subdir?>/products" class="filter-all"><?php _e('ALL PRODUCTS','foundationpress')?></h2>
+			<h2 href="<?php echo $subdir?>/product_category/all-natural" class="<?php if( is_tax( 'product_category', 'all-natural' ) ){ echo "active "; } ?>filter-all-natural"><?php _e('ALL NATURAL','foundationpress')?></h2>
+			<h2 href="<?php echo $subdir?>/product_category/bacon" class="<?php if( is_tax( 'product_category', 'bacon' ) ){ echo "active "; } ?>filter-bacon"><?php _e('BACON','foundationpress')?></h2>
+			<h2 href="<?php echo $subdir?>/product_category/breakfast-sausage" class="<?php if( is_tax( 'product_category', 'breakfast-sausage' ) ){ echo "active "; } ?>filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE','foundationpress')?></h2>
+			<h2 href="<?php echo $subdir?>/product_category/ham" class="<?php if( is_tax( 'product_category', 'ham' ) ){ echo "active "; } ?>filter-ham"><?php _e('HAM','foundationpress')?></h2>
+			<h2 href="<?php echo $subdir?>/product_category/hot-dogs" class="<?php if( is_tax( 'product_category', 'hot-dogs' ) ){ echo "active "; } ?>filter-hot-dogs"><?php _e('HOT DOGS','foundationpress')?></h2>
+			<h2 href="<?php echo $subdir?>/product_category/lunch-meat" class="<?php if( is_tax( 'product_category', 'lunch-meat' ) ){ echo "active "; } ?>filter-lunch-meat"><?php _e('LUNCH MEAT','foundationpress')?></h2>
+			<h2 href="<?php echo $subdir?>/product_category/smoked-sausage" class="<?php if( is_tax( 'product_category', 'smoked-sausage' ) ){ echo "active "; } ?>filter-smoked-sausage"><?php _e('SMOKED SAUSAGE','foundationpress')?></h2>
 			<div class="right dropdown-toggle collapsed"></div>
 		</a>
 		<div class="products_archive_filter_dropdown row">
@@ -63,25 +75,25 @@ if( is_tax() ) {
 				<a class="filter-all active"><?php _e('ALL PRODUCTS','foundationpress')?></a>
 			</div>
 			<div class="column products_archive_filter_item">
-				<a href="/product_category/all-natural" class="<?php if( is_tax( 'product_category', 'all-natural' ) ){ echo "active "; } ?>filter-all-natural"><?php _e('ALL NATURAL','foundationpress')?></a>
+				<a href="<?php echo $subdir?>/product_category/all-natural" class="<?php if( is_tax( 'product_category', 'all-natural' ) ){ echo "active "; } ?>filter-all-natural"><?php _e('ALL NATURAL','foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a href="/product_category/bacon" class="filter-bacon"><?php _e('BACON','foundationpress')?></a>
+				<a href="<?php echo $subdir?>/product_category/bacon" class="filter-bacon"><?php _e('BACON','foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a href="/product_category/breakfast-sausage" class="filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE','foundationpress')?></a>
+				<a href="<?php echo $subdir?>/product_category/breakfast-sausage" class="filter-breakfast-sausage"><?php _e('BREAKFAST SAUSAGE','foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a href="/product_category/ham" class="filter-ham"><?php _e('HAM','foundationpress')?></a>
+				<a href="<?php echo $subdir?>/product_category/ham" class="filter-ham"><?php _e('HAM','foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a href="/product_category/hot-dogs" class="filter-hot-dogs"><?php _e('HOT DOGS','foundationpress')?></a>
+				<a href="<?php echo $subdir?>/product_category/hot-dogs" class="filter-hot-dogs"><?php _e('HOT DOGS','foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a href="/product_category/lunch-meat" class="filter-lunch-meat"><?php _e('LUNCH MEAT','foundationpress')?></a>
+				<a href="<?php echo $subdir?>/product_category/lunch-meat" class="filter-lunch-meat"><?php _e('LUNCH MEAT','foundationpress')?></a>
 			</div>
 			<div class="column small-12 products_archive_filter_item text-center">
-				<a href="/product_category/smoked-sausage" class="filter-smoked-sausage"><?php _e('SMOKED SAUSAGE','foundationpress')?></a>
+				<a href="<?php echo $subdir?>/product_category/smoked-sausage" class="filter-smoked-sausage"><?php _e('SMOKED SAUSAGE','foundationpress')?></a>
 			</div>
 		</div>
 	</div>
