@@ -7,17 +7,17 @@
  * @since FoundationPress 1.0.0
  */
 if (get_locale() == 'es_MX') {
-  $products = '/products';
-  $ourstory = '/our-story';
-  $foodsafety = '/food-safety';
-  $contact = '/contact';
-  $recipes = '/recipes';
-} else {
   $products = '/es/productos';
   $ourstory = '/es/nuestra-historia/';
   $foodsafety = '/es/seguridad-de-alimentos/';
   $contact = '/es/contactenos/';
   $recipes = '/es/recetas/';
+} else {
+  $products = '/products';
+  $ourstory = '/our-story';
+  $foodsafety = '/food-safety';
+  $contact = '/contact';
+  $recipes = '/recipes';
 }
 ?>
     <a class="left-off-canvas-toggle" href="#"></a>
