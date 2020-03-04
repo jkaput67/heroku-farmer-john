@@ -7,9 +7,17 @@
  * @since FoundationPress 1.0.0
  */
 if (get_locale() == 'es_MX') {
-  $lang_switch = '<a href="/"><img src="/wp-content/plugins/multisite-language-switcher/flags/us.png"> English</a>';
+  $products = '/products';
+  $ourstory = '/our-story';
+  $foodsafety = '/food-safety';
+  $contact = '/contact';
+  $recipes = '/recipes';
 } else {
-  $lang_switch = '<a href="/es/"><img src="/wp-content/plugins/multisite-language-switcher/flags/mx.png"> Español</a>';
+  $products = '/es/productos';
+  $ourstory = '/es/nuestra-historia/';
+  $foodsafety = '/es/seguridad-de-alimentos/';
+  $contact = '/es/contactenos/';
+  $recipes = '/es/recetas/';
 }
 ?>
     <a class="left-off-canvas-toggle" href="#"></a>
@@ -23,24 +31,24 @@ if (get_locale() == 'es_MX') {
           </a>
         </li>
         <li>
-          <?php echo $lang_switch ?>
+          <?php if ( function_exists( 'the_msls' ) ) the_msls(); ?>
         </li>
         <li>
-          <a href="/products"><?php _e('Products','foundationpress')?></a>
+          <a href="<?php echo $products?>"><?php _e('Products','foundationpress')?></a>
         </li>
         <li class="has-submenu">
-          <a href="/our-story"><?php _e('About Us','foundationpress')?></a>
+          <a href="<?php echo $ourstory?>"><?php _e('About Us','foundationpress')?></a>
           <ul class="right-submenu">
             <li class="back"><a href="#"><?php _e('Back','foundationpress')?></a></li>
             <li><label><?php _e('About Us','foundationpress')?></label></li>
-            <li><a href="/our-story"><?php _e('Our Story','foundationpress')?></a></li>
-            <li><a href="/food-safety"><?php _e('Food Safety','foundationpress')?></a></li>
+            <li><a href="<?php echo $ourstory?>"><?php _e('Our Story','foundationpress')?></a></li>
+            <li><a href="<?php echo $foodsafety?>"><?php _e('Food Safety','foundationpress')?></a></li>
             <li><a href="https://www.smithfieldfoods.com/careers"><?php _e('Careers','foundationpress')?></a></li>
-            <li><a href="/contact"><?php _e('Contact','foundationpress')?></a></li>
+            <li><a href="<?php echo $contact?>"><?php _e('Contact','foundationpress')?></a></li>
           </ul>
         </li>
         <li>
-          <a href="/recipes"><?php _e('Recipes','foundationpress')?></a>
+          <a href="<?php echo $recipes?>"><?php _e('Recipes','foundationpress')?></a>
         </li>
         <li>
         <li>
