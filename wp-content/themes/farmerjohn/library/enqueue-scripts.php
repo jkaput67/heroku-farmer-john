@@ -14,7 +14,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	function foundationpress_scripts() {
 
 	// Enqueue the main Stylesheet.
-	wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/css/foundation.css' );
+	wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/css/foundation.css?v=1' );
 
 	// Enqueue the slick Stylesheet.
 	wp_enqueue_style( 'slick-stylesheet', get_stylesheet_directory_uri() . '/js/vendor/slick/slick.css' );

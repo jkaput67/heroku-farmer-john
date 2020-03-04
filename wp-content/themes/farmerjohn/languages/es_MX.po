@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2020-01-23T15:45:13+00:00\n"
-"PO-Revision-Date: 2020-02-27 09:57-0600\n"
+"PO-Revision-Date: 2020-03-04 14:11-0600\n"
 "X-Generator: Poedit 2.3\n"
 "X-Domain: foundationpress\n"
 "Project-Id-Version: \n"
@@ -1554,7 +1554,7 @@ msgstr "PORCIONES"
 
 #: single-recipes.php:83 single-recipes.php:170 single-recipes.php:288
 msgid "PREP TIME"
-msgstr "TIEMPO DE PREPARACIÓN"
+msgstr "TIEMPO DE PREP"
 
 #: single-recipes.php:87 single-recipes.php:174 single-recipes.php:292
 msgid "COOK TIME"

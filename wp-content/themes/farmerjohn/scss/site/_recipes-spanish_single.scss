@@ -282,16 +282,16 @@ body.single-recipes .homepage_recipes_header, body.single-recipes .homepage_reci
 	}
 }
 
-.meta_value.difficulty.Easy {
-	background-image:url(../assets/img/recipes/easy.png);
+.meta_value.difficulty.Easy, .meta_value.difficulty.Fácil {
+  background-image: url(../assets/img/recipes/easy.png);
 }
 
-.meta_value.difficulty.Intermediate, .meta_value.difficulty.Medium {
-	background-image:url(../assets/img/recipes/intermediate.png);
+.meta_value.difficulty.Intermediate, .meta_value.difficulty.Medium, .meta_value.difficulty.Media {
+  background-image: url(../assets/img/recipes/intermediate.png);
 }
 
-.meta_value.difficulty.Difficult {
-	background-image:url(../assets/img/recipes/difficult.png);
+.meta_value.difficulty.Difficult, .meta_value.difficulty.Difícil{
+  background-image: url(../assets/img/recipes/difficult.png);
 }
 
 .difficulty_label {

@@ -171,7 +171,7 @@
 }
 
 .tip_icon_bg {
-	padding:6rem 15%;
+	padding:3rem 15%;
 	background-repeat:no-repeat !important;
 	background-position:center center !important;
 	background-size: auto 90% !important;
@@ -181,6 +181,7 @@
 	color:$white;
 	font-family: "DIN OT Bold";
 	text-transform: uppercase;
+	line-height: 2.8rem;
 }
 
 .tips h2 {
