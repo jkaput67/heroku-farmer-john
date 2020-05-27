@@ -1,5 +1,5 @@
 .DS_Store
-wp-config.php
+#wp-config.php
 _assets
 web.config
 .env*
