@@ -17,72 +17,46 @@
  *
  * @package WordPress
  */
+
+
+ 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-//define( 'DB_NAME', 'lalafoods' );
-//
-///** MySQL database username */
-//define( 'DB_USER', 'lalafoods@1041092glmysql01' );
-//
-///** MySQL database password */
-//define( 'DB_PASSWORD', 'l4l4Fo06s+' );
-//
-///** MySQL hostname */
-//define( 'DB_HOST', '1041092glmysql01.mysql.database.azure.com' );
-//
-/** The name of the database for WordPress */
-//define( 'DB_NAME', 'farmerjohn' );
-//// /** MySQL database username */
-//define( 'DB_USER', 'root' );
-//// /** MySQL database password */
-//define( 'DB_PASSWORD', 'root' );
-//// /** MySQL hostname */
-//define( 'DB_HOST', 'localhost' );
-///** Database Charset to use in creating database tables. */
-//define( 'DB_CHARSET', 'utf8mb4' );
-///** The Database Collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
-
-if( !$_SERVER["ENV"]){
-    define('DB_HOST', 'localhost:3306');
-    define('DB_NAME', 'farmerjohn_latest');
-    define('DB_USER', 'wordpresstest');
-    define('DB_PASSWORD', 'wordpresstest');
-    //define('WP_DEBUG', true);
-
-    define( 'WP_HOME', 'http://localhost:150/');
-    define( 'WP_SITEURL', 'http://localhost:150');
-}
-elseif($_SERVER["ENV"] == 'stage') {
-	define('DB_NAME', $_SERVER["DB_NAME"]);
-	define('DB_USER', $_SERVER["DB_USER"]);
-	define('DB_PASSWORD', $_SERVER["DB_PASSWORD"]);
-	define('DB_HOST', $_SERVER["DB_HOST"]);
-	define( 'WP_HOME', $_SERVER["WP_HOME"]);
-	define( 'WP_SITEURL', $_SERVER["WP_SITEURL"]);
+if(!$_SERVER["ENV"]){
+    define( 'DB_NAME', '' );
+    define( 'DB_USER', 'root' );
+    define( 'DB_PASSWORD', 'root' );
+    define( 'DB_HOST', 'localhost' );
 }
 else{
-	//Live server on Azure
-	//Begin Really Simple SSL Load balancing fix
-	if ((isset($_ENV["HTTPS"]) && ("on" == $_ENV["HTTPS"]))
-	|| (isset($_SERVER["HTTP_X_FORWARDED_SSL"]) && (strpos($_SERVER["HTTP_X_FORWARDED_SSL"], "1") !== false))
-	|| (isset($_SERVER["HTTP_X_FORWARDED_SSL"]) && (strpos($_SERVER["HTTP_X_FORWARDED_SSL"], "on") !== false))
-	|| (isset($_SERVER["HTTP_CF_VISITOR"]) && (strpos($_SERVER["HTTP_CF_VISITOR"], "https") !== false))
-	|| (isset($_SERVER["HTTP_CLOUDFRONT_FORWARDED_PROTO"]) && (strpos($_SERVER["HTTP_CLOUDFRONT_FORWARDED_PROTO"], "https") !== false))
-	|| (isset($_SERVER["HTTP_X_FORWARDED_PROTO"]) && (strpos($_SERVER["HTTP_X_FORWARDED_PROTO"], "https") !== false))
-	|| (isset($_SERVER["HTTP_X_PROTO"]) && (strpos($_SERVER["HTTP_X_PROTO"], "SSL") !== false))
-	) {
-	$_SERVER["HTTPS"] = "on";
-	}
-	define('DB_NAME', $_SERVER["DB_NAME"]);
-	define('DB_USER', $_SERVER["DB_USER"]);
-	define('DB_PASSWORD', $_SERVER["DB_PASSWORD"]);
-	define('DB_HOST', $_SERVER["DB_HOST"]);
-	define( 'WP_HOME', $_SERVER["WP_HOME"]);
-	define( 'WP_SITEURL', $_SERVER["WP_SITEURL"]);
-
+echo('<!-- stage-->');
+    define('DB_NAME', $_SERVER["DB_NAME"]);
+    define('DB_USER', $_SERVER["DB_USER"]);
+    define('DB_PASSWORD', $_SERVER["DB_PASSWORD"]);
+    define('DB_HOST', $_SERVER["DB_HOST"]);
+    define('WP_HOME', $_SERVER["WP_HOME"]);
+    define('WP_SITEURL', $_SERVER["WP_SITEURL"]);
 }
 
+// /** The name of the database for WordPress */
+// define( 'DB_NAME', 'mazola' );
+
+// /** MySQL database username */
+// define( 'DB_USER', 'root' );
+
+// /** MySQL database password */
+// define( 'DB_PASSWORD', 'root' );
+
+// /** MySQL hostname */
+// define( 'DB_HOST', 'localhost' );
+
+
+
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
+
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -93,15 +67,35 @@ else{
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '?;RZMJ48!&g/6y#N(1Na[8/q(87SXLuW?KZ.}6mM#dsPy$98;O,Bz`~bW!o_PD>0' );
-define( 'SECURE_AUTH_KEY',  's)0-M8_Lq-%R`E&N#RU#cMFGrbSm}@jG2Q#*GskI?9]n>KP2B^Y%31(W2:B*s(zj' );
-define( 'LOGGED_IN_KEY',    'iZqnLCe%izT,:OWj/bKd:k[R<XL4Tb9f|)4OGSYqU8+xigmXFz3xKL:,8Av*ybBX' );
-define( 'NONCE_KEY',        '9F}}6+su `eYlO);B)9MtY<n(s5fk{7VA2N79HEr4p8G<d{37_<DHqqM>mJLJ_wj' );
-define( 'AUTH_SALT',        '_A,nb/N(z$K=TGdYaDCc^fv-3S.P-T[@3pcsyD0,0w6#l=neB`t0<vTLw~e(6B(y' );
-define( 'SECURE_AUTH_SALT', 'D,5(`5dF1WaSh~fOi(yD<)*OD<[M@NY/bF:fTp_VlR1CIxjUHQ%4Gu;S_ca:J9{D' );
-define( 'LOGGED_IN_SALT',   'GJiB?tM,pKifMsV~-u:_^g_$l)75]mX0thK2$_v~zA-5|)AR&?^gzO#8^(-JISjz' );
-define( 'NONCE_SALT',       '++GXo(i;bV|(O{jNZOEy0(5.8-y9&qa+J9,0YbL(2jGM}ty27P&{m }Ap;u899dZ' );
+define('AUTH_KEY',         '3klFQK<wEED:? HeZ9<NE`L&P6Awm=jN+*-:#c59$/PBe%Xrj1C|;[&^zFyzHU,T');
+define('SECURE_AUTH_KEY',  'ok|3;<1p<>aK+Sf+-T0-fCIKL<C@$tL!o7Rre+Lq+km$vY?jCv|)u6+];3;3)vl<');
+define('LOGGED_IN_KEY',    't27<53QS4(0w/rV6umNrM$%KWPHo8cL*ZN<] t3c*>v[pa%P*>DVQ]| b-j 7kr<');
+define('NONCE_KEY',        'Rq5d 4aS+-*?NV<D-+-WgNG5g|Vm%xOT*cZWhbC`og21t<6y9K]Q) hf%gc*PLc6');
+define('AUTH_SALT',        '7$Q=`LlGzR%?|qZ<b=u%v:j9.nGIM@-S8`%ay?+]Ex+;N3,(kNVRNcM|l5Sr J]?');
+define('SECURE_AUTH_SALT', 'C}C@R&qts{S|YT=Ox9rp*2P>`ifE=0nMn8G-|&HcX`gkaHug/8758.~%H:+&`x} ');
+define('LOGGED_IN_SALT',   'h6*KQ;Y]v|k9,{R@|y,lgNsqKCOP@-Ye>Pi{8A*Ee,iK*c%:PE=D$O)gE|v.SN/A');
+define('NONCE_SALT',       'NN7/ZKN05-o>8mnKF<8<(Y+{=+<?fXlZ ^prh3@R%y76[P`%r i`Xc{X/k,K7:3I');
+
+
+if($_SERVER["ENV"] == "prod"){
+    //Begin Really Simple SSL Load balancing fix
+    if ((isset($_ENV["HTTPS"]) && ("on" == $_ENV["HTTPS"]))
+    || (isset($_SERVER["HTTP_X_FORWARDED_SSL"]) && (strpos($_SERVER["HTTP_X_FORWARDED_SSL"], "1") !== false))
+    || (isset($_SERVER["HTTP_X_FORWARDED_SSL"]) && (strpos($_SERVER["HTTP_X_FORWARDED_SSL"], "on") !== false))
+    || (isset($_SERVER["HTTP_CF_VISITOR"]) && (strpos($_SERVER["HTTP_CF_VISITOR"], "https") !== false))
+    || (isset($_SERVER["HTTP_CLOUDFRONT_FORWARDED_PROTO"]) && (strpos($_SERVER["HTTP_CLOUDFRONT_FORWARDED_PROTO"], "https") !== false))
+    || (isset($_SERVER["HTTP_X_FORWARDED_PROTO"]) && (strpos($_SERVER["HTTP_X_FORWARDED_PROTO"], "https") !== false))
+    || (isset($_SERVER["HTTP_X_PROTO"]) && (strpos($_SERVER["HTTP_X_PROTO"], "SSL") !== false))
+    ) {
+    $_SERVER["HTTPS"] = "on";
+    }
+    define( 'WP_HOME', '');
+    define( 'WP_SITEURL', '');
+}
+
+
 /**#@-*/
+
 /**
  * WordPress Database Table prefix.
  *
@@ -109,6 +103,7 @@ define( 'NONCE_SALT',       '++GXo(i;bV|(O{jNZOEy0(5.8-y9&qa+J9,0YbL(2jGM}ty27P&
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix = 'bsgdv_';
+
 /**
  * For developers: WordPress debugging mode.
  *
@@ -121,33 +116,21 @@ $table_prefix = 'bsgdv_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('DISALLOW_FILE_MODS',true);
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// !!!!!!!! THESE 2 LINES BELOW CAUSE LOCALHOST TO REDIRECT TO LIVE SITE, COMMENT TO FIX !!!!!!!!!
-// define('SUBDOMAIN_INSTALL', false);
-/* define('MULTISITE', true);
+define( 'WP_DEBUG', false );
+define( 'WP_ALLOW_MULTISITE', true );
+define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', false);
-define('DOMAIN_CURRENT_SITE', 'localhost:150');
+define('DOMAIN_CURRENT_SITE', 'farmerjohn-dev.eba-54m3ysmu.us-east-1.elasticbeanstalk.com');
 define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
- */
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-/* define('WP_HOME','localhost:8888');
-define('WP_SITEURL','localhost:8888');
-define('DOMAIN_CURRENT_SITE', 'localhost:8888');
-define('PATH_CURRENT_SITE', '/');
-define('SITE_ID_CURRENT_SITE', 1);
-define('BLOG_ID_CURRENT_SITE', 1); */
-/* That's all, stop editing! Happy blogging. */
+/* That's all, stop editing! Happy publishing. */
+
 /** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-    define('ABSPATH', dirname(__FILE__) . '/');
+if ( ! defined( 'ABSPATH' ) ) {
+    define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+}
+
 /** Sets up WordPress vars and included files. */
-require_once(ABSPATH . 'wp-settings.php');
-/** Sets up 'direct' method for wordpress, auto update without FTP */
-define('FS_METHOD','direct');
-//Disable File Edits
-define('DISALLOW_FILE_EDIT', false);
-// /* Multisite */
-define( 'WP_ALLOW_MULTISITE', true );
+require_once( ABSPATH . 'wp-settings.php' );
+

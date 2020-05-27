@@ -121,7 +121,6 @@
 .schedule_btn_left {
 	color: white;
 	background-color: #c19c6f;
-	float: right;
 	display: inline-block;
 	font-size: 25px;
 	margin-top: 1%;
@@ -224,10 +223,8 @@
 }
 
 .sch_btn_holder {
-	@media only screen and (max-width: 1024px) {
-		text-align: center;
-	};
-}
+ 		text-align: center;
+ }
 
 .bresee_text {
 	text-transform: unset !important;

@@ -84,12 +84,12 @@
 </div>
 
 <div class="row schedule_block" style="border-bottom: unset !important;">
-<div class="large-6 small-12 columns sch_btn_holder"> 
+<div class="large-12 small-12 columns sch_btn_holder"> 
 <div class="schedule_btn_left sch_btn"><a href="https://www.lafc.com/schedule">VIEW FULL SCHEDULE</a></div>
 </div>
-<div class="large-6 small-12 columns sch_btn_holder">
+<!-- <div class="large-6 small-12 columns sch_btn_holder">
 <div class="schedule_btn_right sch_btn">PRINT SCHEDULE</div>
-</div>
+</div> -->
 </div>
 
 </section>
