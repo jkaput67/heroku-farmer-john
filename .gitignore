@@ -8,7 +8,7 @@ wp-content/upgrade/
 wp-content/cache/
 wp-content/languages/wpml/
 wp-content/aiowps_backups/
-
+/wp-content/themes/farmerjohn_old
 node_modules/
 
 # ignore log files and databases

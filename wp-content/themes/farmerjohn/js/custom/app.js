@@ -15,6 +15,19 @@ $(document).ready(function(){
 		$('.slick-prev, .slick-next').click(function(){
 			clearTimeout(autoRotate);
 		});
+	} else if ( $('body').hasClass('page-id-3103')) {
+		$('.landing_slider_container').slick({
+			prevArrow: '<button type="button" class="slick-prev"><img src="/wp-content/themes/farmerjohn/assets/img/home/left-arrow.png"></button>',
+			nextArrow: '<button type="button" class="slick-next"><img src="/wp-content/themes/farmerjohn/assets/img/home/right-arrow.png"></button>',
+			dots: true
+		});
+		// Auto-rotate for slider
+		var autoRotate = setInterval(function(){
+			$('.homepage_slider_container').slick('slickNext');
+		},5000);
+		$('.slick-prev, .slick-next').click(function(){
+			clearTimeout(autoRotate);
+		});
 	} else if ( $('body').hasClass('post-type-archive-recipes') ) {
 		// There's an external js file for this page template's scripts.
 	} else if ( $('body').hasClass('single-recipes') ) {

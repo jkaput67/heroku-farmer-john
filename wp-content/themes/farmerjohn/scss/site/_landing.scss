@@ -1,0 +1,289 @@
+.landing_slider {
+	background-size:cover;
+	display:block;
+	padding-top:53%;
+	max-width:100%;
+	@media only screen and (max-width: 1024px) {
+	   padding-top: 56%;
+	};
+}
+
+.landing_slider_mobile {
+	padding-top: 88%;
+	background-size:cover;
+	display:block;
+	max-width:100%;
+}
+
+.landing_slider_container { 
+	// padding: 0rem 0rem 2rem;
+    background-color: #c39d6c;
+}
+
+.landing_banner {
+	padding:15rem 0.5rem;
+	background-size:cover;
+	background-position:center top;
+}
+
+.landing_family_banner {
+	position: absolute;
+	left: 50%;
+}
+
+.landing_family_banner > p {
+	position: relative;
+    left: -50%;
+    color: white;
+	margin-top: -2%;
+	width: 90vw;
+    font-size: 2.5rem !important;
+    font-weight: bold;
+	@media only screen and (max-width: 1024px) {
+	font-size: 2.5rem !important;
+	width: 80vw;
+	margin-top: -22%;
+	};
+	@media only screen and (max-width: 900px) and (min-width: 701px) {
+		margin-top: -28%;
+	}
+	@media only screen and (max-width: 700px) {
+		margin-top: -32%;
+	}
+	@media only screen and (max-width: 550px) {
+		margin-top: -43%;
+		font-size: 2rem !important;
+	}
+}
+
+.sch_btn > a {
+	color: white !important;
+}
+
+.landing_family_banner > a > img {
+    display: inline-block;
+    margin-right: 3%;
+    height: 50px;
+    position: relative;
+    width: 50px;
+	left: -50%;
+	@media only screen and (max-width: 1024px) {
+		width: 30px;
+		height: 30px;
+		};
+}
+
+.landing_family_social {
+	position: relative;
+	margin-top: 3%;
+	left: 50%;
+}
+
+.landing-pg-tip {
+	min-height: 25rem;
+	background-position-x: center;
+	// @media only screen and (max-width: 1024px) {
+	// 	min-height: 41rem;
+	// }
+}
+
+.schedule_block {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid goldenrod;
+    padding-bottom: 20px;
+}
+
+.schedule_vs {
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.schedule_desc {
+	margin-top: 25px;
+}
+
+.schedule_icon_left {
+	height: 75px;
+    width: 60px;
+    float: right;
+    margin-top: 10px;
+}
+
+.schedule_icon_right {
+	height: 75px;
+    width: 60px;
+    float: left;
+    margin-top: 10px;
+}
+
+.schedule_btn_left {
+	color: white;
+	background-color: #c19c6f;
+	float: right;
+	display: inline-block;
+	font-size: 25px;
+	margin-top: 1%;
+	font-weight: bold;
+	padding: 10px;
+	@media only screen and (max-width: 1024px) {
+		float: unset;
+		width: 50%;
+		text-align:center;
+		margin-bottom: 2%;
+		font-size: 15px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	};
+}
+
+.schedule_btn_right {
+	font-weight: bold;
+	color: white;
+	background-color: #c19c6f;
+	float: left;
+	display: inline-block;
+	font-size: 25px;
+	margin-top: 1%;
+	padding-right: 3%;
+	padding-left: 3%;
+	padding: 10px;
+	@media only screen and (max-width: 1024px) {
+		float: unset;
+		width: 50%;
+		font-size: 15px;
+		text-align:center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	};
+}
+
+.hungry {
+	padding: 9rem 0.5rem !important;
+	@media only screen and (max-width: 1024px) {
+		padding: 5rem 0.5rem !important;
+	};
+}
+
+.all-recipe-btn {
+	font-weight: bold;
+	color: white;
+	background-color: #cf252f;
+	display: inline-block;
+	font-size: 25px;
+	margin-top: 1%;
+	padding-right: 3%;
+	padding-left: 3%;
+	padding: 10px;
+}
+
+.all-recipe-btn:hover {
+	cursor: pointer;
+}
+
+.recipe-sec {
+	padding: 3rem 0.5rem !important;
+}
+
+.landing_familia {
+	text-align: center !important;
+    color: white;
+    font-weight: bold;
+    margin-top: 4%;
+	font-size: 4rem;
+	@media only screen and (min-width: 1025px) {
+		font-size: 5rem !important;
+	}
+}
+
+.landing_p {
+	text-align: center !important;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+
+}
+
+.iframe_tip {
+	@media only screen and (max-width: 700px) {
+		margin-top: -4%;
+	}
+}
+
+.landing_bresee {
+	background-image: url('/wp-content/uploads/2020/05/bresee.jpg');
+	background-size: contain;
+	background-color: black;
+	background-repeat: no-repeat;
+	@media only screen and (max-width: 1024px) {
+		background-image: url('/wp-content/uploads/2020/05/bresee-mobile.jpg');
+		min-height: 29rem !important;
+		background-size: contain;
+	};
+}
+
+.sch_btn_holder {
+	@media only screen and (max-width: 1024px) {
+		text-align: center;
+	};
+}
+
+.bresee_text {
+	text-transform: unset !important;
+	font-weight: 300 !important;
+	font-family: unset !important;
+	margin-top: 7%;
+	@media only screen and (max-width: 1024px) {
+		margin-top: 11%;
+	};
+	@media only screen and (max-width: 700px) {
+		font-size: 1.75rem !important;
+	}
+
+}
+.schedule_desc {
+	@media only screen and (max-width: 1024px) {
+		text-align: center;
+		font-size: 2rem;
+	}
+}
+
+.landing_fix {
+	padding-top: 3%;
+}
+
+.mobile_sch_head {
+	width: 40vw;
+    margin-left: 28%;
+    padding: 3%;
+	@media only screen and (max-width: 1024px) {
+		padding: 10%;
+		width: 90vw;
+		margin-left: 5%;
+	} 
+}
+
+.desktop {
+	@media only screen and (max-width: 1024px) {
+		display: none !important;
+	} 
+}
+
+.small { 
+	@media only screen and (min-width: 1025px) {
+		display: none;
+	} 
+}
+
+// .slick-prev > img {
+// 	display: none;
+// }
+
+// .slick-next > img {
+// 	display: none;
+// }
+
+// .slick-dots {
+// 	display: none !important;
+// }

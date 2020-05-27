@@ -212,7 +212,21 @@
 	}
 }
 
-.homepage_dodgers img {
+.homepage_lafc {
+	background:url(../assets/img/home/lafc_bg.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	padding:2.5rem 0;
+	.button.dark-grey-button {
+		margin-top:2rem;
+		clear:both;
+		@media #{$large-up} {
+			margin-top:1.5rem !important;
+		}
+	}
+}
+
+.homepage_lafc img {
 	max-width:90%;
 }
 

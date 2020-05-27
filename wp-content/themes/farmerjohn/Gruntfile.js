@@ -1,3 +1,4 @@
+const sass = require('node-sass');
 module.exports = function(grunt) {
   // time
   require('time-grunt')(grunt);
@@ -10,7 +11,8 @@ module.exports = function(grunt) {
         // If you can't get source maps to work, run the following command in your terminal:
         // $ sass scss/foundation.scss:css/foundation.css --sourcemap
         // (see this link for details: http://thesassway.com/intermediate/using-source-maps-with-sass )
-        sourceMap: true
+        sourceMap: true,
+        implementation: sass
       },
 
       dist: {
@@ -112,6 +114,7 @@ module.exports = function(grunt) {
         files: 'scss/**/*.scss',
         tasks: ['sass'],
         options: {
+              implementation: sass,
               livereload:true,
             }
       },

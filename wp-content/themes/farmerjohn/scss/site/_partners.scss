@@ -45,6 +45,22 @@ section.page-partners strong {
 	padding-top:87.5%
 }
 
+.lafc-bg {
+	background:url(../assets/img/partners/lafc-bg.jpg) no-repeat;
+	background-size:cover;
+	padding-top:87.5%;
+	@media only screen and (max-width: 1024px) {
+		background:url(../assets/img/partners/stadium_lafc.jpg) no-repeat;
+    background-position: right -2px bottom 0px;
+    background-size: cover;
+	};
+}
+
+.lafc-logo-bg {
+	background:url(../assets/img/partners/lafc-bg.jpg) no-repeat;
+	background-size:cover;
+}
+
 .dodgers-logo-bg {
 	background:url(../assets/img/partners/dodgers-logo-bg-mobile.jpg) no-repeat;
 	background-size:cover;
@@ -100,8 +116,8 @@ section.page-partners strong {
 	background-repeat:no-repeat;
 }
 
-.rose_bowl {
-	background-image:url(../assets/img/partners/rose-bowl-bg.jpg);
+.lafc {
+	background-image:url(../assets/img/partners/lafc-bg.jpg);
 	background-repeat:no-repeat;
 }
 
