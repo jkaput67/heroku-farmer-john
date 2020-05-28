@@ -91,7 +91,7 @@
 				<div class="absolute-block">
 					<a href="/recipes/quesadilla-dogs/" class="recipes_color_overlay absolute-block blue">
 						<div>
-							<h2 class="homepage_recipes_recipe_title">QUESADILLA HOT DOGS</h2>
+							<h2 class="homepage_recipes_recipe_title">QUESADILLA DOGS</h2>
 							<div class="see_recipe_cta">SEE RECIPE</div>
 						</div>
 					</a>
