@@ -151,3 +151,135 @@ section.page-partners strong {
 @media #{$large-up}{
 	
 }
+.lafc-fullscreen {
+    padding-top: 0%;
+}
+
+.landing_influencer-banner {
+    position: relative;
+}
+.influencer-headline {
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+.headline-copy {
+    color: #ffffff;
+    font-family: "DIN OT Bold";
+    font-size: 4.5vw;
+    line-height: 10.3vw;
+    text-transform: uppercase;
+}
+.influencer {
+    margin-top: -1%;
+}
+.influencer-container {
+    background-color: #c19c6f;
+    text-align: center;
+}
+.influencer-box {
+    min-height: 28vw;
+    background-position-x: center;
+}
+.influencer-left {
+    padding: 0rem 12%;
+}
+.influencer-headshot {
+    width: 42%;
+    padding-top: 5%;
+}
+.influencer-name {
+    color: #ffffff;
+    font-family: "DIN OT Bold";
+    font-size: 1.5vw;
+    line-height: 0.5vw;
+    text-transform: uppercase;
+    padding-top: 2.5vw;
+    margin-bottom: 0vw;
+}
+.influencer-sub-info {
+    color: #ffffff;
+    font-family: "DIN OT Regular";
+    font-size: 1.5vw;
+    line-height: 0.5vw;
+}
+
+.instagram-link {
+    line-height: 3.5vw;
+}
+.influencer-recipe {
+    text-align: center;
+}
+.influencer-recipe-cta {
+    font-family: "DIN OT Regular", sans-serif;
+    color: #ffffff;
+    background-color: #cf252f;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4vw 2vw;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 1.5vw;
+    letter-spacing: 0.05vw;
+    margin: 3vw 5vw;
+    transition: all .25s;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.centered-info {
+    width: 72vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0vw 11vw 3vw;
+}
+@media only screen and (max-width: 1365px) {
+    .centered-info {
+        padding: 0vw 8vw 3vw;
+    }
+}
+@media only screen and (max-width: 80.0625em) {
+    .influencer-recipe-cta {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 64.0625em) {
+    .influencer-headshot {
+        width: 34%;
+        padding-top: 2%;
+    }
+
+    .influencer-box {
+        min-height: 50vw;
+    }
+    .influencer-left {
+        padding: 0rem 6%;
+    }
+    .influencer-name {
+        font-size: 3.5vw;
+        line-height: 2.5vw;
+        padding-top: 3.5vw;
+        margin-bottom: 1vw;
+    }
+    .influencer-sub-info {
+        font-size: 3.5vw;
+        line-height: 4.5vw;
+    }
+    .influencer-right {
+        margin-top: -1vw;
+    }
+    .influencer-recipe-cta {
+        font-size: 2.5vw;
+    }
+    .centered-info {
+        padding: 0vw 0vw 3vw;
+    }
+}
+@media only screen and (max-width: 40.0625em) {
+    .influencer-recipe-cta {
+        font-size: 4.5vw;
+    }
+}
+

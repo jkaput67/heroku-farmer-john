@@ -23,10 +23,7 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 if(!$_SERVER["ENV"]){
-    define( 'DB_NAME', '' );
-    define( 'DB_USER', 'root' );
-    define( 'DB_PASSWORD', 'root' );
-    define( 'DB_HOST', 'localhost' );
+    include(".env.php");
 }
 else{
 echo('<!-- stage-->');
@@ -120,7 +117,7 @@ define( 'WP_DEBUG', false );
 define( 'WP_ALLOW_MULTISITE', true );
 define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', false);
-define('DOMAIN_CURRENT_SITE', 'farmerjohn-dev.eba-54m3ysmu.us-east-1.elasticbeanstalk.com');
+define('DOMAIN_CURRENT_SITE', 'localhost:150');
 define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);

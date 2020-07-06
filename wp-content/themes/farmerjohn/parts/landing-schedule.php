@@ -2,84 +2,68 @@
 
 <img class="mobile_sch_head" src="/wp-content/uploads/2020/05/la_sch.jpg">
 
-<!-- LAFC vs Colorado Rapids -->
+<!-- MLS Tourament blurb -->
+<div class="centered-info">
+    <h2>MLS is Back Tournament</h2>
+    <p>54 matches, 26 teams, 6 groups, 1 champion</p>
+    <p>Major League Soccer returns to play with an all-new tournament with regular season points and a spot in 2021 Concacaf Champions League on the line.</p>
+</div>
+
+<!-- LAFC vs Houston Dynamo -->
 <div class="row schedule_block">
-    <div class="large-5 small-12 columns schedule_vs">LAFC vs Colorado Rapids (A)
+    <div class="large-5 small-12 columns schedule_vs">LAFC vs Houston Dynamo
         <div class="row">
             <div class="large-6 small-6 columns">
                 <img class="schedule_icon_left" src="/wp-content/uploads/2020/05/lafc-logo.png"/>
             </div>
             <div class="large-6 small-6 columns">
-            <img class="schedule_icon_right" src="/wp-content/uploads/2020/05/rapids.png"/>
+            <img class="schedule_icon_right" src="/wp-content/uploads/2020/06/HOU_Primary.png"/>
             </div>
         </div>
     </div>
     <div class="large-7 columns schedule_desc">
-    <strong>Saturday, June 13, 2020 6:00 PM PT</strong><br />
-    at COLORADO RAPIDS <br />
-    DICK'S SPORTING GOODS PARK <br />
-    Broadcast: Youtube TV, Estrella TV, 710 AM, ESPN, KFWB 980
+    <strong>Monday, July 13th @ 5pm PST</strong><br />
+    ESPN Wide World of Sports Complex in Orlando <br />
+    on FS1 & TUDN <br />
     </div>
 </div>
 
 
-<!-- LAFC vs MNUFC -->
+<!-- LAFC vs Galaxy -->
 <div class="row schedule_block">
-    <div class="large-5 columns schedule_vs">LAFC vs Minnesota United FC (H)
+    <div class="large-5 columns schedule_vs">LAFC vs Galaxy
         <div class="row">
             <div class="large-6 small-6 columns">
                 <img class="schedule_icon_left" src="/wp-content/uploads/2020/05/lafc-logo.png"/>
             </div>
             <div class="large-6 small-6 columns">
-            <img class="schedule_icon_right" src="/wp-content/uploads/2020/05/mnufc.png"/>
+            <img class="schedule_icon_right" src="/wp-content/uploads/2020/06/LA_Primary_0.png"/>
             </div>
         </div>
     </div>
     <div class="large-7 columns schedule_desc">
-    <strong>Wednesday, June 17, 2020 7:30PM PT</strong><br />
-    MINNESOTA UNITED FC <br />
-    BANK OF CALIFORNIA STADIUM <br />
-    Broadcast: Youtube TV, Estrella TV, 710 AM, ESPN, KFWB
+    <strong>Saturday, July 18th @ 7:30pm PST</strong><br />
+    ESPN Wide World of Sports Complex in Orlando <br />
+    on ESPN & ESPON Deportes<br />
     </div>
 </div>
 
-<!-- LAFC vs Montreal -->
+<!-- LAFC vs Portland Timbers -->
 <div class="row schedule_block">
-    <div class="large-5 columns schedule_vs">LAFC vs Montreal Impact (A)
+    <div class="large-5 columns schedule_vs">LAFC vs Portland Timbers
         <div class="row">
             <div class="large-6 small-6 columns">
                 <img class="schedule_icon_left" src="/wp-content/uploads/2020/05/lafc-logo.png"/>
             </div>
             <div class="large-6 small-6 columns">
-            <img class="schedule_icon_right" src="/wp-content/uploads/2020/05/montreal.png"/>
+            <img class="schedule_icon_right" src="/wp-content/uploads/2020/06/portland-logo.png"/>
             </div>
         </div>
     </div>
     <div class="large-7 columns schedule_desc">
-    <strong>Saturday, June 20, 2020 4:00 PM PT</strong><br />
-    at MONTREAL IMPACT <br />
-    STADE SAPUTO <br />
-    Broadcast: Youtube TV, Estrella TV, 710 AM, ESPN, KFWB 980
-    </div>
-</div>
-
-<!-- LAFC vs Colorado Rapids -->
-<div class="row schedule_block">
-    <div class="large-5 columns schedule_vs">LAFC vs Nashville SC (H)
-        <div class="row">
-            <div class="large-6 small-6 columns">
-                <img class="schedule_icon_left" src="/wp-content/uploads/2020/05/lafc-logo.png"/>
-            </div>
-            <div class="large-6 small-6 columns">
-            <img class="schedule_icon_right" src="/wp-content/uploads/2020/05/nash.png"/>
-            </div>
-        </div>
-    </div>
-    <div class="large-7 columns schedule_desc">
-    <strong>Saturday, June 27, 2020 8:55 PM PT</strong><br />
-    NASHVILLE SC <br />
-    BANK OF CALIFORNIA STADIUM <br />
-    Broadcast: Youtube TV, Estrella TV, 710 AM, ESPN, KFWB 980
+    <strong>Thursday, July 23rd @ 7:30 PST </strong><br />
+    ESPN Wide World of Sports Complex in Orlando <br />
+    on ESPN2 & ESPN Deportes<br />
     </div>
 </div>
 

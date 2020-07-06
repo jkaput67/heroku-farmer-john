@@ -10,6 +10,8 @@ get_template_part('parts/landing', 'bresee');
 get_template_part( 'parts/landing', 'banner' );
 get_template_part( 'parts/landing', 'video' );
 get_template_part('parts/landing', 'schedule');
+get_template_part('parts/landing', 'influencer-banner');
+get_template_part('parts/landing', 'influencer');
 get_template_part('parts/landing', 'banner-hungry');
 get_template_part('parts/landing', 'recipes');
 get_template_part('parts/landing', 'all-recipe-btn');
